@@ -36,6 +36,6 @@ html:
   extra_navbar: ""
 
 sphinx:
-  extra_extensions: {}
+  extra_extensions: []
   config:
     intersphinx_mapping: {}
