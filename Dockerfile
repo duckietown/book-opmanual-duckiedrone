@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1.4
+
 # ==================================================>
 # ==> Do not change the code below this line
 ARG ARCH
@@ -61,3 +63,6 @@ LABEL org.duckietown.label.module.type="book" \
     org.duckietown.label.maintainer="everybody"
 # <== Do not change the code above this line
 # <==================================================
+
+# copy source (if given)
+COPY --from=source . ${JB_SOURCE_DIR}
