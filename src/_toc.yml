@@ -4,13 +4,38 @@
 format: jb-book
 root: intro
 parts:
-    - caption: PART_ONE
+    - caption: Hardware build
       maxdepth: 2
       numbered: False
       chapters:
-          - file: part_1/chapter_a/index
-            sections:
-                - file: part_1/chapter_a/section_1
+        - file: building-start/safety
+        - file: building-start/prerequisites
+        - file: building-start/included-materials
+        - file: building-start/excluded-materials
+        - file: rpi-power/index.md
+          sections:
+            - file: rpi-power/overview
+            - file: rpi-power/instructions
+            - file: rpi-power/checkpoint
+            
+        - file: motors-esc/index
+          sections:
+            - file: motors-esc/overview
+            - file: motors-esc/instructions
+            - file: motors-esc/checkpoint
+
+        - file: fc-cleanflight/index
+          sections:
+            - file: fc-cleanflight/overview
+            - file: fc-cleanflight/instructions
+            - file: fc-cleanflight/checkpoint
+
+        - file: camera-prop-mount/index
+          sections:
+            - file: camera-prop-mount/overview
+            - file: camera-prop-mount/instructions
+            - file: camera-prop-mount/checkpoint
+            
     - caption: PART_TWO
       maxdepth: 2
       numbered: False
