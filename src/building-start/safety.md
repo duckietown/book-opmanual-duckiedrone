@@ -55,6 +55,7 @@ The black nuts (of the motors) should be on the clockwise motors/props, while th
 
 ```{figure} ../_images/motors.jpg
 :name: figure-example-2
+:width: 200
 
 RED: **counter clockwise** propellers\
 BLACK: **clockwise** propellers/motors
