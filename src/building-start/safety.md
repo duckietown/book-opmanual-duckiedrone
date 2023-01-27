@@ -53,6 +53,9 @@ The main sources of danger when flying are the spinning propellers. The propelle
 ```{tip}
 The black nuts (of the motors) should be on the clockwise motors/props, while the red nuts on the counter clockwise ones (so they don't unscrew while spinning).
 
-[ADD AN IMAGE OF THIS]
+```{figure} ../_images/motors.jpg
+:name: figure-example-2
 
+RED: **counter clockwise** propellers\
+BLACK: **clockwise** propellers/motors
 ```
