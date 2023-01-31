@@ -46,21 +46,21 @@ Never leave the battery charging unattended. Unplug the battery once it is fully
 ```
 
 ### Power Distribution Board (PDB)
-```{figure}../_images/rpi-power/PDB.png
+```{figure} ../_images/rpi-power/PDB.png
 Power Distribution Board (PDB)
 ```
 
 The Power Distribution Board is used to distribute power from the battery to electrical components of the drone. The PDB is an example of a Printed Circuit Board (PCB), which is a circuit board that has connections within its structure. For the PDB, the internal wiring connects all of the positive (+) pads together, and all of the negative (-) pads together; this allows for the battery to be connected to one set of positive and negative pads, and all of the other pads receive power.
 
 ### UBEC (Universal Battery Eliminator Circuit)
-```{figure}../_images/rpi-power/UBEC.png
+```{figure} ../_images/rpi-power/UBEC.png
 UBEC
 ```
 
 The UBEC, solves the issue that arises from different electrical components requiring different supply voltages. In the case of the drone, the LiPo battery is used for outputs around 12V; this is the required voltage for the motors, but not for the Raspberry Pi, which requires 5V. The Universal Battery Eliminator Circuit eliminates the need to carry multiple batteries of different voltages by converting the 12V supply from the battery down to a 5V supply for the Pi.
 
 ### Raspberry Pi
-```{figure}../_images/rpi-power/raspberry.png
+```{figure} ../_images/rpi-power/raspberry.png
 Raspberry Pi 3 Model B
 ```
 
@@ -69,20 +69,20 @@ The Raspberry Pi, or, Pi, is a single-board computer. The Pi is capable of runni
 ### Pi Hat
 The Pi hat is a special type of breadboard. One useful property of a breadboard is that it has rails. A rail is a sequence of holes that share an electrical connection:
 
-```{figure}../_images/rpi-power/pihat_1.png
+```{figure} ../_images/rpi-power/pihat_1.png
 Pi Hat shield
 ```
-```{figure}../_images/rpi-power/pihat_2.jpg
+```{figure} ../_images/rpi-power/pihat_2.jpg
 PiHat with rails highlighted in purple
 ```
 
 The rails are useful because every wire put on a rail will be electrically connected; this means that it does not matter which hole along a rail a wire is inserted. This is useful for wire organization, and if a soldering mistake is made in one hole, an adjacent hole in the same rail can be used instead. Notice especially the long +5V and GND rails; we can use any of the holes in these rails to provide power to components. Also notice that there is a 3.3V rail, be sure not to mix this up with the 5V rail because electrical components will only work at the correct voltages
 
 ### Micro SD Card
-```{figure}../_images/rpi-power/microSD.png
+```{figure} ../_images/rpi-power/microSD.png
 microSD card
 ```
-```{figure}../_images/rpi-power/microSD_reader.png
+```{figure} ../_images/rpi-power/microSD_reader.png
 Micro SD Card adapter
 ```
 
@@ -90,7 +90,7 @@ The Micro SD card stores the operating system on the pi, as well as all the soft
     
 
 ### XT60 Connector
-```{figure}../_images/rpi-power/XT60_cable.png
+```{figure} ../_images/rpi-power/XT60_cable.png
 XT60 connector cable
 ```
 
