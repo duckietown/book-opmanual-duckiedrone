@@ -18,6 +18,11 @@ parts:
             - file: rpi-power/instructions
             - file: rpi-power/checkpoint
             
+        - file: tof-sensor/index
+          sections:
+            - file: tof-sensor/overview
+            - file: tof-sensor/instructions
+            - file: tof-sensor/checkpoint
         - file: motors-esc/index
           sections:
             - file: motors-esc/overview
