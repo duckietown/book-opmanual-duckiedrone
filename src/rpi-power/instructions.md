@@ -137,27 +137,6 @@ Use the multimeter to check for connections:
 ```{image} ../_images/rpi-power/sda_check_hat.jpg
 ```
 
-## Attach the LED and Resistor to the Pi Hat
-[TODO: REMOVE THIS CHAPTER IF NO CHECKPOINTS]
-
-Solder the 680 Ohm resistor and your LED to the Pi Hat as shown in the image.
-
-```{tip}
-The value of the resistor can be modified to adjust the brightness of the LED at full power. If you have additional resistors, you can modify this resistance by using a resistor with a smaller resistance, or by adding resistors in parallel later on. A helpful thread for understanding why this resistance should work is found [here](https://electronics.stackexchange.com/questions/378129/can-i-use-blue-green-leds-as-mcu-state-indicators-on-3-3-v-power).
-```
-
-```{attention}
-The direction of the resistor does not matter, but the direction of the LED **does matter.** Be sure to place the cathode (shorter end) into the GND rail.
-```
-
-<figure>  
-   <figcaption>Extra resistor wire snipped</figcaption>
-   <img style='width:216px' src="photos/pihat-with-led.png"/>
-</figure>
-
-
-You've just finished the LED circuit! In a future lesson, you will learn how to send electricity through GPIO pin #6 to the LED and resistor, and then back to ground.
-
 ## Attach the UBEC to the Pi Hat
 
 The UBEC is a battery eliminator circuit that lowers the voltage from the battery from 12V (used by the motors) to 5V (used by the Pi).  We will power the Pi by connecting it to the battery via the UBEC. Within your kit you are provided with a few 90 degrees header pins. 
@@ -170,7 +149,7 @@ You will need to solder one of them (with two pins) into the 5v and GND ports as
 
 The UBEC comes with a black connector which you can plug into your newly soldered pins.
 
-While you could directly solder the UBEC to the pi hat, using the pins provides a plug and play feature when needing to disassemble the drone. Also allowing the user to test motors while not having the pi drain power from them.
+While you could directly solder the UBEC to the Pi Hat, using the pins provides a plug and play feature when needing to disassemble the drone. Also allowing the user to test motors while not having the Raspberry Pi drain power from them.
 
 ```{attention}
 Make sure to plug in the conector correctly with red wire on 5v and black wire respectively on GND. Leaving the last pin hole on the UBEC connector free.
@@ -264,12 +243,14 @@ Visually inspect the drone to **verify the following**:
 ```
 
 ### Solder the UBEC to the PDB
-Tin the ends of the red and black wires that are connected to the side of the UBEC that is labeled INPUT (they're pre-tinned, you should cut the cable and tin it again).
+Tin the ends of the red and black wires that are connected to the side of the UBEC labeled INPUT (they're pre-tinned, you should cut the cable and tin it again).
 
 Solder the BEC red (+) IN wire to the positive (+) pad on the PDB 12V pad, and solder the black (-) IN wire to the GND pad on the PDB, as shown in the image.
 
-[TODO: ADD PICTURE OF UBEC SOLDERED]
+```{figure} ../_images/rpi-power/soldered_UBEC.jpg
 
+UBEC soldered to PDB
+```
 ```{admonition} Check ✅
 
 Do a connectivity check on the PDB.
@@ -355,7 +336,7 @@ Pi Hat inserted into Raspberry Pi pins
 ## Final Steps
 
 ```{admonition}  Check ✅
-Do another connectivity check to verify that there is **no short** between the +5V rail and the GND rail on the Pi Hat.
+On the Pi Hat, do another connectivity check to verify that there is **no short** between the +5V rail and the GND rail.
 
 **Verify that the Pi has power:**
 
