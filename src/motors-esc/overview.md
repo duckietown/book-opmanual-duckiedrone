@@ -66,7 +66,7 @@ You will be using the extra red and black wire that came with the kit to make th
 :width: 400px
 :align: center
 
-Spare red and black wire
+Battery monitoring leads
 ```
 
 % REMOVED: build progress
