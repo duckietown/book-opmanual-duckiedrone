@@ -231,11 +231,6 @@ Here's a video of the process.
 ```{note} For the remainder of the instructions, unless stated otherwise, **red** wires should be soldered **to positive (+)** pads and **black** wires should be soldered **to ground (-)** pads.
 ```
 
-### Solder the UBEC to the PDB
-Tin the ends of the red and black wires that are connected to the side of the UBEC that is labeled INPUT (they're pre-tinned, you should cut the cable and tin it again).
-
-Solder the BEC red (+) IN wire to the positive (+) pad on the PDB 12V pad, and solder the black (-) IN wire to the GND pad on the PDB, as shown in the image.
-
 ### Solder the XT60 Battery Connector to the PDB
 1. **Strip** the ends of the battery connector so that about 1cm of wire is exposed
 
@@ -244,9 +239,17 @@ Solder the BEC red (+) IN wire to the positive (+) pad on the PDB 12V pad, and s
 
 1. **Solder** the XT60 **red (+) wire** to the tinned positive (+) opening on the PDB, and solder the **black (-) wire** to the tinned ground (-) opening on the PDB.
 
-```{tip} This wire is very thick and it will take a while for the solder to melt. Make sure your soldering iron is turned all the way up and be patient.
+```{tip} This wire is very thick and it will take a while for the solder to melt.
+
+Make sure your soldering iron is turned all the way up, you're using a chisel tip and be patient.
 ```
-[**TODO**: ADD IMAGES OF XT60 SOLDERED TO PDB]
+
+```{figure} ../_images/rpi-power/pdb_soldered_XT60.jpg
+:width: 400px
+:align: center
+
+Tinned PDB with XT60 soldered
+```
 
 ```{attention}
 Visually inspect the drone to **verify the following**:
@@ -259,6 +262,13 @@ Visually inspect the drone to **verify the following**:
 * The wires on the IN side - NOT the OUT side - of the BEC are soldered to the PDB
 
 ```
+
+### Solder the UBEC to the PDB
+Tin the ends of the red and black wires that are connected to the side of the UBEC that is labeled INPUT (they're pre-tinned, you should cut the cable and tin it again).
+
+Solder the BEC red (+) IN wire to the positive (+) pad on the PDB 12V pad, and solder the black (-) IN wire to the GND pad on the PDB, as shown in the image.
+
+[TODO: ADD PICTURE OF UBEC SOLDERED]
 
 ```{admonition} Check ✅
 
@@ -277,7 +287,7 @@ Verify there is:
 ```
 
 ```{admonition}  Check ✅
-**ONLY** if the connectivity check passed, do a DC voltage check on the PDB.
+**ONLY** if the connectivity check passed, do a _DC voltage_ check on the PDB.
 
 Plug in a 12V battery and verify there is:
 * ~0V between any positive (+) pad and any other positive (+) pad
@@ -297,7 +307,9 @@ If the battery is charged to X volts instead of 12 volts (e.g. 10), then the mul
 ```{admonition}  Check ✅
 **ONLY** if the DC voltage check passed, re-connect a battery to your drone and verify the following:
 
-* The bottom of the drone frame is illuminating, due to the LEDs on the bottom of the PDB.
+* red LEDs on the PDB light up.
+
+* red LED on Raspberry Pi lights up.
 ```
 
 ## Put Heat Sinks on Raspberry Pi
