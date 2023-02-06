@@ -205,7 +205,7 @@ This tip applies more heat quickly to the pad, so that the solder flows onto the
 
 Here's a video of the process.
 
-[**TODO** VIDEO OF PDB TINNING]
+<div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/796378281?h=628361c041&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="3DCE65E5-00EE-40AD-8586-732FF412CFC5-561-0000005DF510D4C0"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ```{note} For the remainder of the instructions, unless stated otherwise, **red** wires should be soldered **to positive (+)** pads and **black** wires should be soldered **to ground (-)** pads.
 ```
