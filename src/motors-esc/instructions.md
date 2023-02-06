@@ -35,6 +35,8 @@ Solder each of your 4 ESCs to the PDB:
 Solder the 6-inch red and black wires to the PDB to the `VCC` and `GND` pads respectively. 
 
 ```{figure} ../_images/motors-esc/battery_monitor_pads.jpg
+
+Pads for soldering the red and black monitor battery leads
 ```
 
 [TODO: ADD PICTURE OF SOLDERED LEADS]
