@@ -1,8 +1,21 @@
 # Instructions
 
-```{note} Sometimes parts will have wires already tinned out-of-the-box by the manufacturer (i.e. pre-tinned). You can identify this by: 1) the “shininess” of the tip of a wire and 2) the inability to fray the wire strands of the tip of a wire. However, such tinning is often ineffective. Cut off any pre-tinned tips, then strip and tin the part yourself.
+```{note} 
+Sometimes parts will have wires already tinned out-of-the-box by the manufacturer (i.e. pre-tinned). 
+
+You can identify this by: 
+1. the “shininess” of the tip of a wire and
+2. the inability to fray the wire strands of the tip of a wire. 
+
+However, such tinning is often ineffective. 
+
+Cut off any pre-tinned tips, then strip and tin the part yourself.
 ```
-Visually inspect each ESC and verify that the heat shrinks are on properly; there should be no exposed wires and each heat shrink should be a tight fit. 
+
+```{warning}
+Visually inspect each ESC and verify that the heat shrinks are on properly; there should be no exposed wires and each heat shrink should be a tight fit.
+```
+
 Do a connectivity check on the XT60 connector cable; verify there is no short between the red and black wire.
 
 ## Soldering ESCs to the PDB
@@ -16,18 +29,25 @@ An ESC (i.e. Electronic Speed Control) is a component which requires power. It t
 Schematic of motors-ESCs connections
 ```
 
-```{attention}
-Do not solder the wires flat against the PDB - solder them at ~20° angle. If you solder them flat, then you will not be able to fit the PDB into the drone frame.
+```{warning}
+Do not solder the wires flat against the PDB.
+
+**Solder the ESCs wires at ~20° angle**.
+
+If you solder them flat, then you will not be able to fit the PDB into the drone frame.
 ```
 
 Solder each of your 4 ESCs to the PDB:
-1. Strip about 5mm of wire from (+) and (-) of ESC
+1. Strip about 5 mm of wire from (+) red and (-) black cables of ESC
 1. Tin the wire
-1. Solder on the pad at a 20 deg angle.
+1. Solder on the pad **at a 20 deg angle**.
 
 
-```{figure} ../_images/motors-esc/soldered_motors.jpg
-[TODO: Pic of ESCs Soldered to PDB ]
+```{figure} ../_images/motors-esc/soldered_ESCs.jpg
+:width: 400px
+:align: center
+
+ESCs cables soldered to the PDB on the right and left pads
 ```
 
 ## Solder battery monitor leads to the PDB
@@ -39,12 +59,13 @@ Solder the 6-inch red and black wires to the PDB to the `VCC` and `GND` pads res
 Pads for soldering the red and black monitor battery leads
 ```
 
-[TODO: ADD PICTURE OF SOLDERED LEADS]
-
 These wires are soldered as to go across the PDB, toward where the flight controller will be mounted.
 
-```{attention}
-While trying to solder on these wires, you may accidentally unsolder the existing wires from the PDB. We recommend temporarily holding down the existing wires with long-nose pliers, tape, or helping hands.
+```{figure} ../_images/motors-esc/soldered_battery_leads.jpg
+:width: 400px
+:align: center
+
+Battery leads soldered to the PDB
 ```
 
 ## Attach parts to drone frame
@@ -95,7 +116,8 @@ PDB Secured in Drone Frame
 
 There are two clockwise and two counter-clockwise motors.  Unfortunately the motors themselves are not labeled, so only the color of the screw will let you tell the difference.  The clockwise motors have a nut threaded so that when the propellers spin clockwise, the nut will tend to tighten, and the counter-clockwise motors are the opposite.  
 
-* The counter-clockwise motors have a black nut. * The clockwise motors have a red nut.
+* The counter-clockwise motors have a black nut. 
+* The clockwise motors have a red nut.
 
 Take the motors out of their bags.  
 
@@ -104,23 +126,32 @@ Take the motors out of their bags.
 This will prevent you from mixing up the motors.
 ```
 
-```{admonition} TODO
-this section is not very clear, take some pictures and improve it
+```{tip} 
+Motors, frame, prop guards and standoffs all have 4 holes each for the screws. These holes are slightly asymmetrical, so that they can only be attached in one direction.
+
+[TODO: add picture of what this means]
 ```
 
-```{admonition} TODO: CLARIFY and COMPLETE
-Find the prop guards, and put a prop guard underneath each motor between [TODO: CLARIFY]
+Get the standoffs, insert two screws through the holes and insert them in the holes on the frame. 
 
-Attach **CW** motors to the bottom-right and top-left of the drone frame, using 2 silver screws for each attachment.  (Do not use the black screws that come with the motor.) [TODO: CLARIFY]
-The image below is just for reference but belongs to a previous build.
+[TODO: ADD PICTURE]
 
-Top View Add completed picture here with feet and prop guards + motors
+Get the prop guards, and put a prop guard on the frame. The prop guards will slot underneath each motor, between the motor's casing and the prop guard.  [TODO: ADD PICTURE]
+
+Attach **CW** motors to the bottom-right and top-left of the drone frame, using 2 long silver M3 screws for each attachment.  
+
+```{danger}
+Do not use the black screws that come with the motor
 ```
+
+
+[TODO: Top View Add completed picture here with feet and prop guards + motors]
+
 
 Attaching CW Motors
 Attach Counter-Clockwise (CCW) Motors
 
-Attach CCW motors to the bottom-left and top-right of the drone frame, using 2 black screws for each attachment.
+Attach CCW motors to the bottom-left and top-right of the drone frame, using 4 long M3 gray screws for each attachment.
 
 
 
