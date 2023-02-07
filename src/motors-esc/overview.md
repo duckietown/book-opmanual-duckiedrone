@@ -18,7 +18,7 @@ Required Materials
   - 2
 * - Clockwise Motors 
   - 2
-* - Long M3 Bolts (included w/ motor) 
+* - Long gray M3 Bolts (included w/ motor) 
   - 16
 * - Short M3 Bolts (included w/ motor) 
   - 4
@@ -26,7 +26,11 @@ Required Materials
   - 4
 * - Velcro Strap 
   - 1
-* - Spare Wire
+* - Propeller guards
+  - 4
+* - Plastic standoffs
+  - 4
+* - Battery leads Wire
   - 1
 * - Soldering Tools
   - 1
@@ -68,5 +72,25 @@ You will be using the extra red and black wire that came with the kit to make th
 
 Battery monitoring leads
 ```
+
+### Long M3 screws
+
+These long gray screws are used to attach the motors to the frame together with the propellers guards (prop guards) and the plastic standoffs used as landing legs.
+
+```{image} ../_images/motors-esc/long_M3_screws.png
+```
+
+```{danger} 
+The motors include short black M3 screws. You must not use these as they are too short to attach to the motors when the landing standoffs and prop guards are attached. 
+
+**You MUST use the long gray M3 screws.**
+
+```{figure} ../_images/motors-esc/motors_screws.png
+
+**left:** right screws to use
+
+**right:** wrong screws, DO NOT USE
+```
+
 
 % REMOVED: build progress
