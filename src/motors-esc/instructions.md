@@ -68,9 +68,12 @@ These wires are soldered as to go across the PDB, toward where the flight contro
 Battery leads soldered to the PDB
 ```
 
-## Attach parts to drone frame
+## Attaching parts to drone frame
 This section will cover attaching the first set of items to the drone frame.
+
+```{attention}
 Before beginning, verify the PDB is completely soldered with all necessary parts (as covered in previous sections).
+```
 
 ```{note}
 The flight controller is not shown in these images.
@@ -88,74 +91,75 @@ For reference, here are the motor directions with respect to the frame:
 
 Your motors MUST spin in these directions
 ```
+```{figure} ../_images/motors-esc/duckiedrone_front_back.png
+:width: 400px
+:align: center
 
-```{admonition} What you'll need
+Notice the colors of the motors nuts in this pic 
 
-Gather the following:
-* Drone frame
-* Completed PDB
-* 4 motors (2 Clockwise, 2 Counterclockwise)
-* Velcro strap
-* Crash guards
-* 4 standoffs
-* 12 black screws (in motors box, not drone frame box)
+(**red**->*counter*-clockwise, **black**->clockwise)
 ```
+
 ### Align the frame
 Place the drone frame on a flat surface so that the back is facing you.
  
 ### Attach PDB to frame
 
-Place the completed PDB into the front center of the drone frame. With plastic screws in their respective holes. For each of the 4 corner screw holes of the PDB, add a plastic nut on the other end to secure it. 
+Place the completed PDB towards the bottom of the drone frame, with plastic M3 screws in their respective holes. For each of the 4 corner screw holes of the PDB, add a plastic nut on the other end to secure it. 
 
 ```{figure} ../_images/motors-esc/pdb_on_frame.jpg
 
-PDB Secured in Drone Frame
+PDB Secured in Drone Frame (front side up)
 ```
 
 ### Attach motors
 
 There are two clockwise and two counter-clockwise motors.  Unfortunately the motors themselves are not labeled, so only the color of the screw will let you tell the difference.  The clockwise motors have a nut threaded so that when the propellers spin clockwise, the nut will tend to tighten, and the counter-clockwise motors are the opposite.  
 
-* The counter-clockwise motors have a black nut. 
-* The clockwise motors have a red nut.
+```{attention}
+* The counter-clockwise motors have a red nut. 
+* The clockwise motors have a black nut.
+```
 
 Take the motors out of their bags.  
 
 ```{attention} Immediately screw on the red or black nut into the main screw sticking out of the motor.
+```
 
 This will prevent you from mixing up the motors.
-```
+
 
 ```{tip} 
 Motors, frame, prop guards and standoffs all have 4 holes each for the screws. These holes are slightly asymmetrical, so that they can only be attached in one direction.
-
-[TODO: add picture of what this means]
 ```
 
-Get the standoffs, insert two screws through the holes and insert them in the holes on the frame. 
+Get the standoffs, insert two screws through the holes and insert them in the holes on the frame (on the back side of the frame). 
 
-[TODO: ADD PICTURE]
+Get the prop guards, and put a prop guard on the frame. The prop guards will slot underneath each motor, between the motor's casing and the prop guard.
 
-Get the prop guards, and put a prop guard on the frame. The prop guards will slot underneath each motor, between the motor's casing and the prop guard.  [TODO: ADD PICTURE]
+```{figure} ../_images/motors-esc/motors_layers.jpg
 
-Attach **CW** motors to the bottom-right and top-left of the drone frame, using 2 long silver M3 screws for each attachment.  
+**top** : propeller guards
+
+**middle** : drone frame
+
+**bottom** : standoffs
+```
+
+Attach **clockwise** motors to the bottom-right and top-left of the drone frame, using 4 long silver M3 screws for each attachment.  
 
 ```{danger}
 Do not use the black screws that come with the motor
 ```
+```{figure} ../_images/motors-esc/motor_screwed.jpg
 
+Motor screwed on the frame with standoffs and prop guards
 
-[TODO: Top View Add completed picture here with feet and prop guards + motors]
+*notice*: the gray M3 screws are used
+```
 
+Attach **counter-clockwise** motors to the bottom-left and top-right of the drone frame, using 4 long M3 gray screws for each attachment.
 
-Attaching CW Motors
-Attach Counter-Clockwise (CCW) Motors
-
-Attach CCW motors to the bottom-left and top-right of the drone frame, using 4 long M3 gray screws for each attachment.
-
-
-
-[Attaching CCW Motors]
 ### Connecting the Motors to the ESCs
 
 For each motor, connect its plug bullet connectors to the socket bullet connectors of the ESC in the motor’s corner (e.g. top-left motor connects to top-left ESC). Any connection order will suffice for now, as you will be able to change them in a later phase.
@@ -164,3 +168,28 @@ For each motor, connect its plug bullet connectors to the socket bullet connecto
 
 ESCs plugs connected to motors
 ```
+
+### Attaching the ESCs to the frame
+
+Each ESC has to be fixed to the frame. Due to the length of the wires powering the ESCs, you will have to fix the bottom two to the arms and the top two to the arms and the body of the drone, as shown below.
+
+```{warning}
+When attaching the top two ESCs to the frame make sure not to cover any of the round holes on the frame of the drone.
+
+They will be used to screw components on later.
+
+```{image} ../_images/motors-esc/do_not_cover.png
+
+```
+
+Use two thin zip ties provided to fix each ESC, as shown.
+
+```{figure} ../_images/motors-esc/escs_attached.jpg
+ESCs attached to the frame
+```
+
+```{tip} 
+Fixing first the top two ESCs will allow you to route their cables more easily.
+```
+
+Cut the excess zip ties off to tidy up.

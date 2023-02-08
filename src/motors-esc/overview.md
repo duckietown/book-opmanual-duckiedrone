@@ -3,7 +3,6 @@
 ## Preface
 
 In this phase of the build, you’ll be adding the essential elements of every drone– the motors, ESCs, and the flight controller.
-Required Materials
 
 ## Required Materials
 ```{list-table} Materials
@@ -12,20 +11,16 @@ Required Materials
 
 * - Part
   - Quantity
-* - Flight Controller
-  - 1
 * - Counter-clockwise Motors
   - 2
 * - Clockwise Motors 
   - 2
-* - Long gray M3 Bolts (included w/ motor) 
+* - Long gray metal M3 Bolts 
   - 16
-* - Short M3 Bolts (included w/ motor) 
-  - 4
+* - Nylon M3 Bolts and nuts
+  - 4 pairs
 * - Electronic Speed Controllers (ESCs)
   - 4
-* - Velcro Strap 
-  - 1
 * - Propeller guards
   - 4
 * - Plastic standoffs
@@ -48,6 +43,10 @@ The motors used are Brushless Direct Current (BLDC) motors. They are a particula
 :align: center
 
 BLDC motors
+
+**black nut** : *counter*-clockwise motors
+
+**red nut** : clockwise motor
 ```
 
 ### Electronic Speed Controller (ESC)
@@ -92,5 +91,22 @@ The motors include short black M3 screws. You must not use these as they are too
 **right:** wrong screws, DO NOT USE
 ```
 
+### Nylon M3 bolts and nuts
+These plastic bolts are used to attach the PDB to the frame of the Duckiedrone.
+
+```{warning}
+You will fing both M3 and M2 bolts and nuts in your Duckiebox, pay attention to use the M3 in this section.
+
+You can distinguish them by:
+1. comparing the two; the M3 bolts will be slightly thicker
+1. the M2 bolts only have 4 corresponding nuts
+1. the M3 bolts have 11 corresponding nuts
+
+The M3 bolts will fit firmly in the PDB mounting holes, whereas the M2 bolts would wobble and be loose.
+```
+```{figure} ../_images/motors-esc/nylon_M3_bolts_nuts.png
+
+Nylon M3 bolts (8) and nuts (11)
+```
 
 % REMOVED: build progress
