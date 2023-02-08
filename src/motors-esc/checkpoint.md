@@ -5,7 +5,7 @@
 Verify the following:
 * All red wires connected to the PDB are connected to positive (+) pads
 * All black wires connected to the PDB are connected to negative (-) pads
-* The wires on the IN side - **NOT** the OUT side - of the BEC are soldered to the PDB
+* The wires on the INPUT side - **NOT** the OUTPUT side - of the BEC are soldered to the PDB
 * For the battery monitor lead: the red wire is connected to a positive (+) pad while the brown wire is connected to a negative (-) pad
 
 ```{important}
@@ -34,11 +34,10 @@ Plug in a 12V battery and verify there is:
 ```
 
 ## ESC check
-```{warning} **ONLY** if the DC voltage check passed, perform the ESC check.
+```{warning} **ONLY** if the DC voltage check passed (in the previous section), perform the ESC check.
 ```
 Re-connect the battery to your drone.
 
 Verify the following:
-* The ESCs emit a noise
 * The PDB board lights up.
-* The flight controller lights up with solid blue LED and Flashing red LED
+* Each ESC emits a noise (it does so by performing a slight rotation, so you should also notice some slight movements of each motor)
