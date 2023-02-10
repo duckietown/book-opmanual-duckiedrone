@@ -93,7 +93,7 @@ You will need to solder the pins to the microUSB board and connect it to the Fli
 *   6 pins connector (in the Flight Controller bag)
 
 **what you'll get**
-*   OSD Flight Controller connected to the base station
+*   `OSD` Flight Controller connected to the base station
 
 1.  Solder the 90° pins to the microUSB board as shown
     ```{figure} ../_images/software-initialization/OSD_usb_board.jpg
@@ -158,7 +158,7 @@ To flash the firmware, we need the Flight Controller to be in Bootloader mode in
 
     ```{figure} ../_images/software-initialization/OSD_boot_pins.jpg
 
-    Location of the boot pins `"BO"` on the OSD Flight Controller
+    Location of the boot pins `"BO"` on the `OSD` Flight Controller
     ```
 
 2. Use some conductive metal tool to short the `"BO"` while connecting the USB cable
@@ -262,12 +262,23 @@ To see the whole process for your version of the Flight Controller choose the co
     ```
 1. Leave the baud rate (number) at the default value of `115200`
 
-1.  Press the `“Connect”` button and a `“Setup”` page should greet you with a rendering of your drone (see figure below). Before configuring anything, please read the next section and flash the firmware.
+1.  Press the `“Connect”` button and a `“Setup”` page should greet you with a rendering of your drone (see figure below).
 
+```{figure} ../_images/software-initialization/CFC_setup_screen.png
+
+Cleanflight Configurator `"Setup"` page
+```
+
+```{attention}
+Please check below that you have the correct versions of both:
+
+*   Configurator: `2.4.0`
+*   Firmware:   `BTFL 3.3.3`
+```
 
 ### Checking the firmware version
 
-On the top left of the CFC interface, one could check for the Firmware version. For example, in the figure below, the firmware version of the Flight Controller is BTFL 3.3.3.
+On the top left of the CFC interface, one could check for the Firmware version. For example, in the figure below, the firmware version of the Flight Controller is `BTFL 3.3.3`.
 
 ```{figure} ../_images/software-initialization/cleanflight_firmware_version.png
 
@@ -277,7 +288,7 @@ Top left of CFC, check CFC version and Flight Controller firmware version here
 ## Troubleshooting
 
 ```{trouble}
-The OSD version of the Flight Controller does not enter `bootloader mode`
+The `OSD` version of the Flight Controller does not enter `bootloader mode`
 ---
 It is tricky to jump the exposed Boot pins. Try applying a bit of force when pressing on the pins. If possible, also try verifying they have actually been jumped with a multi-meter.
 ```
