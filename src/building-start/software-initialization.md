@@ -167,7 +167,7 @@ do not just unplug the SD crad from the base station
 
 
 
-You are now ready for the first boot (https://ethidsc.atlassian.net/l/cp/EyDf1TLm).
+You are now ready for the first boot.
 
 ## Troubleshooting
 ```{trouble}

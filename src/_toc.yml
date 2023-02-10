@@ -13,6 +13,7 @@ parts:
         - file: building-start/included-materials
         - file: building-start/excluded-materials
         - file: building-start/software-initialization
+        - file: building-start/flight-controller-initialization
         - file: rpi-power/index.md
           sections:
             - file: rpi-power/overview
