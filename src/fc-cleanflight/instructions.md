@@ -35,16 +35,6 @@ Solder the 2 pins connector to the flight controller, as shown in the image belo
 Battery leads connection to Flight Controller [TODO: REDO PIC AND ADD FOR BOTH FC TYPES]
 ```
 
-### Connecting the USB board (OSD version only)
-
-|USB board pin  |Cable color  |
-|:---           |---:         |
-|GND            |Black        |
-|5.0V           |Red          |
-|TXD            |Yellow       |
-|RXD            |Green        |
-|DTR            |White        |
-
 ### Attaching the Flight Controller
 Now you will fix the Flight Controller to the Duckiedrone frame. The Flight Controller is located on the bottom side of the Duckiedrone, in the center (his "belly").
 
