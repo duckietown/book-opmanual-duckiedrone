@@ -6,34 +6,75 @@ Here you will solder the Flight Controller.
 
 Take the Flight Controller out of its plastic casing, exposing both sides of the PCB.
 
-### Soldering the pins
-```{admonition} TODO
-Do we have 90 degrees pins being shipped?
+### Soldering the ESCs pins
 
-Also since we have two versions of FC we should have tabs with both
+Here you will need to solder the pins to connect your ESCs to your Flight Controller.
 
-Add FC version identification step
-```
-
-Solder the short edge of the 90 degree pins to the flight controller.
+There are subtle variations between the two Flight Controller versions, **choose in the tabs here your FC type**.
 
 ```{attention} Be sure that the direction you solder the pins into the board is exactly as shown in the images 
 ```
 
-[TODO: ADD FC WITH SOLDERED PINS PICTURE]
+::::{tab-set}
+
+:::{tab-item} OSD
+If you only have a 3x8 straight pins connector you'll need to solder those rather than the 90° pins.
+
+```{figure} ../_images/fc-cleanflight/flight_controller_ESC_pins_OSD.png
+
+3x8 straight ESCs pins soldered
+```
+
+:::
+
+:::{tab-item} ACRO
+
+Solder the edge of the 90 degree pins without black plastic to the Flight Controller.
+
+```{figure} ../_images/fc-cleanflight/flight_controller_ESC_pins_ACRO.jpg
+
+3x8 90 degrees ESCs pins soldered
+```
+:::
+
+::::
 
 ### Solder the battery monitor pins to the flight controller
-
-[TODO: this is wrong, we don't solder directly to the board but rather use pin headers]
 
 Pick the the 6 pins header that came in the Flight Controller wiring and use pliers to break off a 2 pins connect.
 
 Solder the 2 pins connector to the flight controller, as shown in the image below (select your Flight Controller version in the tab).
 
-```{figure} ../_images/motors-esc/fc_battery_monitor_wire.png
-
-Battery leads connection to Flight Controller [TODO: REDO PIC AND ADD FOR BOTH FC TYPES]
+```{attention}
+The battery leads bins have to be soldered on the same side you soldered the ESCs pins on
 ```
+
+::::{tab-set}
+
+:::{tab-item} OSD
+
+The battery lead pins `VBAT` are in between the ESCs pins and the bottom-left mounting hole of the Flight controller.
+
+```{figure} ../_images/fc-cleanflight/fc_battery_leads_pins_OSD.png
+
+Solder the battery leads pins to these two pads (they must stick out on the same side as the other pins)
+```
+
+
+:::
+
+:::{tab-item} ACRO
+
+The battery lead pins `VBAT` are right above the bottom-left mounting hole of the Flight controller.
+
+```{figure} ../_images/fc-cleanflight/fc_battery_leads_pins_ACRO.png
+
+Battery leads pins soldered
+```
+
+:::
+
+::::
 
 ### Attaching the Flight Controller
 Now you will fix the Flight Controller to the Duckiedrone frame. The Flight Controller is located on the bottom side of the Duckiedrone, in the center (his "belly").
@@ -69,7 +110,7 @@ To fix the flight controller to the frame use the 4 white M3 Nylon screws:
 1.  Screw the nuts on the bolts from the bottom side.
 
 ```{important}
-The OSD version of the Flight Controller has the soldered battery leads header pins partially occluding the space for the nut to be screwed.
+The `OSD` version of the Flight Controller has the soldered battery leads header pins partially occluding the space for the nut to be screwed.
 
 The suggested solution is to simply file the nut about 1 mm to have enough clearance once screwed on the bolt.
 ```
@@ -88,13 +129,17 @@ Now that the Flight Controller has been attached to the frame, it can be connect
 
 Take a moment to find the numbers 1-8 next to the flight controller 3x8 header pins (the big row of pins that you soldered in). 
 
-We will be connecting the PWM wires to numbers 1-4 because we have 4 motors. 
+We will be connecting the **PWM wires to numbers 1-4** because we have 4 motors. 
 
-```{attention}
-These numbers on the flight controller indicate which PWM wire coming out of the motor should be connected to which set of pins on the flight controller.
+````{attention}
+These numbers on the Flight Controller indicate which PWM wire coming out of the motor should be connected to which set of pins on the flight controller.
+
+```{figure} ../_images/fc-cleanflight/fc_motors_numbering.png
+
+Motors numbering on the Flight Controller
 ```
 
-For example, in the [image below](motors-numbering), motor 1 is in the bottom right; therefore you will take the PWM wire from the ESC connected to the motor in the bottom right of your drone, and connect this to the pins labeled 1 on the flight controller.
+For example, in the [image below](motors-numbering), **motor 1 is in the bottom right**; therefore you will take the PWM wire from the ESC connected to the motor in the bottom right of your drone, and connect this to the pins labeled 1 on the flight controller.
 
 ```{figure} ../_images/fc-cleanflight/motors_numbering.png
 :align: center
@@ -102,6 +147,8 @@ For example, in the [image below](motors-numbering), motor 1 is in the bottom ri
 
 Motors numbering
 ```
+
+````
 
 ```{caution}
 There is a correct way to connect an ESC cable to the Flight Controller.
@@ -167,10 +214,10 @@ You will be spinning the motors and you don't want your drone to fly off your de
 
 - the correct motor spins. If the correct motor does not spin, [reconnect the ESC wires to the FC](#build-part3-fc-connect-esc) in the correct order.
 
-- the motor spins in the correct direction.  If the motor spins in the incorrect direction, take note and you will correct it later on.  Read the following Remark and Note before continuing.
+- the motor spins in the correct direction.  If the motor spins in the incorrect direction, take note and you will correct it later on.
 
 ```{tip}
-One way to find out which direction the motor is spinning is to put a piece of tap on the motor to create a flap. Then, use a pencil or other object and touch it to the tape while the motor is spinning to see which direction it is pushed.
+One way to find out which direction the motor is spinning is to put a piece of tape on the motor to create a flap. Then, use a pencil or other object and touch it to the tape while the motor is spinning to see which direction it is pushed.
 ```
 
 ```{attention}
@@ -207,8 +254,9 @@ However, note that your drone has not 1, but 4 ESCs - which may not all have the
 
 The solution to this problem is to *calibrate* the ESCs with the FC. In this context, **calibration** means getting all the ESCs to have the same PWM-to-RPM understanding from the FC. In this section, you will calibrate your ESCs.
 
-```{warning}
-Symptoms of no calibration include: 
+```{admonition} Symptoms of no calibration
+:class: warning
+
 *   scorching hot motors
 *   a drone that lifts to one side during flight
 *   motors that appear to spin at different speeds.
@@ -236,22 +284,14 @@ Unplug the battery from your drone.
 
 ### Calibrate
 
-1. Drag the master slider up to full. All 4 motor sliders should automatically move up to full accordingly (e.g. 2000).
+1. **With the battery disconnected**, drag the master slider up to `full`. All 4 motor sliders should automatically move up to full accordingly (e.g. 2000).
 
 1. Plug the battery into your drone. 
 
-The ESCs will make an interesting set of sounds, kind of like music. If they do not, stop and try the previous steps again.
+    The ESCs will make an interesting set of sounds, kind of like music. If they do not, stop and try the previous steps again.
 
-3. After the music stops, drag the master slider to the bottom of the bar. Correspondingly, all 4 motor sliders should automatically be at the bottoms of their bars (e.g. 1000). The motors will make another set of sounds.
+3. After the music stops, drag the master slider to the bottom of the bar. Correspondingly, all 4 motor sliders should automatically be at the bottoms of their bars (e.g. `1000`). The motors will make another set of sounds.
 
 1. After the sounds stop, spin up each motor and verify it is spinning in the correct direction (i.e. according to the motors diagram in this doc).
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/797686925?h=b40fa6d538&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="esc calibration (new ESCs)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-<div class='check' markdown="1">
-
-- Make sure the motors spin in the correct direction, i.e. according to the motors diagram in this doc.
-
-- When you connect the drone to power, the ESCs should make a "boop boop boop" sound, followed by a "beep BEEEEEP" sound.
-
-</div>

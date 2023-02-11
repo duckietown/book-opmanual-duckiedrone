@@ -166,7 +166,7 @@ OSD version Flight Controller
 :::{tab-item} ACRO
 
 
-```{figure} ../_images/fc-cleanflight/ACRO_identify.png
+```{figure} ../_images/fc-cleanflight/ACRO_identify.jpg
 
 ACRO version Flight Controller
 ```
