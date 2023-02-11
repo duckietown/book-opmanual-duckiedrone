@@ -29,6 +29,8 @@ In this phase of the build, you’ll be adding the essential elements of every d
   - 1
 * - Soldering Tools
   - 1
+* - Zip ties
+  - ~ 8
 ```
 
 
@@ -107,6 +109,15 @@ The M3 bolts will fit firmly in the PDB mounting holes, whereas the M2 bolts wou
 ```{figure} ../_images/motors-esc/nylon_M3_bolts_nuts.png
 
 Nylon M3 bolts (8) and nuts (11)
+```
+
+### Zip Ties
+
+Zip Ties will help you tie up your Duckiedrone together and manage its cabling (Duckiecaptain wants its ship to be tidy!).
+
+```{figure} ../_images/components-official/zip_ties.png
+
+Zip Ties (Large on top, small on bottom)
 ```
 
 % REMOVED: build progress
