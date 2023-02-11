@@ -11,7 +11,7 @@ Make sure to check which version you have and **follow the appropriate instructi
 Check [this section](identifying_fc) if you're not sure which version you have.
 ```
 
-### What you'll need
+````{admonition} What you'll need
 ```{list-table} Materials flight controller
 :header-rows:   1
 :name:  materials-fc
@@ -33,7 +33,8 @@ Check [this section](identifying_fc) if you're not sure which version you have.
 
 *   - Base station
     - 1
-```
+````
+
 ### Flight Controller
 The flight controller (i.e. FC) contains multiple sensors: an Inertial Measurement Unit (IMU) and a gyroscope. The IMU measures linear accelerations and the gyroscope measures angular velocities. The flight controller also receives commands from the Raspberry Pi and then sends electrical signals to the ESCs which in turn change the speeds of the motors.
 
@@ -42,10 +43,11 @@ You should already have installed the correct version of Cleanflight on your Fli
 ```
 
 ```{seealso}
-If you haven't or you're not sure you can reflash the Flight Controller following the instructions 
 
-[TODO: add link to FC-install HERE]
+If you haven't or you're not sure you can reflash the Flight Controller following the [Flight Controller initialization instructions here](../building-start/flight-controller-initialization).
+
 ```
+
 The flight controller bag will also contain header pins to be soldered and connectors. These differ between the two Flight Controller versions, use the tabs below to select yours.
 
 ::::{tab-set}
@@ -93,9 +95,14 @@ This is okay, you should anyways get the needed pins to have the functionality r
 
 ### USB to Micro USB cable
 This cable is used for two purposes:
- 1. To configure the flight controller settings in CleanFlight; this part only needs to be done once. 
+
+1. To configure the flight controller settings in CleanFlight
+
+    ```{note}
+    this part only needs to be done once. 
+    ```
  
- 1. To send the flight commands from the Raspberry Pi to the FC. This connection allows our software on the Pi to control the motors. The Pi tells the FC what roll, pitch, yaw, and throttle values the drone should have, and then the flight controller speeds up or slows down the motors to achieve these values.
+1. To send the flight commands from the Raspberry Pi to the FC. This connection allows our software on the Pi to control the motors. The Pi tells the FC what roll, pitch, yaw, and throttle values the drone should have, and then the flight controller speeds up or slows down the motors to achieve these values.
 
 ```{figure} ../_images/fc-cleanflight/micro_usb_cable.png
 
