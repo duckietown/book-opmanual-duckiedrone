@@ -3,6 +3,7 @@
 
 TODO: highlight that we have two different types of FC
 
+(fc_identification)=
 ## Identifying your Flight Controller board
 ```{attention}
 There are currently 2 types of Flight Controller hardware.
