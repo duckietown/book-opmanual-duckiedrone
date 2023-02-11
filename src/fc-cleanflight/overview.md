@@ -52,7 +52,17 @@ The flight controller bag will also contain header pins to be soldered and conne
 
 :::{tab-item} OSD
 
-blabla
+In the Flight Controller bag you'll also find:
+
+* 1 set of 8x3 straight pins
+* 1 set of 2x4 straight pins
+* 1 strip of straight pins
+* Cabling
+
+```{figure} ../_images/fc-cleanflight/fc_osd_content.png
+
+OSD Flight Controller
+```
 
 :::
 
@@ -65,12 +75,21 @@ In the Flight Controller bag you'll also find:
 * 1 strip of straight pins
 * Cabling
 
-```{figure} ../_images/fc-cleanflight/fc_acro.png
+```{figure} ../_images/fc-cleanflight/fc_acro_content.png
+
 ACRO Flight Controller
 ```
 :::
 
 ::::
+
+```{note}
+
+Due to packaging variations there might be a slightly different number of straight pins or you might find only 8x3 straight pins rather than 90° bent pins.
+
+This is okay, you should anyways get the needed pins to have the functionality required by your Duckiedrone.
+
+```
 
 ### USB to Micro USB cable
 This cable is used for two purposes:
