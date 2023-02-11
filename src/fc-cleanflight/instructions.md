@@ -148,9 +148,9 @@ You will be spinning the motors and you don't want your drone to fly off your de
 
 ### Connect your drone
 
-1. Plug your drone's FC into a computer (via the USB to micro USB cable)
+1. Plug your drone's FC into your base station (via the USB to micro USB cable)
 
-1. Press connect in the top right corner of Cleanflight. (You won't need to do this if "autoconnect" was selected)
+1. Press `"Connect"` in the top right corner of Cleanflight. (You won't need to do this if `"autoconnect"` was selected)
 
 1. Plug the battery into your drone.
 
@@ -207,7 +207,7 @@ However, note that your drone has not 1, but 4 ESCs - which may not all have the
 
 The solution to this problem is to *calibrate* the ESCs with the FC. In this context, **calibration** means getting all the ESCs to have the same PWM-to-RPM understanding from the FC. In this section, you will calibrate your ESCs.
 
-```{note}
+```{warning}
 Symptoms of no calibration include: 
 *   scorching hot motors
 *   a drone that lifts to one side during flight
@@ -245,6 +245,8 @@ The ESCs will make an interesting set of sounds, kind of like music. If they do 
 3. After the music stops, drag the master slider to the bottom of the bar. Correspondingly, all 4 motor sliders should automatically be at the bottoms of their bars (e.g. 1000). The motors will make another set of sounds.
 
 1. After the sounds stop, spin up each motor and verify it is spinning in the correct direction (i.e. according to the motors diagram in this doc).
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/797686925?h=b40fa6d538&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="esc calibration (new ESCs)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 <div class='check' markdown="1">
 
