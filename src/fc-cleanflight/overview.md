@@ -1,19 +1,181 @@
 (overview_fc)=
 # Overview
+In this phase of the build, you will configure and calibrate the Flight Controller and ESCs. You will flash the correct Firmware. It's a special type of software that controls the hardware on a device.
 
-TODO: highlight that we have two different types of FC
+## Flight Controller
+```{warning}
+Two different versions of flight controllers are shipped randomly. 
+
+Make sure to check which version you have and **follow the appropriate instructions** by selecting the correct tab when needed.
+
+Check [this section](identifying_fc) if you're not sure which version you have.
+```
+
+````{admonition} What you'll need
+```{list-table} Materials flight controller
+:header-rows:   1
+:name:  materials-fc
+
+*   - Parts
+    - Quantity
+
+*   - Flight Controller
+    - 1
+
+*   - USB to Micro USB cable
+    - 1
+
+*   - Nylon M3 white bolts and nuts
+    - 4 pairs
+
+*   - M3 Rubber spacers
+    - 4
+
+*   - Base station
+    - 1
+````
+
+### Flight Controller
+The flight controller (i.e. FC) contains multiple sensors: an Inertial Measurement Unit (IMU) and a gyroscope. The IMU measures linear accelerations and the gyroscope measures angular velocities. The flight controller also receives commands from the Raspberry Pi and then sends electrical signals to the ESCs which in turn change the speeds of the motors.
 
 (fc_identification)=
 ## Identifying your Flight Controller board
 ```{attention}
+You should already have installed the correct version of Cleanflight on your Flight Controller.
+```
+
+```{seealso}
+
+If you haven't or you're not sure you can reflash the Flight Controller following the [Flight Controller initialization instructions here](../building-start/flight-controller-initialization).
+
+```
+
+The flight controller bag will also contain header pins to be soldered and connectors. These differ between the two Flight Controller versions, use the tabs below to select yours.
+
+::::{tab-set}
+
+:::{tab-item} OSD
+
+In the Flight Controller bag you'll also find:
+
+* 1 set of 8x3 straight pins
+* 1 set of 2x4 straight pins
+* 1 strip of straight pins
+* Cabling
+
+```{figure} ../_images/fc-cleanflight/fc_osd_content.png
+
+OSD Flight Controller
+```
+
+:::
+
+:::{tab-item} ACRO
+
+In the Flight Controller bag you'll also find:
+
+* 1 set of 8x3 straight pins
+* 1 set of 8x3 bent 90° pins
+* 1 strip of straight pins
+* Cabling
+
+```{figure} ../_images/fc-cleanflight/fc_acro_content.png
+
+ACRO Flight Controller
+```
+:::
+
+::::
+
+```{note}
+
+Due to packaging variations there might be a slightly different number of straight pins or you might find only 8x3 straight pins rather than 90° bent pins.
+
+This is okay, you should anyways get the needed pins to have the functionality required by your Duckiedrone.
+
+```
+
+### USB to Micro USB cable
+This cable is used for two purposes:
+
+1. To configure the flight controller settings in CleanFlight
+
+    ```{note}
+    this part only needs to be done once. 
+    ```
+ 
+1. To send the flight commands from the Raspberry Pi to the FC. This connection allows our software on the Pi to control the motors. The Pi tells the FC what roll, pitch, yaw, and throttle values the drone should have, and then the flight controller speeds up or slows down the motors to achieve these values.
+
+```{figure} ../_images/fc-cleanflight/micro_usb_cable.png
+
+Micro USB cable
+```
+
+### Rubber spacers
+These spacers are used to isolate the Flight Controller and dampen the vibrations from the ESCs, to improve accuracy in the accelerometer readings.
+
+```{figure} ../_images/fc-cleanflight/rubber_spacers.png
+
+M3 Rubber spacers
+```
+
+### Nylon M3 bolts and nuts
+These plastic bolts are used to attach the PDB to the frame of the Duckiedrone.
+
+```{warning}
+You will fing both M3 and M2 bolts and nuts in your Duckiebox, pay attention to use the M3 in this section.
+
+You can distinguish them by:
+1. comparing the two; the M3 bolts will be slightly thicker
+1. the M2 bolts only have 4 corresponding nuts
+1. the M3 bolts have 11 corresponding nuts
+
+The M3 bolts will fit firmly in the PDB mounting holes, whereas the M2 bolts would wobble and be loose.
+```
+```{figure} ../_images/fc-cleanflight/nylon_M3_bolts_nuts.png
+
+Nylon M3 bolts (8) and nuts (11)
+```
+
+(identifying_fc)=
+## Identifying your Flight Controller board
+```{important}
 There are currently 2 types of Flight Controller hardware.
 
-Read this section carefully to avoid mistakes. 
-```
-
-```{important}
 Identify here which type of Flight Controller you have and use the steps corresponding to your hardware.
-
-You will have different tabs with pictures for each type when necessary, as shown below.
 ```
 
+::::{tab-set}
+
+:::{tab-item} OSD
+
+```{figure} ../_images/fc-cleanflight/OSD_identify.png
+
+OSD version Flight Controller
+```
+
+*   There is no micro USB port on the Flight Controller (it is on the separate smaller board)
+
+*   As highlighted below, the Boot pins are exposed near the “BO”marking. 
+```{image} ../_images/fc-cleanflight/OSD_boot_pins.jpg
+:align: center
+:width: 500px
+```
+
+
+:::
+
+:::{tab-item} ACRO
+
+
+```{figure} ../_images/fc-cleanflight/ACRO_identify.jpg
+
+ACRO version Flight Controller
+```
+
+*   There is a micro USB port soldered on the board
+*   There is a `BOOT` push button
+
+:::
+
+::::
