@@ -1,19 +1,23 @@
 # Initializing the Flight Controller
 
-**What you will need before starting**:
+```{admonition} What you will need
+:class: note
 
 * A base station computer
 * Flight Controller
 * USB to Micro USB cable
+```
 
-**What you will have after finishing**:
+
+```{admonition} What you will get
 
 * An up-to-date, initialized Flight Controller
+```
 
-The flight controller (FC) implements several low-level behaviors, e.g., stabilizing the Duckiedrone around roll, pitch, and yaw through three different PID controllers. Correctly configuring the Flight Controller is critical for flying safely.  
+The Flight Controller (FC) implements several low-level behaviors, e.g., stabilizing the Duckiedrone around roll, pitch, and yaw through three different PID controllers. Correctly configuring the Flight Controller is critical for flying safely.  
 
 ## Installing Cleanflight Configurator (CFC)
-Cleanflight configurator is an app that allows the base station to connect directly to the Flight Controller and access its configuration interface.
+Cleanflight Configurator is an app that allows the base station to connect directly to the Flight Controller and access its configuration interface.
 
 ```{note}
 Cleanflight Configurator used to be a Chrome App, however Chrome Apps' support has been dropped from Google so we'll use native apps for your OS.
@@ -34,26 +38,6 @@ Cleanflight Configurator (CFC) welcome screen
 
 ## Flashing the correct firmware
 
-### Prepare for flashing the Flight Controller firmware
-
-```{important}
-Regardless of the firmware version, if it is the first time setting up the Flight Controller, we recommend performing the below flashing procedure once anyways in order to start from a clean state.
-```
-
-Perform the following 2 steps with the Flight Controller disconnected.
-
-*   In the default Welcome page of CFC, in the left sidebar, please click on the Firmware Flasher tab 
-    ```{figure} ../_images/software-initialization/cleanflight_flasher.png
-
-    **Firmware Flasher** tab in Cleanflight Configurator
-    ```
-
-*   Configure the options in the tab as below:
-    ```{figure} ../_images/software-initialization/flasher_parameters.png
-
-    Firmware Flasher parameters to set
-    ```
-
 ### Updating the Flight Controller firmware (Flashing the FC)
 
 FCs might have different versions of firmware (i.e., the software that runs on the FC’s micro-controller) out of the factory. Normally, this only needs to be done once initially. Follow this procedure to update your firmware.
@@ -66,12 +50,30 @@ Our current target firmware is:
 
 *   **BTFL v3.3.3**  (Download the `.hex` file below to your base station) [Download BTFL v3.3.3 here](https://github.com/betaflight/betaflight/releases/download/v3.3.3/betaflight_3.3.3_SPRACINGF3.hex)
 
-### Different Flight Controller versions
-There are currently 2 types of Flight Controller hardware. Use the steps corresponding to your hardware. Videos for both hardware versions are provided later in the document.
+
+### Prepare for flashing the Flight Controller firmware
 
 ```{important}
-Identify your flight controller in [**this chapter**](fc_identification).
+Regardless of the firmware version, if it is the first time setting up the Flight Controller, we recommend performing the below flashing procedure once anyways in order to start from a clean state.
 ```
+
+Perform the following 2 steps with the Flight Controller **disconnected**.
+
+*   In the default Welcome page of CFC, in the left sidebar, please click on the `Firmware Flasher` tab 
+    ```{figure} ../_images/software-initialization/cleanflight_flasher.png
+
+    `Firmware Flasher` tab in Cleanflight Configurator
+    ```
+
+*   Configure the options in the tab as below:
+    ```{figure} ../_images/software-initialization/flasher_parameters.png
+
+    `Firmware Flasher` parameters to set
+    ```
+
+### Different Flight Controller versions
+
+There are currently 2 types of Flight Controller hardware. Use the steps corresponding to your hardware. Videos for both hardware versions are provided later in the document.
 
 ```{attention} 
 
@@ -80,20 +82,28 @@ If you have the `OSD` version of the Flight Controller you need to solder the mi
 **Choose in the following tabs which Flight Controller version you have**
 ```
 
+```{seealso}
+Identify your flight controller in [**this chapter**](fc_identification).
+```
+
+
 ::::{tab-set}
 
 :::{tab-item} OSD
 You will need to solder the pins to the microUSB board and connect it to the Flight Controller.
 
-**what you'll need**
+```{admonition} what you'll need
+:class: note
 
 *   soldering tools
 *   Flight Controller microUSB board
 *   90° header pins
-*   6 pins connector (in the Flight Controller bag)
+*   6 pins cable connector (in the Flight Controller bag)
+```
 
-**what you'll get**
+```{admonition} what you'll get
 *   `OSD` Flight Controller connected to the base station
+```
 
 1.  Solder the 90° pins to the microUSB board as shown
     ```{figure} ../_images/software-initialization/OSD_usb_board.jpg
@@ -126,27 +136,31 @@ You will need to solder the pins to the microUSB board and connect it to the Fli
 
 :::{tab-item} ACRO
 
-The microUSB port is already soldered to your board, you can go ahead with the tutorial.
+The microUSB port is already soldered to your board, you can go on with the tutorial.
 
 :::
 
 ::::
 
-## Flashing the FC
+## Flashing the Flight Controller
 
-The videos to flash respectively the **ACRO** version and the **OSD** version of Flight Controllers are below in this section. A summary is provided here. Most operations are the same with both versions, and any version-wise operations are written in the respective tab.
+The videos to flash the **ACRO** version and the **OSD** version of Flight Controllers are below in this section, in their respective tab. 
+
+A summary is provided here.
+
+Most operations are the same with both versions, and any version-wise operations are written in the respective tab.
 
 ```{attention}
 Normally, when connected to the base station, the Flight Controller connects in `Normal mode`.
 
 This can be identified by:
 
-*    Having a red blinking LED on the board
+*    Having a red blinking LED on the Flight Controller board
 
 If this is the case during this section, unplug from base station and try to reactivate `bootloader mode` as detailed below.
 ```
 
-To flash the firmware, we need the Flight Controller to be in Bootloader mode instead.
+To flash the firmware, we need the Flight Controller to be in `bootloader mode`.
 
 **Start by having the Flight Controller disconnected**
 
@@ -194,7 +208,7 @@ To flash the firmware, we need the Flight Controller to be in Bootloader mode in
 
 Now that the Flight Controller is in `bootloader mode` you can flash the correct firmware:
 
-1.  In the CFC Firmware Flasher tab, click the `Load Firmware [Local]` button (bottom right), and select the .hex file downloaded at the beginning of this section.
+1.  In the CFC Firmware Flasher tab, click the `Load Firmware [Local]` button (bottom right), and select the `.hex` file downloaded at the beginning of this section.
 
     - **check** The progress bar should look like `“Loaded Local Firmware: (… bytes)”`
 
@@ -203,10 +217,10 @@ Now that the Flight Controller is in `bootloader mode` you can flash the correct
     -   **check** The progress bar shows: `“Flashing…”` => `“Verifying…”` => `“Programming SUCCESSFUL”`
 
     ```{tip}
-    In case the progress bar turns red, see the Troubleshooting section below
+    In case the progress bar turns red, see the [Troubleshooting section below](fc_initialization_troubleshooting)
     ```
 
-3.  If successful, without needing to reconnect the cable, the Flight Controller should go back to the Normal mode.
+3.  If successful, without needing to reconnect the cable, the Flight Controller should go back to the `Normal mode`.
 
     ```{admonition} **Check**
     
@@ -244,7 +258,9 @@ To see the whole process for your version of the Flight Controller choose the co
 1.  Connect the micro USB cable from your Flight Controller to your base station
 
 1. Identify the `"Connect"` button in the top right corner (right now it will be green as the Flight Controller is not connected yet)
-    [add image of connect button]
+    ```{figure} ../_images/software-initialization/CFC_connect_button.png
+
+    `"Connect"` button in the top-right corner of CFC
 
 1. Select the correct connection port
 
@@ -285,6 +301,7 @@ On the top left of the CFC interface, one could check for the Firmware version. 
 Top left of CFC, check CFC version and Flight Controller firmware version here
 ```
 
+(fc_initialization_troubleshooting)=
 ## Troubleshooting
 
 ```{trouble}
