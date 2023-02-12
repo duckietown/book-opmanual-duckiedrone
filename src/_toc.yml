@@ -42,6 +42,7 @@ parts:
             - file: camera-prop-mount/overview
             - file: camera-prop-mount/instructions
             - file: camera-prop-mount/checkpoint
+        - file: troubleshooting
             
     - caption: PART_TWO
       maxdepth: 2
