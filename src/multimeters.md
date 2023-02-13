@@ -75,7 +75,7 @@ Performing a continuity check is a safe way to debug if a circuit has an undesir
 ## DC Voltage Check
 
 1. **Selecting the DC Voltage Mode**  
-    Switch on your multimeter, and set the dial to DC voltage mode (indicated by a V with a straight line, or the symbol ⎓).   
+    Switch on your multimeter, and set the dial to DC voltage mode (indicated by a `V` with a straight line `-V`, or the symbol `⎓`).   
 
     ```{figure} ./_images/multimeters/multimeter_dial_dc_voltage.jpg
 
@@ -95,7 +95,7 @@ Reversing the leads (i.e. red on - and black on +) won't do any harm; it will si
 ## AC Voltage Check
 
 1. **Selecting the AC Voltage Mode**  
-    Switch on your multimeter, and set the dial to AC voltage mode (indicated by a `V` with a wavy line, or the symbol `⎓`).  
+    Switch on your multimeter, and set the dial to AC voltage mode (indicated by a `V` with a wavy line (`~V`), or the symbol `ṽ`).  
 
     ```{tip}
     AC voltage does not have polarity. 
