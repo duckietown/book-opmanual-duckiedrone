@@ -3,7 +3,11 @@
 
 During this step you will learn about how to use multimeters to do a continuity check and a voltage check.    
 
-A multimeter or a multitester, also known as a VOM (volt-ohm-milliammeter), is an electronic measuring instrument that combines several measurement functions in one unit. A typical multimeter can measure voltage, current, and resistance. [This](https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/all) is a general tutorial for multimeters.
+A multimeter or a multitester, also known as a VOM (volt-ohm-milliammeter), is an electronic measuring instrument that combines several measurement functions in one unit. A typical multimeter can measure voltage, current, and resistance. 
+
+```{seealso}
+[This](https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/all) is a general tutorial for multimeters.
+```
 
 ```{note}
 Please turn off the multimeter by setting the dial to `OFF` after you finish your check.    
@@ -85,7 +89,7 @@ Reversing the leads (i.e. red on - and black on +) won't do any harm; it will si
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TdUK6RPdIrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## [**AC Voltage Check**](https://www.youtube.com/watch?v=nW13vjQjS5M)
+## AC Voltage Check
 
 1. **Selecting the AC Voltage Mode**  
     Switch on your multimeter, and set the dial to AC voltage mode (indicated by a V with a wavy line, or the symbol ṽ).  
@@ -113,4 +117,8 @@ Switch the Dial to the AC Voltage Test Function
 Reversing the leads won't do any harm; it just gives us a negative reading.  
 ```
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nW13vjQjS5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+```{seealso}
 [This article](https://www.fluke.com/en-us/learn/best-practices/test-tools-basics/digital-multimeters/how-to-measure-ac-voltage-with-a-digital-multimeter) contains more detailed information about AC voltage test.    
+```
