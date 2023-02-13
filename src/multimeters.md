@@ -60,6 +60,7 @@ Performing a continuity check is a safe way to debug if a circuit has an undesir
     ```
 
 ```{admonition} General Continuity Check Strategy
+:class: tip
 
 * Check every two positive (+) terminals to make sure every pair of these terminals is continuous.
 
