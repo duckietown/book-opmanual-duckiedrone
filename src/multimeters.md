@@ -76,10 +76,10 @@ Performing a continuity check is a safe way to debug if a circuit has an undesir
 1. **Selecting the DC Voltage Mode**  
     Switch on your multimeter, and set the dial to DC voltage mode (indicated by a V with a straight line, or the symbol ⎓).   
 
-```{figure} ./_images/multimeters/multimeter_dial_dc_voltage.jpg
+    ```{figure} ./_images/multimeters/multimeter_dial_dc_voltage.jpg
 
-Switch the Dial to the DC Voltage Test Function
-```
+    Switch the Dial to the DC Voltage Test Function
+    ```
 
 2. **Performing the Voltage Check**  
     * Place the positive (i.e. red) lead on a positive (+) terminal, and the negative (i.e. black) lead on the negative (-) terminal.  
