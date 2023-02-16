@@ -63,9 +63,14 @@ In the Flight Controller bag you'll also find:
 * 1 strip of straight pins
 * Cabling
 
-```{figure} ../_images/fc-cleanflight/fc_osd_content.png
+```{figure} ../_images/components-official/fc_OSD_content.jpg
 
 OSD Flight Controller
+```
+
+```{figure} ../_images/components-official/fc_OSD_cabling.jpg
+
+Cabling included with OSD Flight Controller
 ```
 
 :::
