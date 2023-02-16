@@ -54,7 +54,7 @@ BLDC motors
 ### Electronic Speed Controller (ESC)
 An Electronic Speed Controller (ESC) is used to regulate the speed of a motor according to a signal from the flight controller. A brushless motor would not be able to spin without an ESC, as they are responsible for changing the magnetic fields that generate a moment to make the motor spin.
 
-```{figure} ../_images/motors-esc/ESC.png
+```{figure} ../_images/components-official/ESC.png
 :width: 400px
 :align: center
 
@@ -78,7 +78,7 @@ Battery monitoring leads
 
 These long gray screws are used to attach the motors to the frame together with the propellers guards (prop guards) and the plastic standoffs used as landing legs.
 
-```{image} ../_images/motors-esc/long_M3_screws.png
+```{image} ../_images/components-official/long_M3_screws.png
 ```
 
 ```{danger} 
@@ -106,7 +106,7 @@ You can distinguish them by:
 
 The M3 bolts will fit firmly in the PDB mounting holes, whereas the M2 bolts would wobble and be loose.
 ```
-```{figure} ../_images/motors-esc/nylon_M3_bolts_nuts.png
+```{figure} ../_images/components-official/nylon_M3_bolts_nuts.png
 
 Nylon M3 bolts (8) and nuts (11)
 ```
