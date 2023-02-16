@@ -160,7 +160,7 @@ network={
 5. Eject your SD card safely; 
 
 ```{warning}
-do not just unplug the SD crad from the base station
+Do not just unplug the SD crad from the base station
 ```
 
 
