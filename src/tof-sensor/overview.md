@@ -29,7 +29,7 @@ In this part of the build, you will be adding your first sensor to the drone: th
 ## TOF Sensor
 The TOF (**Li**ght **d**etection **a**nd **r**anging - **Lidar**) sensor is used to measure distance. On the drone, we use this sensor to measure the height of the drone above the ground. Lidar enables autonomous vehicles to “see” by generating and measuring millions of data points in real time, creating a precise map of its ever-changing surroundings for safe navigation.
 
-```{image} ../_images/tof-sensor/TOF-sensor.png
+```{image} ../_images/components-official/TOF-sensor.jpg
 :width: 200px
 :align: center
 ```
