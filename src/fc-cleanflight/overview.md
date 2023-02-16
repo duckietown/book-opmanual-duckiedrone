@@ -84,7 +84,7 @@ In the Flight Controller bag you'll also find:
 * 1 strip of straight pins
 * Cabling
 
-```{figure} ../_images/fc-cleanflight/fc_acro_content.png
+```{figure} ../_images/components-official/fc_acro_content.png
 
 ACRO Flight Controller
 ```
@@ -111,7 +111,7 @@ This cable is used for two purposes:
  
 1. To send the flight commands from the Raspberry Pi to the FC. This connection allows our software on the Pi to control the motors. The Pi tells the FC what roll, pitch, yaw, and throttle values the drone should have, and then the flight controller speeds up or slows down the motors to achieve these values.
 
-```{figure} ../_images/fc-cleanflight/micro_usb_cable.png
+```{figure} ../_images/components-official/micro_usb_cable.png
 
 Micro USB cable
 ```
@@ -119,7 +119,7 @@ Micro USB cable
 ### Rubber spacers
 These spacers are used to isolate the Flight Controller and dampen the vibrations from the ESCs, to improve accuracy in the accelerometer readings.
 
-```{figure} ../_images/fc-cleanflight/rubber_spacers.png
+```{figure} ../_images/components-official/rubber_spacers.png
 
 M3 Rubber spacers
 ```
@@ -137,7 +137,7 @@ You can distinguish them by:
 
 The M3 bolts will fit firmly in the PDB mounting holes, whereas the M2 bolts would wobble and be loose.
 ```
-```{figure} ../_images/fc-cleanflight/nylon_M3_bolts_nuts.png
+```{figure} ../_images/components-official/nylon_M3_bolts_nuts.png
 
 Nylon M3 bolts (8) and nuts (11)
 ```
