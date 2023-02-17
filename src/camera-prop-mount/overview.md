@@ -92,3 +92,11 @@ You will use them to secure the camera to the frame of the Duckiedrone.
 
 ```{image} ../_images/components-official/small_metal_bolts.png
 ```
+
+### Wrench
+This little 8-10 mm wrench will be helpful in tightening the propellers on the motor's shaft.
+
+```{figure} ../_images/components-official/wrench.png
+
+8mm wrench
+```
