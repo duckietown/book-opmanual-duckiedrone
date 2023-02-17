@@ -6,10 +6,10 @@
 ```
 1. Solder the TOF Sensor Wires to the Pi Hat following [the figure](soldered-tof-cable) below:
     * insert a wire into the correct hole in the front of the Pi Hat. 
-    * Solder the red IR Sensor Wire to the 3V rail
-    * Solder the black IR Sensor Wire to the GND rail
-    * Solder the yellow IR Sensor Wire to SCL rail
-    * Solder the blue IR Sensor Wire to SDF rail
+    * Solder the red IR Sensor Wire to the `3V` rail
+    * Solder the black IR Sensor Wire to the `GND` rail
+    * Solder the yellow IR Sensor Wire to `SCL` rail
+    * Solder the blue IR Sensor Wire to `SDF` rail
 
 1. Trim the excess cable on the back side of the Pi Hat (where you just soldered it)
 
