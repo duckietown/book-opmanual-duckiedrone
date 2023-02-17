@@ -8,7 +8,7 @@ Verify that:
 
 Here is a picture of how the Pi Hat should look like.
 ```{figure} ../_images/tof-sensor/pi_hat_progress.jpg
-:width: 300px
+:width: 500px
 
 Pi Hat progress
 ```
