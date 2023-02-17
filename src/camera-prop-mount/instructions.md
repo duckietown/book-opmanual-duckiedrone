@@ -162,3 +162,39 @@ Make sure to attach all dangling cables using zip ties to the frame, such that n
 
 PWM wires fixed to the bottom of the frame
 ```
+
+## Attach propellers
+Attach the propellers to the drone so that it may fly: attach CW propellers to the CW motors, and CCW propellers to the CCW motors. 
+
+````{important}
+The propellers have small arrows on them in the center to indicate which type they are.
+
+```{figure} ../_images/camera-mounting-hw/propellers_arrows.jpg
+
+Arrows on the propellers indicating spin direction
+```
+
+````
+
+```{tip}
+The bolts on the motors that spin CCW tighten when turned CW, and the bolts on the motors that spin CW tighten when turned CCW.
+```
+
+Use the 8 mm wrench to tighten the bolts down so that the bottom of the propeller is flat on the top of the motor. Screw bolts down tightly, but not so tight that you could not remove the propellers if you had to.
+
+
+**Propeller Direction**:
+
+1.  The arrows on the propellers should be on visible from the top of the drone
+1.  The arrows should be going in the same direction as the arrows on the motors.
+
+**Propeller Attachment**:
+
+1.  The propellers must be flat on the base of the motor
+1.  Make sure there is no gap between the propeller, the motor, and the motor nut.
+1.  Holding the motor still, try to spin the prop and make sure the props cannot spin around the motor shaft; the motors and the props should spin together.
+
+```{figure} ../_images/camera-mounting-hw/propellers_attached.jpg
+
+Propeller attached to the motors
+```
