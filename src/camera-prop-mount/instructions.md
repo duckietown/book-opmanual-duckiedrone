@@ -147,21 +147,33 @@ UBEC attached to the Raspberry Pi USB ports
 
 1.  Connect the Flight Controller USB cable to one of the USB ports on the Raspberry Pi
 
-```{note}
+````{note}
 If you have the `OSD` version of the Flight Controller, you can use a piece of double sided foam tape to attach the USB connector board to the frame, right beneath the PDB board.
 
-    ```{figure} ../_images/camera-mounting-hw/OSD_usb_board.png
+```{figure} ../_images/camera-mounting-hw/OSD_usb_board.png
 
-    USB board attached to the frame (`OSD` Flight Controller)
-    ```
+USB board attached to the frame (`OSD` Flight Controller)
+```
+
+````
 
 ## Fix cables to the frame
 Make sure to attach all dangling cables using zip ties to the frame, such that no wires can hit the propellers.
 
 ```{figure} ../_images/camera-mounting-hw/pwm_wires_fixed.png
 
-PWM wires fixed to the bottom of the frame
+PWM wires fixed to the bottom of the frame (zip tie in the center)
 ```
+
+````{danger}
+Make sure ESC-motor wires are ziptied down properly. If not, you risk having a short.
+
+```{figure} ../_images/camera-mounting-hw/esc_cables_tied.jpg
+
+Properly tied ESCs cables
+```
+
+````
 
 ## Attach propellers
 Attach the propellers to the drone so that it may fly: attach CW propellers to the CW motors, and CCW propellers to the CCW motors. 
@@ -180,19 +192,10 @@ Arrows on the propellers indicating spin direction
 The bolts on the motors that spin CCW tighten when turned CW, and the bolts on the motors that spin CW tighten when turned CCW.
 ```
 
-Use the 8 mm wrench to tighten the bolts down so that the bottom of the propeller is flat on the top of the motor. Screw bolts down tightly, but not so tight that you could not remove the propellers if you had to.
+Use the 8 mm wrench to tighten the bolts down so that the bottom of the propeller is flat on the top of the motor.
 
+Screw bolts down tightly, but not so tight that you could not remove the propellers if you had to.
 
-**Propeller Direction**:
-
-1.  The arrows on the propellers should be on visible from the top of the drone
-1.  The arrows should be going in the same direction as the arrows on the motors.
-
-**Propeller Attachment**:
-
-1.  The propellers must be flat on the base of the motor
-1.  Make sure there is no gap between the propeller, the motor, and the motor nut.
-1.  Holding the motor still, try to spin the prop and make sure the props cannot spin around the motor shaft; the motors and the props should spin together.
 
 ```{figure} ../_images/camera-mounting-hw/propellers_attached.jpg
 
