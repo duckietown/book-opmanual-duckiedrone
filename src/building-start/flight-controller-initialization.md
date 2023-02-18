@@ -333,9 +333,8 @@ On Linux, Cleanflight Configurator doesn't connect to the Flight Controller and 
 ---
 This is a permission issue to access the serial port of the Flight Controller. The quickest solution is to run `sudo chmod 0777 /dev/tty*` while Cleanflight Configurator is open, where `/dev/tty* is the port you're using to connect to the Flight Controller.
 
-```{note}
 This has to be done each time the Flight Controller is reconnected to the base station.
-```
+
 ````
 
 ```{trouble}
