@@ -18,7 +18,6 @@ parts:
           sections:
             - file: rpi-power/overview
             - file: rpi-power/instructions
-            - file: rpi-power/checkpoint
             
         - file: tof-sensor/index
           sections:
