@@ -26,6 +26,12 @@ Cleanflight Configurator used to be a Chrome App, however Chrome Apps' support h
 Steps:
 
 1.  Download the correct version of Cleanflight Configurator v2.4.0 for your OS from [**this link**](https://github.com/cleanflight/cleanflight-configurator/releases/tag/CLFL_v2.4.0).
+    
+    ```{note} 
+    If you're using Ubuntu 22.04 the version above could not start.
+
+    I that's the case use Cleanflight Configurator v2.6.0 from [here](https://github.com/cleanflight/cleanflight-configurator/releases/tag/CLFL_v2.6.0)
+    ```
 
 1. Install Cleanflight Configurator on your system
 
@@ -320,6 +326,14 @@ It might happen when, on the Firmware Flasher tab, the Flash Firmware button is 
 `"Flashing..."` started, but progress bar turns red with a `"Timeout"` error
 ---
 It might happen during “Flashing…” or “Verifying…”. Click the `Flash Firmware` button and try again
+```
+
+```{trouble}
+On Linux, Cleanflight Configurator doesn't connect to the Flight Controller and an error `Failed to open serial port` appears in the log 
+---
+This is a permission issue to access the serial port of the Flight Controller. The quickest solution is to run `sudo chmod 0777 /dev/tty*` while Cleanflight Configurator is open, where `/dev/tty* is the port you're using to connect to the Flight Controller.
+
+This has to be done each time the Flight Controller is reconnected to the base station.
 ```
 
 ```{trouble}
