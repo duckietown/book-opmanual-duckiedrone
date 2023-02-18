@@ -10,21 +10,25 @@ Part : Quantity
 
 Raspberry Pi Camera : 1
 
-Pi Mount : 1
-
-Pi Mount Screws : 3
-
-Plastic Standoffs : 2
+Long Plastic Standoffs : 4
 
 CW Propellers : 2
 
 CCW Propellers : 2
+
+Nylon M2.5 bolts : 8
+
+Nylon M3 bolts : 1
+
+Steel M2 bolts : 4
 
 8mm Wrench : 1
 
 Zip Ties : 10+
 
 Double sided tape : 1
+
+Velcro strap : 1
 
 ```
 
@@ -75,22 +79,22 @@ These nylon standoffs are used to mount the top part of the Duckiedrone frame (t
 Frame M2 nylon standoffs
 ```
 
-### Nylon M2 bolts
+### Nylon M2.5 bolts
 Used to mount the frame with the frame standoffs.
 
-```{image} ../_images/components-official/M2_bolts_nuts_nylon.png
+```{image} ../_images/components-official/M2_5_bolts_nuts_nylon.png
 ```
 
 ### Nylon M3 bolt
-You will use one nylon screw to attach the ToF sensor to the frame.
+You will use one nylon bolt and nut to attach the ToF sensor to the frame.
 
 ```{image} ../_images/components-official/nylon_M3_bolts_nuts.png
 ```
 
-### Small metal bolts and nuts
+### Metal M2 bolts and nuts
 You will use them to secure the camera to the frame of the Duckiedrone.
 
-```{image} ../_images/components-official/small_metal_bolts.png
+```{image} ../_images/components-official/M2_metal_bolts.png
 ```
 
 ### Wrench
@@ -99,4 +103,11 @@ This little 8-10 mm wrench will be helpful in tightening the propellers on the m
 ```{figure} ../_images/components-official/wrench.png
 
 8mm wrench
+```
+
+### Velcro strap
+
+Useful to secure the battery to the frame of the drone
+
+```{image} ../_images/components-official/black_velcro.png
 ```
