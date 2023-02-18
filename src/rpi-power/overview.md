@@ -7,6 +7,8 @@ In this first part of the build, you will create a circuit to provide power to t
 First, we will introduce you to the components that you will be working with. Then, you will do some preliminary tasks that will run in the background. As those tasks are running, you will go through the first portion of the build.
 
 ## Required Materials
+````{admonition} What you will need
+
 ```{list-table} Materials
 :header-rows: 1
 :name: materials-rpi-power
@@ -19,11 +21,11 @@ First, we will introduce you to the components that you will be working with. Th
   - 1
 * - Battery Charging Adapter 
   - 1
-* - Power Distribution Board 
+* - Power Distribution Board (PDB)
   - 1
-* - Universal Battery Eliminator Circuit 
+* - Universal Battery Eliminator Circuit (UBEC)
   - 1
-* - Pi Hat 
+* - Raspberry Pi Hat 
   - 1
 * - XT60 Connector 
   - 1
@@ -37,9 +39,8 @@ First, we will introduce you to the components that you will be working with. Th
   - 1
 * - Base Station 
   - 1
-* - Micro SD Card Reader 
-  - 1
 ```
+````
 
 ## Detailed Hardware Descriptions
 ### Battery
@@ -49,23 +50,27 @@ LiPo Battery
 
 The Battery on your drone is a 1500mAh 3S 20C LiPo Battery. Let's go over what all that means.
 
-### Capacity
-The unit milliAmp hour, or mAh, is a measure of how much charge a battery can hold. The higher this number is, the more charge the battery can hold; therefore, the battery will "last" longer and your drone will fly for a longer time without needing to be recharged.
+#### Capacity
+The unit milliAmp hour, or `mAh`, is a measure of how much charge a battery can hold. The higher this number is, the more charge the battery can hold; therefore, the battery will "last" longer and your drone will fly for a longer time without needing to be recharged.
 
-### Structure
+#### Structure
 A Lithium-ion polymer (LiPo) battery is made up of one or more LiPo cells. Each cell has a voltage of 3.7 V when it is discharged, and 4.2 V when it is charged. The cells in your battery are connected in series, so that the voltages add together to get a total of 11.1 V when discharged, and **12.6 V when charged**. There are three cells connected in series in your battery, so it is called a 3S battery.
 
-### Current Output
+#### Current Output
 The "**C**" rating of a LiPo Battery determines how much current the battery can deliver. The maximum current draw is equal to the battery's C rating multiplied by the battery's capacity. For the drone's 1500mAh 20C batteries, the maximum current draw is 1500mAh x 20C = 30A.
 
-### Precautions
+#### Precautions
 ```{warning}
 Review the [safety information on the battery](sec:battery_safety).
 ```
- Taking the proper precautions when using, storing, or charging is very important to keeping the battery safe. Only store the battery at room temperature and out of direct sunlight. Do not discharge a battery below 10.5 V. 
 
+Taking the proper precautions when using, storing, or charging is very important to keeping the battery safe.
+ 
 ```{danger}
-Never leave the battery charging unattended. Unplug the battery once it is fully charged.
+1.  Only store the battery at room temperature and out of direct sunlight.
+1.  Do not discharge a battery below 10.5 V. 
+1.  Never leave the battery charging unattended.
+1.  Unplug the battery once it is fully charged.
 ```
 
 ### Power Distribution Board (PDB)
@@ -80,36 +85,45 @@ The Power Distribution Board is used to distribute power from the battery to ele
 UBEC
 ```
 
-The UBEC, solves the issue that arises from different electrical components requiring different supply voltages. In the case of the drone, the LiPo battery is used for outputs around 12V: this is the required voltage for the motors, but not for the Raspberry Pi, which requires 5V. The Universal Battery Eliminator Circuit eliminates the need to carry multiple batteries of different voltages by converting the 12V supply from the battery down to a 5V supply for the Pi.
+The UBEC, solves the issue that arises from different electrical components requiring different supply voltages. In the case of the drone, the LiPo battery is used for outputs around 12V: this is the required voltage for the motors, but not for the Raspberry Pi, which requires 5V. The Universal Battery Eliminator Circuit eliminates the need to carry multiple batteries of different voltages by converting the 12V supply from the battery down to a 5V supply for the Raspberry Pi.
 
 ### Raspberry Pi
 ```{figure} ../_images/rpi-power/raspberry.png
 Raspberry Pi 3 Model B
 ```
 
-The Raspberry Pi, or Pi, is a single-board computer. The Pi is capable of running a full desktop operating system: you can use it as a computer similar to the one you're using now. The Raspberry Pi is used on the drone as the main computer that reads and processes all the sensor data and user inputs, and then sends commands to the flight controller to control the drone motors. The drone would be able to fly without it if a person had a remote controller to manually steer the drone. However, for the DuckieSky Drone, the person with a remote controller is replaced by software and sensors on the Raspberry Pi. This, as well as the sensors you will connect later, makes autonomous flight possible.
+The Raspberry Pi is a single-board computer. The Raspberry Pi is capable of running a full desktop operating system: you can use it as a computer similar to the one you're using now. The Raspberry Pi is used on the drone as the main computer that reads and processes all the sensor data and user inputs, and then sends commands to the flight controller to control the drone motors. The drone would be able to fly without it if a person had a remote controller to manually steer the drone. However, for the Duckiedrone, the person with a remote controller is replaced by software and sensors on the Raspberry Pi. This, as well as the sensors you will connect later, makes autonomous flight possible.
 
-### Pi Hat
-The Pi Hat is a special type of breadboard. One useful property of a breadboard is that it has rails. A rail is a sequence of holes that share an electrical connection:
+### Raspberry Pi Hat
+The Raspberry Pi Hat is a special type of breadboard. One useful property of a breadboard is that it has rails. A rail is a sequence of holes that share an electrical connection:
 
 ```{figure} ../_images/components-official/pihat.png
-Pi Hat shield
+Raspberry Pi Hat shield
 ```
+
+```{figure} ../_images/components-official/pihat_header.png
+:width: 300px
+
+Raspberry Pi Hat header
+```
+
+
+The rails are useful because every wire put on a rail will be electrically connected; this means that it does not matter which hole along a rail a wire is inserted. This is useful for wire organization, and if a soldering mistake is made in one hole, an adjacent hole in the same rail can be used instead.
+
 ```{figure} ../_images/rpi-power/pihat_2.jpg
+:width: 400px
+
 PiHat with rails highlighted in purple
 ```
 
-The rails are useful because every wire put on a rail will be electrically connected; this means that it does not matter which hole along a rail a wire is inserted. This is useful for wire organization, and if a soldering mistake is made in one hole, an adjacent hole in the same rail can be used instead. Notice especially the long +5V and GND rails; we can use any of the holes in these rails to provide power to components. Also notice that there is a 3.3V rail, be sure not to mix this up with the 5V rail because electrical components will only work at the correct voltages
+Notice especially the long `+5V` and `GND` rails; we can use any of the holes in these rails to provide power to components. Also notice that there is a `3.3V` rail, be sure not to mix this up with the `5V` rail because electrical components will only work at the correct voltages.
 
 ### Micro SD Card
 ```{figure} ../_images/components-official/microSD.png
 microSD card
 ```
-```{figure} ../_images/components-official/microSD_reader.png
-Micro SD Card adapter
-```
 
-The Micro SD card stores the operating system on the Raspberry Pi, as well as all the software needed for autonomous flight.
+The micro SD card stores the operating system on the Raspberry Pi, as well as all the software needed for autonomous flight.
     
 
 ### XT60 Connector
@@ -118,3 +132,11 @@ XT60 connector cable
 ```
 
 An XT60 connector cable is a component which provides power when a power source (e.g. battery) is connected to it. By soldering it to the PDB, the PDB will get power to distribute to other components.
+
+### Heatsinks
+
+The heatsinks help regulate the temperature of your Raspberry Pi.
+
+```{image} ../_images/components-official/heatsinks.png
+:width: 400px
+```
