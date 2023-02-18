@@ -107,7 +107,7 @@ This little 8-10 mm wrench will be helpful in tightening the propellers on the m
 
 ### Velcro strap
 
-Useful to secure the battery to the frame of the drone
+Useful to secure the battery to the frame of the drone.
 
 ```{image} ../_images/components-official/black_velcro.png
 ```
