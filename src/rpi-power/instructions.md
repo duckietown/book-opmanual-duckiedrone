@@ -323,6 +323,12 @@ On the Pi Hat, do another connectivity check to verify that there is **no short*
 
 ### Insert the SD card into the Pi
 
+```{warning}
+**Disconnect the UBEC from the Raspberry Pi Hat**
+
+You will boot the Raspberry Pi once the build is complete, for now on until the first boot make sure the Raspberry Pi isn't powered.
+```
+
 Insert your (previously flashed) SD card into the SD card slot on the bottom of the Pi.
 
 ```{attention} The SD card **direction does matter** - the lettering on the SD card should be facing downward.

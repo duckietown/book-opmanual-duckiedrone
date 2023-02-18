@@ -38,8 +38,6 @@ Check [this section](identifying_fc) if you're not sure which version you have.
 ### Flight Controller
 The flight controller (i.e. FC) contains multiple sensors: an Inertial Measurement Unit (IMU) and a gyroscope. The IMU measures linear accelerations and the gyroscope measures angular velocities. The flight controller also receives commands from the Raspberry Pi and then sends electrical signals to the ESCs which in turn change the speeds of the motors.
 
-(fc_identification)=
-## Identifying your Flight Controller board
 ```{attention}
 You should already have installed the correct version of Cleanflight on your Flight Controller.
 ```
@@ -159,13 +157,14 @@ Identify here which type of Flight Controller you have and use the steps corresp
 OSD version Flight Controller
 ```
 
-*   There is no micro USB port on the Flight Controller (it is on the separate smaller board)
+*   There is no micro USB port on the Flight Controller (it is on a separate smaller board)
 
-*   As highlighted below, the Boot pins are exposed near the “BO”marking. 
-```{image} ../_images/fc-cleanflight/OSD_boot_pins.jpg
-:align: center
-:width: 500px
-```
+*   As highlighted below, the Boot pins are exposed near the `BO` marking.
+
+    ```{image} ../_images/fc-cleanflight/OSD_boot_pins.jpg
+    :align: center
+    :width: 500px
+    ```
 
 
 :::

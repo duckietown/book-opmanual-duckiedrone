@@ -5,7 +5,7 @@
 
 * A base station computer
 * Flight Controller
-* USB to Micro USB cable
+* USB to micro USB cable
 ```
 
 
@@ -28,7 +28,7 @@ Steps:
 1.  Download the correct version of Cleanflight Configurator v2.4.0 for your OS from [**this link**](https://github.com/cleanflight/cleanflight-configurator/releases/tag/CLFL_v2.4.0).
     
     ```{note} 
-    If you're using Ubuntu 22.04 the version above could not start.
+    If you're using Ubuntu 22.04 the version above could not open on your base station.
 
     If that's the case use Cleanflight Configurator v2.6.0 from [here](https://github.com/cleanflight/cleanflight-configurator/releases/tag/CLFL_v2.6.0)
     ```
@@ -37,10 +37,10 @@ Steps:
 
 1. Start Cleanflight Configurator on your base station. You should see the below interface.
 
-```{figure} ../_images/software-initialization/CFC_welcome_screen.png
+    ```{figure} ../_images/software-initialization/CFC_welcome_screen.png
 
-Cleanflight Configurator (CFC) welcome screen
-```
+    Cleanflight Configurator (CFC) `welcome screen`
+    ```
 
 ## Flashing the correct firmware
 
@@ -89,7 +89,7 @@ If you have the `OSD` version of the Flight Controller you need to solder the mi
 ```
 
 ```{seealso}
-Identify your flight controller in [**this chapter**](fc_identification).
+Identify your flight controller in [**this chapter**](identifying_fc).
 ```
 
 
@@ -132,6 +132,15 @@ You will need to solder the pins to the microUSB board and connect it to the Fli
 
     USB board pinout connection
     ```
+    
+    ````{attention}
+    **Once you verify the connection** between the base station and the Flight Controller, it is recommended to hot glue the pins in place.
+
+    ```{image} ../_images/software-initialization/OSD_usb_hot_glued.png
+    :width: 300px
+    ```
+
+    ````
 
 3.  Connect the white connector of the 6 pins cable to the Flight Controller port shown here.
     ```{figure} ../_images/software-initialization/usb_connector_port_OSD.jpg
@@ -186,7 +195,10 @@ To flash the firmware, we need the Flight Controller to be in `bootloader mode`.
 
 1. Once connected, you can take the pin-shorting material/tool away
 
-1. **check** there is no red blinking LED. There should be no LED on now on the Flight Controller (there is a red LED on the USB board).
+    ```{admonition} Check
+    :class: seealso
+
+    there is no red blinking LED. There should be no LED on now on the Flight Controller (there is a red LED on the USB board).
 
 1. The Flight Controller is now in `bootloader mode`
 
@@ -217,11 +229,19 @@ Now that the Flight Controller is in `bootloader mode` you can flash the correct
 
 1.  In the Cleanflight Configurator Firmware Flasher tab, click the `Load Firmware [Local]` button (bottom right), and select the `.hex` file downloaded at the beginning of this section.
 
-    - **check** The progress bar should look like `“Loaded Local Firmware: (… bytes)”`
+    ```{admonition} Check
+    :class: seealso
+
+    The progress bar should look like `“Loaded Local Firmware: (… bytes)”`
+    ```
 
 1.  Click the Flash Firmware button (bottom right) and check the progress bar.
 
-    -   **check** The progress bar shows: `“Flashing…”` => `“Verifying…”` => `“Programming SUCCESSFUL”`
+    ```{admonition} Check
+    :class: seealso
+    
+    The progress bar shows: `“Flashing…”` => `“Verifying…”` => `“Programming SUCCESSFUL”`
+    ```
 
     ```{tip}
     In case the progress bar turns red, see the [Troubleshooting section below](fc_initialization_troubleshooting)
@@ -230,10 +250,11 @@ Now that the Flight Controller is in `bootloader mode` you can flash the correct
 3.  If successful, without needing to reconnect the cable, the Flight Controller should go back to the `Normal mode`.
 
     ```{admonition} **Check**
-    
-    * Verify the red blinking LED is back on
+    :class: seealso
 
-    * Click `“Connect”` and verify the firmware version is correct as detailed below
+    1. Verify the red blinking LED is back on
+
+    1. Click `“Connect”` and verify the firmware version is correct as detailed below
     ```
 
 To see the whole process for your version of the Flight Controller choose the correct tab below:
@@ -329,18 +350,20 @@ To do this:
 
     CLI tab
     ```
-1.  Paste all the text you previously copied using `CTRL + V` or `CMD + V` in the text field at the bottom (the one with the text `Write your command here. Press Tab for AutoComplete`).
+1.  Paste all the text you previously copied using `CTRL + V` or `CMD + V` in the text field at the bottom (the one with the text  `Write your command here. Press Tab for AutoComplete`).
     ```{figure} ../_images/software-initialization/fc_cli_interface.png
 
     CLI interface
     ```
-1.  Press `Enter` on your keyboard to execute the commands and wait for the shell to finish (it should take about 30s)
+1.  Press `Enter` on your keyboard to execute the commands and wait for the shell to finish (it should take about 30 seconds)
 
 1.  Save the configuration by executing the command `save` in the CLI.
 
 The Flight Controller will now reboot and reconnect.
 
 ```{admonition} Check
+:class: seealso
+
 In the `setup` tab check that the drone now results facing up when the side of the Flight Controller with the chips faces downward.
 ```
 
