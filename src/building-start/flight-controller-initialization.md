@@ -308,7 +308,7 @@ On the top left of the Cleanflight Configurator interface, one could check for t
 Top left of Cleanflight Configurator, check Cleanflight Configurator version and Flight Controller firmware version here
 ```
 
-### Restoring the correct settings
+## Restoring the correct settings
 We will restore the correct settings for the Flight Controller that reflect the setup we have on Duckiedrones (i.e. Flight Controller upside down, ESCs communication protocol, etc.)
 
 The settings for the Flight Controller can be saved and restored through the CLI interface of Cleanflight, which is akin to a shell used to interact with the firmware.
@@ -317,7 +317,7 @@ We have created a file with the required setup for you, so you will only need to
 
 To do this:
 
-1.  Download this [TODO: Add link] `.txt` configuration file.
+1.  Download [this](https://assets.duckietown.com/robot/duckiedrone/cleanflight_cli_dump.txt) `.txt` configuration file.
 
 1.  Open it in the notepad app of your base station
 
