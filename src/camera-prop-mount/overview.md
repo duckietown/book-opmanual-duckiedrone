@@ -4,33 +4,48 @@
 
 In this section of the build, you will attach the camera, and finalize the drone assembly.
 
-```{admonition} What you'll need
+````{admonition} What you will need
+```{list-table}
+:header-rows: 1
+:name: materials-tof-sensor
 
-Part : Quantity
+*   - Part
+    - Quantity
 
-Raspberry Pi Camera : 1
+*   - Raspberry Pi Camera 
+    - 1
 
-Long Plastic Standoffs : 4
+*   - Long Plastic Standoffs 
+    - 4
 
-CW Propellers : 2
+*   - CW Propellers 
+    - 2
 
-CCW Propellers : 2
+*   - CCW Propellers 
+    - 2
 
-Nylon M2.5 bolts : 8
+*   - Nylon M2.5 bolts 
+    - 8
 
-Nylon M3 bolts : 1
+*   - Nylon M3 bolts 
+    - 1
 
-Steel M2 bolts : 4
+*   - Steel M2 bolts 
+    - 4
 
-8mm Wrench : 1
+*   - 8mm Wrench 
+    - 1
 
-Zip Ties : 10+
+*   - Zip Ties 
+    - 10+
 
-Double sided tape : 1
+*   - Double sided tape
+    - 1
 
-Velcro strap : 1
-
+*   - Velcro strap
+    - 1
 ```
+````
 
 ## Hardware overview
 

@@ -8,6 +8,8 @@
 * Balena Etcher or similar program
 
 * A micro SD card (32GB, U3, Class 10), e.g., that from your Duckiebox 
+
+* A micro SD card reader, e.g., that from your Duckiebox
 ```
 
 ```{admonition} What you will get
@@ -26,10 +28,15 @@ In this section you will install the Duckiedrone software on the microSD card.
 **Download the [Duckiedrone DD21 system image](https://duckietown-public-storage.s3.amazonaws.com/brown/disk_image/dt-amelia-DD21-brown2022-sd-card-v11.zip) (~2.5 GB)**
 
 
-3. Connect the micro SD card to the base station. Use the micro SD to USB card reader if the  base station does not have a micro SD port.
+3. Connect the micro SD card to the base station. Use the micro SD to USB card reader if the base station does not have a micro SD port.
+  ```{figure} ../_images/components-official/microSD_reader.png
+  :width: 400px
+
+  Micro SD Card adapter
+  ```
 
 
-4. Open Etcher and select the downloaded drone image. Then select the micro SD card as the drive to flash. Finally, click the "Flash" button.
+4. Open Etcher and select the downloaded drone image. Then select the micro SD card as the drive to flash. Finally, click the `"Flash"` button.
 
 Watch this video to see how the process looks like.
 
