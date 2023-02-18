@@ -120,4 +120,21 @@ Zip Ties will help you tie up your Duckiedrone together and manage its cabling (
 Zip Ties (Large on top, small on bottom)
 ```
 
-% REMOVED: build progress
+### Propeller Guards
+
+The propeller guards protect both the propellers and the environment where the drone flies.
+
+```{figure} ../_images/components-official/prop_guard.jpg
+:width: 400px
+Propeller guard
+```
+
+### Standoffs feet
+
+These white plastic standoffs are mounted beneath the motors' attachment point on the frame and provide stable ground contact points for the drone.
+
+```{figure} ../_images/components-official/feet_standoffs.png
+:width: 400px
+
+Drone feet standoffs
+```
