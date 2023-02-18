@@ -68,9 +68,9 @@ Examples:
 
 * ✅ argo
 * ✅ mydrone01
-* ❌mydrone_01
-* ❌My Drone
-* ❌Argo
+* ❌ mydrone_01
+* ❌ My Drone
+* ❌ Argo
 ```
 
 ```{important}
@@ -84,11 +84,22 @@ If you are in an environment where multiple drones are operating at the same tim
 
     * If the flashing is successful, you will see that it has one partition named `boot`, with many files inside and overlays folder. **Do not manually alter these files**.
 
+      ```{figure} ../_images/rpi-sw-initialization/boot_partition.png
+      :width: 200px
+
+      `boot` partition **do not alter!**
+      ```
+
 1. There will be a second partition called `config`. Open this partition. You will find two files inside:
 
     - `hostname`
 
     - `wpa_supplicant.conf`
+
+    ```{figure} ../_images/rpi-sw-initialization/config_partition.png
+
+    `config` partition content
+    ```
 
 1. Open the `hostname` file with any text editor program (e.g., Notepad on Windows) and replace the default robot name, `amelia`, with one of your choosing.  
 
@@ -100,29 +111,29 @@ A wrong hostname will mean having to reflash the SD card and start from step 1.
 
 1. Save the file before closing it.
 
-1. Open the `wpa_supplicant.conf` with a text editor of your choice and either edit the default connection settings or duplicate them to add a new network. These parameters will be used only when booting the Duckiedrone in client-network mode, as detailed in .
+1. Open the `wpa_supplicant.conf` with a text editor of your choice and either edit the default connection settings or duplicate them to add a new network. These parameters will be used only when booting the Duckiedrone in client-network mode.
 
-```sh
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-country=US
+    ```sh
+    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+    update_config=1
+    country=US
 
-# NOTE: the following block is a template, use it to define connection to custom wifi networks
-network={
-  id_str="network_1"
-  ssid="duckietown"
-  psk="quackquack"
-  key_mgmt=WPA-PSK
-}
-```
+    # NOTE: the following block is a template, use it to define connection to custom wifi networks
+    network={
+      id_str="network_1"
+      ssid="duckietown"
+      psk="quackquack"
+      key_mgmt=WPA-PSK
+    }
+    ```
 
-* `country`: change it if you are not in the US (e.g., CH for Switzerland, CA for Canada; [full list](https://www.arubanetworks.com/techdocs/InstantWenger_Mobile/Advanced/Content/Instant%20User%20Guide%20-%20volumes/Country_Codes_List.htm) of country codes) 
+    * `country`: change it if you are not in the US (e.g., CH for Switzerland, CA for Canada; [full list](https://www.arubanetworks.com/techdocs/InstantWenger_Mobile/Advanced/Content/Instant%20User%20Guide%20-%20volumes/Country_Codes_List.htm) of country codes) 
 
-* `id_str`: an identifier for the network; change it if adding a new one;
+    * `id_str`: an identifier for the network; change it if adding a new one;
 
-* `SSID`: name of the Wi-Fi you want the Duckiedrone to connect to;
+    * `SSID`: name of the Wi-Fi you want the Duckiedrone to connect to;
 
-* `psk`: password for the above Wi-Fi;
+    * `psk`: password for the above Wi-Fi;
 
 You can add as many Wi-Fi settings as you want, e.g., for home, school, office, etc., by copying and pasting the first block. 
 
@@ -159,10 +170,12 @@ network={
 
 5. Eject your SD card safely; 
 
-```{warning}
+````{warning}
 Do not just unplug the SD crad from the base station
-```
 
+```{image} ../_images/rpi-sw-initialization/eject_sd.png
+```
+````
 
 
 
@@ -170,8 +183,10 @@ Do not just unplug the SD crad from the base station
 You are now ready for the first boot.
 
 ## Troubleshooting
-```{trouble}
+:::{trouble}
 I’m using a Mac and the Flashing step fails for lack of permissions.
 ---
 Go to your computer’s System Preferences > Security & Privacy > Files and Folders and enable access to “removable volumes”
-```
+![](../_images/rpi-sw-initialization/mac_troubleshooting.png)
+
+:::
