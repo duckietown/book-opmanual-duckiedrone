@@ -26,10 +26,16 @@ Cleanflight Configurator used to be a Chrome App, however Chrome Apps' support h
 Steps:
 
 1.  Download the correct version of Cleanflight Configurator v2.4.0 for your OS from [**this link**](https://github.com/cleanflight/cleanflight-configurator/releases/tag/CLFL_v2.4.0).
+    
+    ```{note} 
+    If you're using Ubuntu 22.04 the version above could not start.
+
+    If that's the case use Cleanflight Configurator v2.6.0 from [here](https://github.com/cleanflight/cleanflight-configurator/releases/tag/CLFL_v2.6.0)
+    ```
 
 1. Install Cleanflight Configurator on your system
 
-1. Start CFC on your base station. You should see the below interface.
+1. Start Cleanflight Configurator on your base station. You should see the below interface.
 
 ```{figure} ../_images/software-initialization/CFC_welcome_screen.png
 
@@ -38,12 +44,12 @@ Cleanflight Configurator (CFC) welcome screen
 
 ## Flashing the correct firmware
 
-### Updating the Flight Controller firmware (Flashing the FC)
+### Updating the Flight Controller firmware (Flashing the Flight Controller)
 
-FCs might have different versions of firmware (i.e., the software that runs on the FC’s micro-controller) out of the factory. Normally, this only needs to be done once initially. Follow this procedure to update your firmware.
+Flight Controllers might have different versions of firmware (i.e., the software that runs on the Flight Controller microcontroller) out of the factory. Normally, this only needs to be done once initially. Follow this procedure to update your firmware.
 
 ```{important}
-During flashing, do not press the `“Connect”` button in CFC. 
+During flashing, do not press the `“Connect”` button in Cleanflight Configurator. 
 ```
 
 Our current target firmware is: 
@@ -59,7 +65,7 @@ Regardless of the firmware version, if it is the first time setting up the Fligh
 
 Perform the following 2 steps with the Flight Controller **disconnected**.
 
-*   In the default Welcome page of CFC, in the left sidebar, please click on the `Firmware Flasher` tab 
+*   In the default Welcome page of Cleanflight Configurator, in the left sidebar, please click on the `Firmware Flasher` tab 
     ```{figure} ../_images/software-initialization/cleanflight_flasher.png
 
     `Firmware Flasher` tab in Cleanflight Configurator
@@ -208,7 +214,7 @@ To flash the firmware, we need the Flight Controller to be in `bootloader mode`.
 
 Now that the Flight Controller is in `bootloader mode` you can flash the correct firmware:
 
-1.  In the CFC Firmware Flasher tab, click the `Load Firmware [Local]` button (bottom right), and select the `.hex` file downloaded at the beginning of this section.
+1.  In the Cleanflight Configurator Firmware Flasher tab, click the `Load Firmware [Local]` button (bottom right), and select the `.hex` file downloaded at the beginning of this section.
 
     - **check** The progress bar should look like `“Loaded Local Firmware: (… bytes)”`
 
@@ -260,7 +266,7 @@ To see the whole process for your version of the Flight Controller choose the co
 1. Identify the `"Connect"` button in the top right corner (right now it will be green as the Flight Controller is not connected yet)
     ```{figure} ../_images/software-initialization/CFC_connect_button.png
 
-    `"Connect"` button in the top-right corner of CFC
+    `"Connect"` button in the top-right corner of Cleanflight Configurator
 
 1. Select the correct connection port
 
@@ -294,11 +300,11 @@ Please check below that you have the correct versions of both:
 
 ### Checking the firmware version
 
-On the top left of the CFC interface, one could check for the Firmware version. For example, in the figure below, the firmware version of the Flight Controller is `BTFL 3.3.3`.
+On the top left of the Cleanflight Configurator interface, one could check for the Firmware version. For example, in the figure below, the firmware version of the Flight Controller is `BTFL 3.3.3`.
 
 ```{figure} ../_images/software-initialization/cleanflight_firmware_version.png
 
-Top left of CFC, check CFC version and Flight Controller firmware version here
+Top left of Cleanflight Configurator, check Cleanflight Configurator version and Flight Controller firmware version here
 ```
 
 (fc_initialization_troubleshooting)=
@@ -321,6 +327,15 @@ It might happen when, on the Firmware Flasher tab, the Flash Firmware button is 
 ---
 It might happen during “Flashing…” or “Verifying…”. Click the `Flash Firmware` button and try again
 ```
+
+````{trouble}
+On Linux, Cleanflight Configurator doesn't connect to the Flight Controller and an error `Failed to open serial port` appears in the log 
+---
+This is a permission issue to access the serial port of the Flight Controller. The quickest solution is to run `sudo chmod 0777 /dev/tty*` while Cleanflight Configurator is open, where `/dev/tty* is the port you're using to connect to the Flight Controller.
+
+This has to be done each time the Flight Controller is reconnected to the base station.
+
+````
 
 ```{trouble}
 Other issues
