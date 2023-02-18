@@ -155,6 +155,7 @@ If you have the `OSD` version of the Flight Controller, you can use a piece of d
 USB board attached to the frame (`OSD` Flight Controller)
 ```
 
+Angle it so that the USB connector doesn't protrude much, otherwise you might encounter clearance issues with the propellers.
 ````
 
 ## Fix cables to the frame
