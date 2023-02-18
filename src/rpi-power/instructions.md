@@ -26,32 +26,6 @@ You can also tell by measuring the voltage across the battery's power and ground
 **Never leave a charging battery unattended, and always unplug the battery as soon as it is charged**.
 ```
 
-### Download the image and Image Flashing Software
-In this section you will install the Duckiedrone software on the microSD card.
-
-1. If you have not already, on a base station, download the image flashing tool [Etcher](https://www.balena.io/etcher/).
-
-
-2. If you have not already, on a base station, download the latest drone image.
-**Download the [Duckiedrone DD21 system image](https://duckietown-public-storage.s3.amazonaws.com/brown/disk_image/dt-amelia-DD21-brown2022-sd-card-v11.zip) (~2.5 GB)**
-
-
-3. Connect the micro SD card to the base station. Use the micro SD to USB card reader if the  base station does not have a micro SD port.
-
-
-4. Open Etcher and select the downloaded drone image. Then select the micro SD card as the drive to flash. Finally, click the "Flash" button.
-
-Watch this video to see how the process looks like.
-
-<div style="padding:61.68% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795166491?h=ad68dd5e48&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Screencast from 01-02-2023 170837"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-```{warning} **Double check that the "drive" is your micro SD card**.
-
-You may be prompted to enter the base station password to proceed. This is normal; flashing an SD card deletes everything that is on it, so Etcher is making sure this process is OK with you.
-```
-```{note} Flashing will take 10 - 15 min. In the meantime, you can move on to the next section.
-```
-
 ## Attach the Pin Header to the Pi Hat
 
 ### Identify the front and back
