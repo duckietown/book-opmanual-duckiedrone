@@ -342,7 +342,7 @@ To do this:
 
 1.  Open it in the notepad app of your base station
 
-1.  Copy all content of the file from the notepad by simply clicking on the text and using `CTRL + A` or `CMD + A`
+1.  Copy all content of the file from the notepad by simply clicking on the text and using <kbd>CTRL</kbd> + <kbd>A</kbd> or <kbd>CMD</kbd> + <kbd>A</kbd>
 
 1.  Go in the `CLI` tab of Cleanflight Configurator
     ```{figure} ../_images/software-initialization/fc_cli_tab.png
@@ -350,7 +350,7 @@ To do this:
 
     CLI tab
     ```
-1.  Paste all the text you previously copied using `CTRL + V` or `CMD + V` in the text field at the bottom (the one with the text  `Write your command here. Press Tab for AutoComplete`).
+1.  Paste all the text you previously copied using <kbd>CTRL</kbd> + <kbd>V</kbd> or <kbd>CMD</kbd> + <kbd>V</kbd> in the text field at the bottom (the one with the text  `Write your command here. Press Tab for AutoComplete`).
     ```{figure} ../_images/software-initialization/fc_cli_interface.png
 
     CLI interface
