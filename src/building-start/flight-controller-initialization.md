@@ -113,8 +113,9 @@ You will need to solder the pins to the microUSB board and connect it to the Fli
 
 1.  Solder the 90° pins to the microUSB board as shown
     ```{figure} ../_images/software-initialization/OSD_usb_board.jpg
+    :width: 300px
 
-    Pins soldered to the microUSB board [USE BETTER PIC]
+    Pins soldered to the microUSB board
     ```
 
 2.  Connect the 6 pins cable that came with the Flight Controller to the microUSB board according to the following table (there's one unused `GND` pin on the board). 
@@ -305,6 +306,42 @@ On the top left of the Cleanflight Configurator interface, one could check for t
 ```{figure} ../_images/software-initialization/cleanflight_firmware_version.png
 
 Top left of Cleanflight Configurator, check Cleanflight Configurator version and Flight Controller firmware version here
+```
+
+### Restoring the correct settings
+We will restore the correct settings for the Flight Controller that reflect the setup we have on Duckiedrones (i.e. Flight Controller upside down, ESCs communication protocol, etc.)
+
+The settings for the Flight Controller can be saved and restored through the CLI interface of Cleanflight, which is akin to a shell used to interact with the firmware.
+
+We have created a file with the required setup for you, so you will only need to restore it without having to tweak parameters through the Cleanflight Configurator.
+
+To do this:
+
+1.  Download this [TODO: Add link] `.txt` configuration file.
+
+1.  Open it in the notepad app of your base station
+
+1.  Copy all content of the file from the notepad by simply clicking on the text and using `CTRL + A` or `CMD + A`
+
+1.  Go in the `CLI` tab of Cleanflight Configurator
+    ```{figure} ../_images/software-initialization/fc_cli_tab.png
+    :width: 300px
+
+    CLI tab
+    ```
+1.  Paste all the text you previously copied using `CTRL + V` or `CMD + V` in the text field at the bottom (the one with the text `Write your command here. Press Tab for AutoComplete`).
+    ```{figure} ../_images/software-initialization/fc_cli_interface.png
+
+    CLI interface
+    ```
+1.  Press `Enter` on your keyboard to execute the commands and wait for the shell to finish (it should take about 30s)
+
+1.  Save the configuration by executing the command `save` in the CLI.
+
+The Flight Controller will now reboot and reconnect.
+
+```{admonition} Check
+In the `setup` tab check that the drone now results facing up when the side of the Flight Controller with the chips faces downward.
 ```
 
 (fc_initialization_troubleshooting)=
