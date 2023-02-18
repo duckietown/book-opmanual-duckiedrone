@@ -160,7 +160,7 @@ network={
 5. Eject your SD card safely; 
 
 ```{warning}
-do not just unplug the SD crad from the base station
+Do not just unplug the SD crad from the base station
 ```
 
 
@@ -171,7 +171,7 @@ You are now ready for the first boot.
 
 ## Troubleshooting
 ```{trouble}
-symptom I’m using a Mac and the Flashing step fails for lack of permissions.
+I’m using a Mac and the Flashing step fails for lack of permissions.
 ---
-resolution Go to your computer’s System Preferences > Security & Privacy > Files and Folders and enable access to “removable volumes”
+Go to your computer’s System Preferences > Security & Privacy > Files and Folders and enable access to “removable volumes”
 ```
