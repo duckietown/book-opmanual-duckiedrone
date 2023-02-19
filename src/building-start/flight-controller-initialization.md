@@ -26,12 +26,6 @@ Cleanflight Configurator used to be a Chrome App, however Chrome Apps' support h
 Steps:
 
 1.  Download the correct version of Cleanflight Configurator v2.4.0 for your OS from [**this link**](https://github.com/cleanflight/cleanflight-configurator/releases/tag/CLFL_v2.4.0).
-    
-    ```{note} 
-    If you're using Ubuntu 22.04 the version above could not open on your base station.
-
-    If that's the case use Cleanflight Configurator v2.6.0 from [here](https://github.com/cleanflight/cleanflight-configurator/releases/tag/CLFL_v2.6.0)
-    ```
 
 1. Install Cleanflight Configurator on your system
 
@@ -391,11 +385,22 @@ It might happen during “Flashing…” or “Verifying…”. Click the `Flash
 ````{trouble}
 On Linux, Cleanflight Configurator doesn't connect to the Flight Controller and an error `Failed to open serial port` appears in the log 
 ---
-This is a permission issue to access the serial port of the Flight Controller. The quickest solution is to run `sudo chmod 0777 /dev/tty*` while Cleanflight Configurator is open, where `/dev/tty* is the port you're using to connect to the Flight Controller.
+This is a permission issue to access the serial port of the Flight Controller. 
+First try to run `sudo usermod -a -G dialout <USERNAME> `, replacing <USERNAME> with your base station username; this will add your user to the group that has access to the serial ports. **Reboot** for the change to take effect.
 
-This has to be done each time the Flight Controller is reconnected to the base station.
+If this doesn't work, the quickest solution is to run `sudo chmod 0777 /dev/tty*` while Cleanflight Configurator is open, where `/dev/tty* is the port you're using to connect to the Flight Controller.
+
+This second procedure has to be done each time the Flight Controller is reconnected to the base station.
 
 ````
+
+
+```{trouble}
+   
+I'm using Ubuntu 22.04 and Cleanflight Configurator doesn't open or install!
+---
+If that's the case use Cleanflight Configurator v2.6.0 from [here](https://github.com/cleanflight/cleanflight-configurator/releases/tag/CLFL_v2.6.0)
+```
 
 ```{trouble}
 Other issues
