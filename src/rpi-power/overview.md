@@ -73,6 +73,21 @@ Taking the proper precautions when using, storing, or charging is very important
 1.  Unplug the battery once it is fully charged.
 ```
 
+### Battery charger and charging adapter
+The battery charger and charging adapter allow you to draw power from an outlet to recharge the LiPo battery of your Duckiedrone. The blue charger has a three 7-segments displays showing the voltage on each cell and the overall voltage of the battery while it is charging.
+
+```{figure} ../_images/components-official/battery_charger.png
+:width: 400px
+
+Battery charger
+```
+
+```{figure} ../_images/components-official/charging_adapter.png
+:width: 400px
+
+Charging adapter
+```
+
 ### Power Distribution Board (PDB)
 ```{figure} ../_images/components-official/PDB.png
 Power Distribution Board (PDB)
