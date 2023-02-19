@@ -3,7 +3,7 @@
 
 During this step you will learn about how to use multimeters to do a continuity check and a voltage check.    
 
-A multimeter or a multitester, also known as a VOM (volt-ohm-milliammeter), is an electronic measuring instrument that combines several measurement functions in one unit. A typical multimeter can measure voltage, current, and resistance. 
+A multimeter or a multitester, also known as a *VOM* (volt-ohm-milliammeter), is an electronic measuring instrument that combines several measurement functions in one unit. A typical multimeter can measure voltage, current, and resistance. 
 
 ```{seealso}
 [This](https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/all) is a general tutorial for multimeters.
@@ -62,14 +62,16 @@ Performing a continuity check is a safe way to debug if a circuit has an undesir
 ```{admonition} General Continuity Check Strategy
 :class: tip
 
-* Check every two positive (+) terminals to make sure every pair of these terminals is continuous.
+* Check every two positive (`+`) terminals to make sure every pair of these terminals is continuous.
 
-* Check every two negative (-) terminals to make sure every pair of these terminals is continuous.
+* Check every two negative (`-`) terminals to make sure every pair of these terminals is continuous.
 
-* Check every positive terminal (+) to make sure it is **not continuous** with any negative terminal (-).  
+* Check every positive terminal (`+`) to make sure it is **not continuous** with any negative terminal ('-').  
 ```
 
+```{seealso}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5G622WDZaHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+```
 
 (dc_voltage_check)=
 ## DC Voltage Check
@@ -83,11 +85,11 @@ Performing a continuity check is a safe way to debug if a circuit has an undesir
     ```
 
 2. **Performing the Voltage Check**  
-    * Place the positive (i.e. red) lead on a positive (+) terminal, and the negative (i.e. black) lead on the negative (-) terminal.  
+    * Place the positive (i.e. red) lead on a positive (`+`) terminal, and the negative (i.e. black) lead on the negative (`-`) terminal.  
     * See the screen for a voltage measurement.   
 
 ```{note}
-Reversing the leads (i.e. red on - and black on +) won't do any harm; it will simply give a negative reading of the same magnitude.
+Reversing the leads (i.e. red on `-` and black on `+`) won't do any harm; it will simply give a negative reading of the same magnitude.
 ```
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TdUK6RPdIrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -117,11 +119,12 @@ Reversing the leads (i.e. red on - and black on +) won't do any harm; it will si
     * We can get a reading from the screen now.
 
     ```{tip}
-    Reversing the leads won't do any harm; it just gives us a negative reading.  
+    Reversing the leads won't do any harm: it just gives us a negative reading.  
     ```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nW13vjQjS5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ```{seealso}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nW13vjQjS5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 [This article](https://www.fluke.com/en-us/learn/best-practices/test-tools-basics/digital-multimeters/how-to-measure-ac-voltage-with-a-digital-multimeter) contains more detailed information about AC voltage test.    
 ```
