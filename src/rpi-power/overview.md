@@ -74,7 +74,7 @@ Taking the proper precautions when using, storing, or charging is very important
 ```
 
 ### Battery charger and charging adapter
-The battery charger and charging adapter allow you to draw power from an outlet to recharge the LiPo battery of your Duckiedrone. The blue charger has a three 7-segments displays showing the voltage on each cell and the overall voltage of the battery while it is charging.
+The battery charger and charging adapter allow you to draw power from an outlet to recharge the LiPo battery of your Duckiedrone. The blue charger has a three 7-segments displays cycling through showing the voltage on each cell and the overall voltage of the battery while it is charging.
 
 ```{figure} ../_images/components-official/battery_charger.png
 :width: 400px

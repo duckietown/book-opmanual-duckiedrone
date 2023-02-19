@@ -15,40 +15,44 @@ Start charging your drone battery so it is ready when you need it. To charge the
 Battery connected to the charger (the display will show different codes)
 ```
 
-```{warning} **Never leave the battery charging unattended**.
+The battery takes about 2 hours to charge.  When charging, the battery flashes between the voltage on each cell and `"ALL"`, the voltage on all cells together.  
 
-The battery takes about 2 hours to charge.  When charging, the battery flashes between the voltage on each cell and "ALL", the voltage on all cells together.  
+```{warning}
 
-**The battery is fully charged when "ALL" is 12.5 volts**.
+The battery is fully charged when `"ALL"` is 12.5 volts.
+```
 
 You can also tell by measuring the voltage across the battery's power and ground with a multimeter.  When the battery is plugged into a charger and the charger is not plugged into a wall, it uses power from the battery to display the voltage on the battery.  Over time this will drain the battery.  If a battery's voltage gets too low, the battery can then no longer be charged.  
 
-**Never leave a charging battery unattended, and always unplug the battery as soon as it is charged**.
+```{warning}
+Never leave a charging battery unattended, and always unplug the battery as soon as it is charged.
 ```
 
-## Attach the Pin Header to the Pi Hat
+## Attach the pin Header to the Raspberry Pi Hat
 
 ### Identify the front and back
 
-Identify the side of the Pi Hat that has writing on it - this side is the front, and the side without writing is the back. 
-```{tip} take note of where the slot in the Pi Hat is to help with matching the orientation in the following instructions.
+Identify the side of the Raspberry Pi Hat that has writing on it - this side is the front, and the side without writing is the back.
+
+```{tip} 
+Take note of where the slot in the Raspberry Pi Hat is to help with matching the orientation in the following instructions.
 ```
 
 ```{figure} ../_images/rpi-power/pi_hat_front.jpg
-Pi Hat front
+Raspberry Pi Hat front
 ```
 
 
 ```{figure} ../_images/rpi-power/pi_hat_back.jpg
-Pi Hat back
+Raspberry Pi Hat back
 ```
 
 ### 1 - Insert the Pin Header
 
-Insert the Pin Header into the back of the Pi Hat as shown in the image (the black plastic side will be on the side without any writing).
+Insert the Pin Header into the back of the Raspberry Pi Hat as shown in the image (the black plastic side will be on the side without any writing).
 
 ```{figure} ../_images/rpi-power/pi_hat_header.jpg
-Pin Header Inserted into Back of Pi Hat
+Pin header inserted into the back of Raspberry Pi Hat
 ```
 
 ### 2 - Solder the Pin Header
@@ -85,11 +89,12 @@ It's very easy to add too much solder and create a solder bridge between adjacen
 If you have a solder bridge, try the technique shown in [this video](https://www.youtube.com/watch?v=gJPLs7J4oCk). If this does not work, you can use a desoldering wick or a solder sucker to remove the excess solder.
 %```
 
-```{admonition} Check ✅
+```{admonition} Check
+:class: seealso
 
-Sometime too much heat when soldering the pin header can mess up the Pi Hat connections. To make sure the connections are still good, do a **connectivity check** on the Pi Hat. Verify there is:
+Sometime too much heat when soldering the pin header can mess up the Raspberry Pi Hat connections. To make sure the connections are still good, do a **connectivity check** on the Raspberry Pi Hat. Verify there is:
 
-- A short between the hole labelled SDA on the Pi Hat and the pin at row 2 column 1 of the pin header that you soldered.
+- A short between the hole labelled `SDA` on the Raspberry Pi Hat and the pin at row 2 column 1 of the pin header that you soldered.
 
     ```{figure} ../_images/rpi-power/check-sda.png
     :width: 200px
@@ -97,7 +102,7 @@ Sometime too much heat when soldering the pin header can mess up the Pi Hat conn
 
     ```
 
-- A short between the hole labelled SCL on the Pi Hat and the pin at row 3 column 1 of the pin header that you soldered.
+- A short between the hole labelled `SCL` on the Raspberry Pi Hat and the pin at row 3 column 1 of the pin header that you soldered.
 
     ```{figure} ../_images/rpi-power/check-scl.png
     :width: 200px
@@ -111,10 +116,10 @@ Use the multimeter to check for connections:
 ```{image} ../_images/rpi-power/sda_check_hat.jpg
 ```
 
-## Attach the UBEC to the Pi Hat
+## Attach the UBEC to the Raspberry Pi Hat
 
 The UBEC is a battery eliminator circuit that lowers the voltage from the battery from 12V (used by the motors) to 5V (used by the Pi).  We will power the Pi by connecting it to the battery via the UBEC. Within your kit you are provided with a few 90 degrees header pins. 
-You will need to solder one of them (with two pins) into the 5v and GND ports as shown.
+You will need to solder one of them (with two pins) into the `+5V` and `GND` rails as shown.
 
 ```{image} ../_images/rpi-power/ubec_header.jpg
 :width: 400px
@@ -123,10 +128,10 @@ You will need to solder one of them (with two pins) into the 5v and GND ports as
 
 The UBEC comes with a black connector which you can plug into your newly soldered pins.
 
-While you could directly solder the UBEC to the Pi Hat, using the pins provides a plug and play feature when needing to disassemble the drone. Also allowing the user to test motors while not having the Raspberry Pi drain power from them.
+While you could directly solder the UBEC to the Raspberry Pi Hat, using the pins provides a plug and play feature when needing to disassemble the drone. Also allowing the user to test motors while not having the Raspberry Pi drain power from them.
 
 ```{attention}
-Make sure to plug in the conector correctly with red wire on 5v and black wire respectively on GND. Leaving the last pin hole on the UBEC connector free.
+Make sure to plug in the conector correctly with red wire on `+5V` and black wire respectively on `GND`. Leaving the last pin hole on the UBEC connector free.
 
 ```{image} ../_images/rpi-power/ubec_connector.jpg
 :width: 400px
@@ -134,16 +139,16 @@ Make sure to plug in the conector correctly with red wire on 5v and black wire r
 ```
 
 ```{attention}
-Do a **connectivity check** on the Pi Hat.
+Do a **connectivity check** on the Raspberry Pi Hat.
 
 Verify there is
-no short between the +5V rail and the GND rail on the Pi Hat
+no short between the `+5V` rail and the `GND` rail on the Raspberry Pi Hat
 ```
 
 ## Attaching WiFi mode pins
 The Raspberry Pi has a unique way to understand how to switch between its two different Wi-Fi modes.
 
-You will be soldering another set of 90 degree pins in `port 5` and `port 6` of the PiHat as shown in the following image.
+You will be soldering another set of 90 degree pins in port `#5` and port `#6` of the Raspberry Pi Hat as shown in the following image.
 
 ```{figure} ../_images/rpi-power/wifi_pins.jpg
 :width: 300px
@@ -152,11 +157,13 @@ You will be soldering another set of 90 degree pins in `port 5` and `port 6` of 
 WiFi mode pins with jumper (not inserted in the pic)
 ```
 
-```{note}
-The second piece shown in the image is a jumper to short the pins. This piece is very small, be careful not to lose this. It is advised to insert it into the pins for safe keeping.
+```{attention}
+The second piece shown in the image is a jumper to short the pins. This piece is very small, be careful not to lose this. 
+
+It is advised to insert it into the pins for safe keeping.
 ```
 ```{warning}
-IT DOES matter if the jumper is plugged into both pins or just one when booting your Pi up.
+Remember that it does matter if the jumper is plugged into both pins or just one when booting your Pi up.
 ```
 
 ## Preparing the PDB
@@ -165,7 +172,7 @@ The PDB (Power distribution board) takes power from the battery and distributes 
 ### Tin the PDB
 Similar to exposed wires, the metal pads on a PDB need to be tinned. This will allow tinned wires to be joined to the pads - and therefore the PDB. 
 
-```{warning} It is **VERY IMPORTANT** to use a chisel tip soldering iron rather than the pointed tip you used for soldering header to the PiHat.
+```{warning} It is **very important** to use a chisel tip soldering iron rather than the pointed tip you used for soldering header to the Raspberry Pi Hat.
 
 Make sure to power down your soldering iron, cool it completely, and switch to a chisel tip.
 
@@ -174,23 +181,24 @@ This tip applies more heat quickly to the pad, so that the solder flows onto the
 
 **Tin every pad on the PDB**, including the GND 12V pads.
 
-```{note} Be careful not to aggressively push the soldering iron tip into the PDB, as too much force will cut the pads right off!
+```{warning} Be careful not to aggressively push the soldering iron tip into the PDB, as too much force will cut the pads right off.
 ```
 
 Here's a video of the process.
 
 <div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/796378281?h=628361c041&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="3DCE65E5-00EE-40AD-8586-732FF412CFC5-561-0000005DF510D4C0"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-```{note} For the remainder of the instructions, unless stated otherwise, **red** wires should be soldered **to positive (+)** pads and **black** wires should be soldered **to ground (-)** pads.
+```{note}
+For the remainder of the instructions, unless stated otherwise, **red** wires should be soldered **to positive (`+`)** pads and **black** wires should be soldered **to ground (`-`)** pads.
 ```
 
 ### Solder the XT60 Battery Connector to the PDB
-1. **Strip** the ends of the battery connector so that about 1cm of wire is exposed
+1. **Strip** the ends of the battery connector so that about 1 cm of wire is exposed
 
 
 1. **Tin** the exposed ends of the XT60 connector
 
-1. **Solder** the XT60 **red (+) wire** to the tinned positive (+) opening on the PDB, and solder the **black (-) wire** to the tinned ground (-) opening on the PDB.
+1. **Solder** the XT60 **red (`+`) wire** to the tinned positive (`+`) opening on the PDB, and solder the **black (`-`) wire** to the tinned ground (`-`) opening on the PDB.
 
 ```{tip} This wire is very thick and it will take a while for the solder to melt.
 
@@ -204,54 +212,60 @@ Make sure your soldering iron is turned all the way up, you're using a chisel ti
 Tinned PDB with XT60 soldered
 ```
 
-```{attention}
-Visually inspect the drone to **verify the following**:
-* All red wires connected to the PDB are connected to positive (+) pads
-
-
-* All black wires connected to the PDB are connected to negative (-) pads
-
-
-* The wires on the IN side - NOT the OUT side - of the BEC are soldered to the PDB
-
-```
-
 ### Solder the UBEC to the PDB
-Tin the ends of the red and black wires that are connected to the side of the UBEC labeled INPUT (they're pre-tinned, you should cut the cable and tin it again).
+Tin the ends of the red and black wires that are connected to the side of the UBEC labeled `INPUT` (they're pre-tinned, you should cut the cable and tin it again).
 
-Solder the BEC red (+) IN wire to the positive (+) pad on the PDB 12V pad, and solder the black (-) IN wire to the GND pad on the PDB, as shown in the image.
+Solder the BEC red (`+`) `INPUT` wire to the positive (`+`) pad on the PDB `12V` pad, and solder the black (`-`) `INPUT` wire to the `GND` pad on the PDB, as shown in the image.
 
 ```{figure} ../_images/rpi-power/soldered_UBEC.jpg
 
 UBEC soldered to PDB
 ```
-```{admonition} Check ✅
+
+```{admonition} Check
+:class: seealso
+
+Visually inspect the drone to **verify the following**:
+* All red wires connected to the PDB are connected to positive (`+`) pads
+
+
+* All black wires connected to the PDB are connected to negative (`-`) pads
+
+
+* The wires on the `INPUT` side - NOT the `OUTPUT` side - of the BEC are soldered to the PDB.
+
+```
+
+```{admonition} Check
+:class: seealso
 
 Do a connectivity check on the PDB.
 
 Verify there is:
 
-* a short between any positive (+) pad and any other positive (+) pad
+* a short between any positive (`+`) pad and any other positive (`+`) pad
 
 
-* a short between any negative (-) pad and any other negative (-) pad
+* a short between any negative (`-`) pad and any other negative (`-`) pad
 
 
-* **no short** between any positive (+) pad and any negative (-) pad
+* **no short** between any positive (`+`) pad and any negative (`-`) pad
 
 ```
 
-```{admonition}  Check ✅
+```{admonition} Check
+:class: seealso
+
 **ONLY** if the connectivity check passed, do a _DC voltage_ check on the PDB.
 
 Plug in a 12V battery and verify there is:
-* ~0V between any positive (+) pad and any other positive (+) pad
+* ~0V between any positive (`+`) pad and any other positive (`+`) pad
 
 
-* ~0V between any negative (-) pad and any other negative (-) pad
+* ~0V between any negative (`-`) pad and any other negative (`-`) pad
 
 
-* ~12V between any positive (+) pad and any negative (-) pad.
+* ~12V between any positive (`+`) pad and any negative (`-`) pad.
 ```
 
 
@@ -259,7 +273,9 @@ Plug in a 12V battery and verify there is:
 If the battery is charged to X volts instead of 12 volts (e.g. 10), then the multimeter will show X volts instead of 12 volts.
 ```
 
-```{admonition}  Check ✅
+```{admonition} Check
+:class: seealso
+
 **ONLY** if the DC voltage check passed, re-connect a battery to your drone and verify the following:
 
 * red LEDs on the PDB light up.
@@ -286,33 +302,35 @@ Bottom heatsink
 ```
 
 (attach_pi_hat)=
-## Attach the Pi Hat to the Pi
+## Attach the Raspberry Pi Hat to the Pi
 
-Align the 2x40 GPIO pins on the Raspberry Pi with the 2x40 pin header that you soldered to the Pi Hat as shown in the image.
+Align the 2x40 GPIO pins on the Raspberry Pi with the 2x40 pin header that you soldered to the Raspberry Pi Hat as shown in the image.
 
 ```{figure} ../_images/rpi-power/pi_hat_lined_up.jpg
 :width: 300px
 :align: center
 
-Pi Hat lined up with Raspberry Pi pins
+Raspberry Pi Hat lined up with Raspberry Pi pins
 ```
 
-Press the pin header down onto the GPIO pins to connect the Pi Hat
+Press the pin header down onto the GPIO pins to connect the Raspberry Pi Hat.
 
 ```{figure} ../_images/rpi-power/pi_hat_inserted.jpg
 :width: 300px
 :align: center
 
-Pi Hat inserted into Raspberry Pi pins
+Raspberry Pi Hat inserted into Raspberry Pi pins
 ```
 
 
 ## Final Steps
 
-```{admonition}  Check ✅
-On the Pi Hat, do another connectivity check to verify that there is **no short** between the +5V rail and the GND rail.
+```{admonition} Check
+:class: seealso
 
-**Verify that the Pi has power:**
+On the Raspberry Pi Hat, do another connectivity check to verify that there is **no short** between the `+5V` rail and the `GND` rail.
+
+**Verify that the Raspberry Pi has power:**
 
 1. Connect the battery
 
@@ -323,27 +341,28 @@ On the Pi Hat, do another connectivity check to verify that there is **no short*
 
 ### Insert the SD card into the Pi
 
-```{warning}
-**Disconnect the UBEC from the Raspberry Pi Hat**
+```{admonition} Disconnect the UBEC from the Raspberry Pi Hat
+:class: warning
 
 You will boot the Raspberry Pi once the build is complete, for now on until the first boot make sure the Raspberry Pi isn't powered.
 ```
 
-Insert your (previously flashed) SD card into the SD card slot on the bottom of the Pi.
+Insert your (previously flashed) micro SD card into the micro SD card slot on the bottom of the Pi.
 
-```{attention} The SD card **direction does matter** - the lettering on the SD card should be facing downward.
+```{attention} 
+The micro SD card **direction does matter** - the lettering on the SD card should be facing downward.
 ```
 
 ```{figure} ../_images/rpi-power/raspberry_inserting_sd_card.jpg
 :width: 300px
 :align: center
 
-SD Card being inserted into the Raspberry Pi
+Micro SD Card being inserted into the Raspberry Pi
 ```
 
 ```{figure} ../_images/rpi-power/raspberry_inserted_sd_card.jpg
 :width: 300px
 :align: center
 
-SD Card fully inserted in the Pi
+Micro SD Card fully inserted in the Raspberry Pi
 ```
