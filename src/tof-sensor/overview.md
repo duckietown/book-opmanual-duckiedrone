@@ -11,7 +11,7 @@ The simplest possible robot is one that has only actuators. However, a robot wit
 
 In this part of the build, you will be adding your first sensor to the drone: the time of flight (ToF) sensor. The ToF sensor is used to measure distance. We’ll provide more details about the hardware used in this portion of the build, and then get into the instructions.
 
-```{attention} You will need Build Part 1 completed before you can begin this build part.
+```{attention} You will need to have completed the Raspberry Pi and PDB section before you can begin this build section.
 ```
 ## Required Materials
 ````{admonition} What you will need
@@ -21,7 +21,9 @@ In this part of the build, you will be adding your first sensor to the drone: th
 
 * - Part
   - Quantity
-* - ToF Sensor & wire
+* - ToF Sensor
+  - 1
+* - ToF Sensor wire
   - 1
 * - Soldering tools
   - 1
@@ -39,7 +41,7 @@ ToF sensor
 
 ## ToF Sensor cable
 
-This cable allows you to connect the ToF sensor to the Raspberry Pi Hat. One end has a connector that is attached to the sensor, while the other has 4 wires that will be soldered to the breadboard.
+This cable allows you to connect the ToF sensor to the Raspberry Pi Hat. One end has a 4-pin connector that is attached to the sensor, while the other has 4 wires that will be soldered to the breadboard.
 
 ```{figure} ../_images/tof-sensor/tof-cable.jpg
 
@@ -47,7 +49,7 @@ ToF sensor cable
 ```
 
 ## Build progress
-After completing this section, you will have the Pi Hat connected to the Raspberry Pi, and the Hat will have soldered on:
+After completing this section, you will have the Raspberry Pi Hat connected to the Raspberry Pi, and the former will have soldered on:
 
 * A 2-pins connector to connect the UBEC, soldered to the `+5V` and `GND` rails.
 * A 2-pins connector to select the WiFi mode of the Raspberry
@@ -59,6 +61,6 @@ See the [following figure](pi_hat_progress):
 :width: 300px
 :name: pi_hat_progress
 
-Pi Hat progress
+Raspberry Pi Hat progress
 ```
-The ToF sensor receives power from the Pi Hat, and the sensor output signal is received by the Pi, using the SCL and SDA inputs (the sensor uses a protocol called I2C).
+The ToF sensor receives power from the Raspberry Pi Hat, and the sensor output signal is received by the Raspberry Pi, using the `SCL` and `SDA` inputs (the sensor uses a protocol called I2C).
