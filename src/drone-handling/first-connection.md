@@ -1,3 +1,5 @@
+# First connection
+
 You are now ready to connect to your Duckiedrone through the Duckietown Dashboard.
 
 #### What you will need:
