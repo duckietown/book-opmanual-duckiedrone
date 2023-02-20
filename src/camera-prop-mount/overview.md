@@ -15,7 +15,7 @@ In this section of the build, you will attach the camera, and finalize the drone
 *   - Raspberry Pi Camera 
     - 1
 
-*   - Long Plastic Standoffs 
+*   - Frame nylon standoffs 
     - 4
 
 *   - CW Propellers 
@@ -27,10 +27,10 @@ In this section of the build, you will attach the camera, and finalize the drone
 *   - Nylon M2.5 bolts 
     - 8
 
-*   - Nylon M3 bolts 
+*   - Nylon M3 bolts and nuts 
     - 1
 
-*   - Steel M2 bolts 
+*   - Steel M2 bolts and nuts 
     - 4
 
 *   - 8mm Wrench 
@@ -79,28 +79,32 @@ Before attaching the camera, make sure that:
 ### Propellers
 The propellers are what provide lift for the drone and allow it to fly. When the propeller spins, it creates a pressure difference between the air above and below it. The pressure below the propeller is greater than the pressure above, generating lift. Another way to think about how a drone prop works is that it pushes air down and the opposite reaction is the thrust lifting the drone up.
 
-The drone propeller is specified by three numbers. The propellers on your drone are 5 x 5 x 3. The first number, 5, is the size, and it indicates the length of the blades; measured from the center to the tip. The second number, 5, is the pitch, and it is a theoretical measurement of how far the propeller would travel through the air in one revolution. A larger pitch means more air is moved, so the propeller travels further, while a smaller pitch would move less air and therefore move less. The last number, 3, is the number of blades.
+The drone propeller is specified by three numbers. The propellers on your drone are `5 x 5 x 3`. 
+
+1.  The first number, `5`, is the size, and it indicates the length of the blades; measured from the center to the tip. 
+1.  The second number, `5`, is the pitch, and it is a theoretical measurement of how far the propeller would travel through the air in one revolution. A larger pitch means more air is moved, so the propeller travels further, while a smaller pitch would move less air and therefore move less. 
+1.  The last number, `3`, is the number of blades.
 
 ```{figure} ../_images/components-official/propellers.png
 
 Propellers
 ```
 
-### Frame standoffs
-These nylon standoffs are used to mount the top part of the Duckiedrone frame (the smaller rectangular piece of the frame) to the bottom part.
+### Frame nylon standoffs
+These long (30 mm) nylon standoffs are used to mount the top part of the Duckiedrone frame (the smaller rectangular piece of the frame) to the bottom part.
 
 ```{figure} ../_images/components-official/frame_standoffs.png
 
 Frame M2 nylon standoffs
 ```
 
-### Nylon M2.5 bolts
+### Nylon M2.5 bolts and nuts
 Used to mount the frame with the frame standoffs.
 
 ```{image} ../_images/components-official/M2_5_bolts_nuts_nylon.png
 ```
 
-### Nylon M3 bolt
+### Nylon M3 bolts and nuts
 You will use one nylon bolt and nut to attach the ToF sensor to the frame.
 
 ```{image} ../_images/components-official/nylon_M3_bolts_nuts.png
