@@ -10,7 +10,7 @@ Take the Flight Controller out of its plastic casing, exposing both sides of the
 
 Here you will need to solder the pins to connect your ESCs to your Flight Controller.
 
-There are subtle variations between the two Flight Controller versions, **choose in the tabs here your FC type**.
+There are subtle variations between the two Flight Controller versions, **choose in the tabs here your Flight Controller type**.
 
 ```{attention} Be sure that the direction you solder the pins into the board is exactly as shown in the images 
 ```
@@ -84,11 +84,11 @@ Now you will fix the Flight Controller to the Duckiedrone frame. The Flight Cont
 Identify the front and back of your Duckiedrone
 ```
 
-The axes of the FC, according to the measurements of linear and angular accelerations provided by the IMU, are as follows: 
+The axes of the Flight Controller, according to the measurements of linear and angular accelerations provided by the IMU, are as follows: 
 
 *    `ux` is positive in the direction identified by the arrow serigraph on the PCB;
 
-*    `uz` is orthogonal to the plane identified by the FC’s PCB, and positive "coming out of the screen";
+*    `uz` is orthogonal to the plane identified by the Flight Controller’s PCB, and positive "coming out of the screen";
 
 *    `uy` is such that (`ux`, `uy`, `uz`) is a right-handed reference system.
 
@@ -181,7 +181,7 @@ Make sure the white wire of the ESC signal wire pair is connected to the top pin
 
 ## Testing the Motors
 
-With the ESCs connected to the FC, your drone's motors can be tested. In this section, you will verify that the motors are spinning correctly.
+With the ESCs connected to the Flight Controller, your drone's motors can be tested. In this section, you will verify that the motors are spinning correctly.
 
 ```{danger}
 **Make sure no propellers are attached to your drone's motors!** 
@@ -189,13 +189,13 @@ With the ESCs connected to the FC, your drone's motors can be tested. In this se
 
 You will be spinning the motors and you don't want your drone to fly off your desk!
 
-### Launch Cleanflight
+### Launch Cleanflight Configurator
 
-1. Open up Cleanflight on your base station.
+1. Open up Cleanflight Configurator on your base station.
 
 ### Connect your drone
 
-1. Plug your drone's FC into your base station (via the USB to micro USB cable)
+1. Plug your drone's Flight Controller into your base station (via the USB to micro USB cable)
 
 1. Press `"Connect"` in the top right corner of Cleanflight. (You won't need to do this if `"autoconnect"` was selected)
 
@@ -203,7 +203,7 @@ You will be spinning the motors and you don't want your drone to fly off your de
 
 ### Navigate to Motors tab
 
-1. Go to the **Motors** tab in Cleanflight. 
+1. Go to the `Motors` tab in Cleanflight. 
 2. Read the safety notice and check the box that says `“I understand the risks, propellers are removed - Enable motor control”`.
 
 ### Test each motor
@@ -212,7 +212,7 @@ You will be spinning the motors and you don't want your drone to fly off your de
 
 1. Use the motors diagram to verify that:
 
-- the correct motor spins. If the correct motor does not spin, [reconnect the ESC wires to the FC](#build-part3-fc-connect-esc) in the correct order.
+- the correct motor spins. If the correct motor does not spin, [reconnect the ESC wires to the Flight Controller](#build-part3-fc-connect-esc) in the correct order.
 
 - the motor spins in the correct direction.  If the motor spins in the incorrect direction, take note and you will correct it later on.
 
@@ -246,13 +246,13 @@ Re-connect a power supply to your drone and check that the motors are now spinni
 
 ## Calibrate the ESCs
 
-By this point, your drone's FC should be able to spin up each of the 4 motors. This is possible because the FC is sending *PWM signals* to each of the 4 ESCs, which in turn sends electrical signals to each of the 4 motors.
+By this point, your drone's Flight Controller should be able to spin up each of the 4 motors. This is possible because the Flight Controller is sending *PWM signals* to each of the 4 ESCs, which in turn sends electrical signals to each of the 4 motors.
 
 A **PWM signal** is a signal that communicates at how much RPM an ESC should spin a motor. For example, the PWM signal "1000" might correspond to 2300 RPM.
 
-However, note that your drone has not 1, but 4 ESCs - which may not all have the same PWM-to-RPM understanding. For example, ESC 1 might think the PWM signal "1100" from the FC means 2300 RPM while ESC 2 might think the PWM signal "1000" means 2300 RPM.
+However, note that your drone has not 1, but 4 ESCs - which may not all have the same PWM-to-RPM understanding. For example, ESC 1 might think the PWM signal "1100" from the Flight Controller means 2300 RPM while ESC 2 might think the PWM signal "1000" means 2300 RPM.
 
-The solution to this problem is to *calibrate* the ESCs with the FC. In this context, **calibration** means getting all the ESCs to have the same PWM-to-RPM understanding from the FC. In this section, you will calibrate your ESCs.
+The solution to this problem is to *calibrate* the ESCs with the Flight Controller. In this context, **calibration** means getting all the ESCs to have the same PWM-to-RPM understanding from the Flight Controller. In this section, you will calibrate your ESCs.
 
 ```{admonition} Symptoms of no calibration
 :class: warning
@@ -265,7 +265,7 @@ The solution to this problem is to *calibrate* the ESCs with the FC. In this con
 
 ### Disconnect Power
 
-Unplug the battery from your drone.
+1. Unplug the battery from your drone.
 
 ```{danger}
 **Make sure no propellers are attached to your drone's motors!** 
@@ -275,7 +275,7 @@ Unplug the battery from your drone.
 
 1. On your base station, open cleanflight
 
-1. Connect the FC to a computer and click "Connect" in the top right of the screen
+1. Connect the Flight Controller to a computer and click "Connect" in the top right of the screen
 
 ### Navigate to Motors tab
 
@@ -284,7 +284,7 @@ Unplug the battery from your drone.
 
 ### Calibrate
 
-1. **With the battery disconnected**, drag the master slider up to `full`. All 4 motor sliders should automatically move up to full accordingly (e.g. 2000).
+1. **With the battery disconnected**, drag the master slider up to `full`. All 4 motor sliders should automatically move up to full accordingly (e.g. `2000`).
 
 1. Plug the battery into your drone. 
 

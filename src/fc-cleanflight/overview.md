@@ -4,7 +4,7 @@ In this phase of the build, you will configure and calibrate the Flight Controll
 
 ## Flight Controller
 ```{warning}
-Two different versions of flight controllers are shipped randomly. 
+Two different versions of Flight Controllers are shipped depending on supplies. 
 
 Make sure to check which version you have and **follow the appropriate instructions** by selecting the correct tab when needed.
 
@@ -12,7 +12,7 @@ Check [this section](identifying_fc) if you're not sure which version you have.
 ```
 
 ````{admonition} What you'll need
-```{list-table} Materials flight controller
+```{list-table}
 :header-rows:   1
 :name:  materials-fc
 
@@ -36,7 +36,7 @@ Check [this section](identifying_fc) if you're not sure which version you have.
 ````
 
 ### Flight Controller
-The flight controller (i.e. FC) contains multiple sensors: an Inertial Measurement Unit (IMU) and a gyroscope. The IMU measures linear accelerations and the gyroscope measures angular velocities. The flight controller also receives commands from the Raspberry Pi and then sends electrical signals to the ESCs which in turn change the speeds of the motors.
+The Flight Controller (i.e. Flight Controller) contains multiple sensors: an Inertial Measurement Unit (IMU) and a gyroscope. The IMU measures linear accelerations and the gyroscope measures angular velocities. The Flight Controller also receives commands from the Raspberry Pi and then sends electrical signals to the ESCs which in turn change the speeds of the motors.
 
 ```{attention}
 You should already have installed the correct version of Cleanflight on your Flight Controller.
@@ -48,7 +48,7 @@ If you haven't or you're not sure you can reflash the Flight Controller followin
 
 ```
 
-The flight controller bag will also contain header pins to be soldered and connectors. These differ between the two Flight Controller versions, use the tabs below to select yours.
+The Flight Controller bag will also contain header pins to be soldered and connectors. These differ between the two Flight Controller versions, use the tabs below to select yours.
 
 ::::{tab-set}
 
@@ -59,6 +59,7 @@ In the Flight Controller bag you'll also find:
 * 1 set of 8x3 straight pins
 * 1 set of 2x4 straight pins
 * 1 strip of straight pins
+* 1 strip of 90 degrees pins
 * Cabling
 
 ```{figure} ../_images/components-official/fc_OSD_content.jpg
@@ -101,13 +102,13 @@ This is okay, you should anyways get the needed pins to have the functionality r
 ### USB to Micro USB cable
 This cable is used for two purposes:
 
-1. To configure the flight controller settings in CleanFlight
+1. To configure the Flight Controller settings in CleanFlight
 
     ```{note}
-    this part only needs to be done once. 
+    This part only needs to be done once. 
     ```
  
-1. To send the flight commands from the Raspberry Pi to the FC. This connection allows our software on the Pi to control the motors. The Pi tells the FC what roll, pitch, yaw, and throttle values the drone should have, and then the flight controller speeds up or slows down the motors to achieve these values.
+1. To send the flight commands from the Raspberry Pi to the Flight Controller. This connection allows our software on the Raspberry Pi to control the motors. The Raspberry Pi tells the Flight Controller what roll, pitch, yaw, and throttle values the drone should have, and then the Flight Controller speeds up or slows down the motors to achieve these values.
 
 ```{figure} ../_images/components-official/micro_usb_cable.png
 
@@ -118,6 +119,7 @@ Micro USB cable
 These spacers are used to isolate the Flight Controller and dampen the vibrations from the ESCs, to improve accuracy in the accelerometer readings.
 
 ```{figure} ../_images/components-official/rubber_spacers.png
+:width: 400px
 
 M3 Rubber spacers
 ```
@@ -136,6 +138,7 @@ You can distinguish them by:
 The M3 bolts will fit firmly in the PDB mounting holes, whereas the M2 bolts would wobble and be loose.
 ```
 ```{figure} ../_images/components-official/nylon_M3_bolts_nuts.png
+:width: 500px
 
 Nylon M3 bolts (8) and nuts (11)
 ```
