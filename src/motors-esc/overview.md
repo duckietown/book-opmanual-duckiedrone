@@ -2,10 +2,11 @@
 # Overview
 ## Preface
 
-In this phase of the build, you’ll be adding the essential elements of every drone– the motors, ESCs, and the flight controller.
+In this phase of the build, you’ll be adding the essential elements of every drone– the motors, ESCs, and the Flight Controller.
 
 ## Required Materials
-```{list-table} Materials
+````{admonition} What you will need
+```{list-table}
 :header-rows: 1
 :name: materials-motors-esc
 
@@ -32,8 +33,7 @@ In this phase of the build, you’ll be adding the essential elements of every d
 * - Zip ties
   - ~ 8
 ```
-
-
+````
 
 ## Detailed Hardware Descriptions
 
@@ -52,7 +52,7 @@ BLDC motors
 ```
 
 ### Electronic Speed Controller (ESC)
-An Electronic Speed Controller (ESC) is used to regulate the speed of a motor according to a signal from the flight controller. A brushless motor would not be able to spin without an ESC, as they are responsible for changing the magnetic fields that generate a moment to make the motor spin.
+An Electronic Speed Controller (ESC) is used to regulate the speed of a motor according to a signal from the Flight Controller. A brushless motor would not be able to spin without an ESC, as they are responsible for changing the magnetic fields that generate a moment to make the motor spin.
 
 ```{figure} ../_images/components-official/ESC.png
 :width: 400px
@@ -63,7 +63,7 @@ Electronic Speed Controller
 
 ### Battery Monitoring Leads
 
-The battery monitor wires allow the flight controller to monitor the power traversing the PDB. This is useful because the flight controller can inform the Pi of the battery voltage. The benefit of this is that the software will prevent the battery from draining too low and permanently damaging it.
+The battery monitor wires allow the Flight Controller to monitor the power traversing the PDB. This is useful because the Flight Controller can inform the Raspberry Pi of the battery voltage. The benefit of this is that the software will prevent the battery from draining too low and permanently damaging it.
 
 You will be using the extra red and black wire that came with the kit to make the battery monitor leads.
 
@@ -90,14 +90,14 @@ The motors include short black M3 screws. You must not use these as they are too
 
 **left:** right screws to use
 
-**right:** wrong screws, DO NOT USE
+**right:** wrong screws, do not use
 ```
 
 ### Nylon M3 bolts and nuts
 These plastic bolts are used to attach the PDB to the frame of the Duckiedrone.
 
 ```{warning}
-You will fing both M3 and M2 bolts and nuts in your Duckiebox, pay attention to use the M3 in this section.
+You will find both M3 and M2 bolts and nuts in your Duckiebox, pay attention to use the M3 in this section.
 
 You can distinguish them by:
 1. comparing the two; the M3 bolts will be slightly thicker
