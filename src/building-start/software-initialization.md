@@ -1,3 +1,4 @@
+(sw-initialization)=
 # Software initialization
 
 ```{admonition} What you will need
