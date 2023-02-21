@@ -21,7 +21,7 @@ Calibrating the accelerometer provides the “zero” plane around which the Fli
     Make sure the drone is level on the flat surface.
     ```
         
-4.  Click on {bdg-succes}`Calibrate Accelerometer`
+4.  Click on {bdg-success-line}`Calibrate Accelerometer`
     
     ```{warning}
     Do not move the drone while the calibration is in progress or it will invalidate the calibration.
