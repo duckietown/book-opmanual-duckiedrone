@@ -45,8 +45,9 @@ parts:
             - file: camera-prop-mount/instructions
             - file: camera-prop-mount/checkpoint
         
-    - caption: PART_TWO
+    - caption: Operation
       maxdepth: 2
       numbered: False
       chapters:
+          - file: first-boot
           - file: calibrations
