@@ -50,3 +50,4 @@ parts:
       numbered: False
       chapters:
           - file: first-boot
+          - file: calibrations
