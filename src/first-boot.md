@@ -29,11 +29,11 @@ Make sure you have a wall outlet power adapter, e.g., a phone charger (5V, 2-3A)
 
 Do not power the Raspberry Pi just yet.
 
+## Getting started
+
 ```{warning}
 Do not interrupt the first boot procedure, e.g., by removing power to the Raspberry Pi. It will likely corrupt the SD card. A corrupted SD card will have to be flashed again.
 ```
-
-## Getting started
 
 1.  Make sure the Raspberry Pi is **not powered.**  
     
