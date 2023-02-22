@@ -2,14 +2,13 @@
 
 There is only one first time you can connect to your Duckiedrone. Savor the experience.
 
-```{admonition} What you will need
+```{needget}
 
 *   An assembled `DD21`
 
 *   A `DD21` initialized SD card, see [](sw-initialization)
-```
+---
 
-```{admonition} What you will get:
 
 *   A live `DD21`
 ```
