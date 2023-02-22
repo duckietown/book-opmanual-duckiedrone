@@ -26,7 +26,7 @@ Be sure to follow the following safety guidelines whenever soldering:
 
 - Wash your hands thoroughly with soap after soldering as the solder may contain lead
 ```
-(sec:battery_safety)=
+
 ## Battery
 
 Lithium Polymer (LiPo) batteries are very commonly used in RC devices, (as well as many cell phones!)  However, they must be handled properly.  Because they store energy, they can start a fire or explode if handled incorrectly. Please [read this article](https://www.getfpv.com/learn/fpv-essentials/drone-battery-safety/) to learn more about the proper care of your drone's LiPo battery.
@@ -53,11 +53,6 @@ The main sources of danger when flying are the spinning propellers. The propelle
 ```{tip}
 The black nuts (of the motors) should be on the clockwise motors/props, while the red nuts on the counter clockwise ones (so they don't unscrew while spinning).
 
-```{figure} ../_images/motors.jpg
-:name: figure-example-2
-:width: 200
-:align: center
+[ADD AN IMAGE OF THIS]
 
-RED: **counter clockwise** propellers\
-BLACK: **clockwise** propellers/motors
 ```
