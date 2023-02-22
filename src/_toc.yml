@@ -50,3 +50,7 @@ parts:
       numbered: False
       chapters:
           - file: drone-handling/first-connection
+          
+          - file: drone-handling/dashboard/index
+            sections:
+              - file: drone-handling/dashboard/robot/info
