@@ -45,9 +45,14 @@ parts:
             - file: camera-prop-mount/instructions
             - file: camera-prop-mount/checkpoint
         
-    - caption: Operation
+    - caption: Drone handling
       maxdepth: 2
       numbered: False
       chapters:
           - file: first-boot
           - file: calibrations
+          - file: drone-handling/first-connection
+          
+          - file: drone-handling/dashboard/index
+            sections:
+              - file: drone-handling/dashboard/robot/info
