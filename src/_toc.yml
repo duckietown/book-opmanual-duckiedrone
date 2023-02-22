@@ -49,6 +49,8 @@ parts:
       maxdepth: 2
       numbered: False
       chapters:
+          - file: first-boot
+          - file: calibrations
           - file: drone-handling/first-connection
           
           - file: drone-handling/dashboard/index
