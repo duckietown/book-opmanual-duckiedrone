@@ -1,3 +1,0 @@
-# TOF Sensor
-```{tableofcontents}
-```
