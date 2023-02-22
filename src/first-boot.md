@@ -99,7 +99,7 @@ Do not interrupt the first boot procedure, e.g., by removing power to the Raspbe
 
 5.  Power the Raspberry Pi
     
-    *  You will see a red and green light turning on on the Raspberry Pi. The green light shows computation usage. You should expect it to become solid green for several minutes.  
+    *  You will see a red and green light turning on the Raspberry Pi. The green light shows computation usage. You should expect it to become solid green for several minutes.  
         
         ```{seealso}
         Watch a short video of a busy Raspberry Pi booting up for the first time: [Raspberry Pi first boot](https://vimeo.com/728539828/6cbc396872)
