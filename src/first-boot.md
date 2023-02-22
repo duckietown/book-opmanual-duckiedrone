@@ -26,7 +26,9 @@ Do not start this procedure if you do not have the time to finish it!
 ```
 
 ```{attention}
-During this process the Duckiedrone will require a stable power source. Make sure you have a wall outlet power adapter, e.g., a phone charger (5V, 2-3A) or a fully charged Duckiebattery before starting the process. Do not power the Raspberry Pi just yet.
+During this process the Duckiedrone will require a stable power source. Make sure you have a wall outlet power adapter, e.g., a phone charger (5V, 2-3A) or a fully charged Duckiebattery before starting the process.
+
+Do not power the Raspberry Pi just yet.
 ```
 
 ```{warning}
