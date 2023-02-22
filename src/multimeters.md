@@ -128,3 +128,7 @@ Reversing the leads (i.e. red on `-` and black on `+`) won't do any harm; it wil
 
 [This article](https://www.fluke.com/en-us/learn/best-practices/test-tools-basics/digital-multimeters/how-to-measure-ac-voltage-with-a-digital-multimeter) contains more detailed information about AC voltage test.    
 ```
+
+```{seealso}
+For an introduction or review of circuit basics and Ohm’s Law, $V=IR$, check out this [SparkFun article](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law).
+```
