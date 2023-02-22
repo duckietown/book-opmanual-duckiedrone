@@ -21,15 +21,13 @@ The first time a newly flashed SD card is inserted in the Duckiedrone a special 
 The first boot procedure will take roughly 10-15 minutes, during which your Raspberry Pi might look unresponsive. It is crunching as fast as it can, do not worry.
 ```
 
-```{important}
-Do not start this procedure if you do not have the time to finish it!
-```
+During this process the Duckiedrone will require a stable power source.
 
 ```{attention}
-During this process the Duckiedrone will require a stable power source. Make sure you have a wall outlet power adapter, e.g., a phone charger (5V, 2-3A) or a fully charged Duckiebattery before starting the process.
+Make sure you have a wall outlet power adapter, e.g., a phone charger (5V, 2-3A) or a fully charged Duckiebattery before starting the process.
+```
 
 Do not power the Raspberry Pi just yet.
-```
 
 ```{warning}
 Do not interrupt the first boot procedure, e.g., by removing power to the Raspberry Pi. It will likely corrupt the SD card. A corrupted SD card will have to be flashed again.
