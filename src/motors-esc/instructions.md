@@ -38,7 +38,7 @@ If you solder them flat, then you will not be able to fit the PDB into the drone
 ```
 
 Solder each of your 4 ESCs to the PDB:
-1. Strip about 5 mm of wire from (+) red and (-) black cables of ESC
+1. Strip about 5 mm of wire from (`+`) red and (`-`) black cables of ESC
 1. Tin the wire
 1. Solder on the pad **at a 20 deg angle**.
 
@@ -59,7 +59,7 @@ Solder the 6-inch red and black wires to the PDB to the `VCC` and `GND` pads res
 Pads for soldering the red and black monitor battery leads
 ```
 
-These wires are soldered as to go across the PDB, toward where the flight controller will be mounted.
+These wires are soldered as to go out of the PDB.
 
 ```{figure} ../_images/motors-esc/soldered_battery_leads.jpg
 :width: 400px
@@ -73,14 +73,6 @@ This section will cover attaching the first set of items to the drone frame.
 
 ```{attention}
 Before beginning, verify the PDB is completely soldered with all necessary parts (as covered in previous sections).
-```
-
-```{note}
-The flight controller is not shown in these images.
-
-However, don’t be alarmed that your build is incorrect.
-
-For now, just move the flight controller as you are working so it is not in the way. In the next section, you will attach the flight controller to the drone frame.
 ```
 
 For reference, here are the motor directions with respect to the frame:

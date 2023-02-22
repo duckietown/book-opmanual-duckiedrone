@@ -2,7 +2,7 @@
 ```{admonition} Read carefully
 :class: danger
 
-Building your duckiedrone can be lots of fun, however you'll be handling some tools which can be dangerous if used improperly. Read carefully this page to know how to handle them correctly to minimize risk!
+Building your Duckiedrone can be lots of fun, however you'll be handling some tools which can be dangerous if used improperly. **Read carefully** this page to know how to handle them correctly to minimize risk!
 ```
 
 ## Soldering
@@ -29,7 +29,7 @@ Be sure to follow the following safety guidelines whenever soldering:
 (sec:battery_safety)=
 ## Battery
 
-Lithium Polymer (LiPo) batteries are very commonly used in RC devices, (as well as many cell phones!)  However, they must be handled properly.  Because they store energy, they can start a fire or explode if handled incorrectly. Please [read this article](https://www.getfpv.com/learn/fpv-essentials/drone-battery-safety/) to learn more about the proper care of your drone's LiPo battery.
+Lithium Polymer (LiPo) batteries are very commonly used in RC devices (as well as many cell phones!)  However, they must be handled properly.  Because they store energy, they can start a fire or explode if handled incorrectly. Please [read this article](https://www.getfpv.com/learn/fpv-essentials/drone-battery-safety/) to learn more about the proper care of your drone's LiPo battery.
 
 ```{caution}
 - **Never leave a LiPo battery charging unattended**.

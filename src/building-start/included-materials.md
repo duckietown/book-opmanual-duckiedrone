@@ -7,7 +7,7 @@
 The *yellow* box
 ```
 
-```{figure} ../_images/in-the-box.png
+```{figure} ../_images/components-official/All-DD21.png
 :name: in-the-box
 :align: left
 

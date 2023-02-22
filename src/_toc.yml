@@ -10,21 +10,23 @@ parts:
       chapters:
         - file: building-start/safety
         - file: building-start/prerequisites
+        - file: multimeters
         - file: building-start/included-materials
         - file: building-start/excluded-materials
         - file: building-start/software-initialization
         - file: building-start/flight-controller-initialization
+
         - file: rpi-power/index.md
           sections:
             - file: rpi-power/overview
             - file: rpi-power/instructions
-            - file: rpi-power/checkpoint
             
         - file: tof-sensor/index
           sections:
             - file: tof-sensor/overview
             - file: tof-sensor/instructions
             - file: tof-sensor/checkpoint
+
         - file: motors-esc/index
           sections:
             - file: motors-esc/overview
@@ -42,15 +44,10 @@ parts:
             - file: camera-prop-mount/overview
             - file: camera-prop-mount/instructions
             - file: camera-prop-mount/checkpoint
-            
-    - caption: PART_TWO
+        
+    - caption: Operation
       maxdepth: 2
       numbered: False
       chapters:
-          - file: part_2/chapter_b/index
-            sections:
-                - file: part_2/chapter_b/section_1
-          - file: part_2/chapter_c/index
-            sections:
-                - file: part_2/chapter_c/section_1
-                - file: part_2/chapter_c/section_2
+          - file: first-boot
+          - file: calibrations

@@ -2,10 +2,11 @@
 # Overview
 ## Preface
 
-In this phase of the build, you’ll be adding the essential elements of every drone– the motors, ESCs, and the flight controller.
+In this phase of the build, you’ll be adding the essential elements of every drone– the motors, ESCs, and the Flight Controller.
 
 ## Required Materials
-```{list-table} Materials
+````{admonition} What you will need
+```{list-table}
 :header-rows: 1
 :name: materials-motors-esc
 
@@ -29,9 +30,10 @@ In this phase of the build, you’ll be adding the essential elements of every d
   - 1
 * - Soldering Tools
   - 1
+* - Zip ties
+  - ~ 8
 ```
-
-
+````
 
 ## Detailed Hardware Descriptions
 
@@ -50,9 +52,9 @@ BLDC motors
 ```
 
 ### Electronic Speed Controller (ESC)
-An Electronic Speed Controller (ESC) is used to regulate the speed of a motor according to a signal from the flight controller. A brushless motor would not be able to spin without an ESC, as they are responsible for changing the magnetic fields that generate a moment to make the motor spin.
+An Electronic Speed Controller (ESC) is used to regulate the speed of a motor according to a signal from the Flight Controller. A brushless motor would not be able to spin without an ESC, as they are responsible for changing the magnetic fields that generate a moment to make the motor spin.
 
-```{figure} ../_images/motors-esc/ESC.png
+```{figure} ../_images/components-official/ESC.png
 :width: 400px
 :align: center
 
@@ -61,7 +63,7 @@ Electronic Speed Controller
 
 ### Battery Monitoring Leads
 
-The battery monitor wires allow the flight controller to monitor the power traversing the PDB. This is useful because the flight controller can inform the Pi of the battery voltage. The benefit of this is that the software will prevent the battery from draining too low and permanently damaging it.
+The battery monitor wires allow the Flight Controller to monitor the power traversing the PDB. This is useful because the Flight Controller can inform the Raspberry Pi of the battery voltage. The benefit of this is that the software will prevent the battery from draining too low and permanently damaging it.
 
 You will be using the extra red and black wire that came with the kit to make the battery monitor leads.
 
@@ -76,7 +78,7 @@ Battery monitoring leads
 
 These long gray screws are used to attach the motors to the frame together with the propellers guards (prop guards) and the plastic standoffs used as landing legs.
 
-```{image} ../_images/motors-esc/long_M3_screws.png
+```{image} ../_images/components-official/long_M3_screws.png
 ```
 
 ```{danger} 
@@ -88,14 +90,14 @@ The motors include short black M3 screws. You must not use these as they are too
 
 **left:** right screws to use
 
-**right:** wrong screws, DO NOT USE
+**right:** wrong screws, do not use
 ```
 
 ### Nylon M3 bolts and nuts
 These plastic bolts are used to attach the PDB to the frame of the Duckiedrone.
 
 ```{warning}
-You will fing both M3 and M2 bolts and nuts in your Duckiebox, pay attention to use the M3 in this section.
+You will find both M3 and M2 bolts and nuts in your Duckiebox, pay attention to use the M3 in this section.
 
 You can distinguish them by:
 1. comparing the two; the M3 bolts will be slightly thicker
@@ -104,9 +106,35 @@ You can distinguish them by:
 
 The M3 bolts will fit firmly in the PDB mounting holes, whereas the M2 bolts would wobble and be loose.
 ```
-```{figure} ../_images/motors-esc/nylon_M3_bolts_nuts.png
+```{figure} ../_images/components-official/nylon_M3_bolts_nuts.png
 
 Nylon M3 bolts (8) and nuts (11)
 ```
 
-% REMOVED: build progress
+### Zip Ties
+
+Zip Ties will help you tie up your Duckiedrone together and manage its cabling (Duckiecaptain wants its ship to be tidy!).
+
+```{figure} ../_images/components-official/zip_ties.png
+
+Zip Ties (Large on top, small on bottom)
+```
+
+### Propeller Guards
+
+The propeller guards protect both the propellers and the environment where the drone flies.
+
+```{figure} ../_images/components-official/prop_guard.jpg
+:width: 400px
+Propeller guard
+```
+
+### Standoffs feet
+
+These white plastic standoffs are mounted beneath the motors' attachment point on the frame and provide stable ground contact points for the drone.
+
+```{figure} ../_images/components-official/feet_standoffs.png
+:width: 400px
+
+Drone feet standoffs
+```

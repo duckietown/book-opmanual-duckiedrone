@@ -5,7 +5,7 @@
 
 * A base station computer
 * Flight Controller
-* USB to Micro USB cable
+* USB to micro USB cable
 ```
 
 
@@ -29,21 +29,21 @@ Steps:
 
 1. Install Cleanflight Configurator on your system
 
-1. Start CFC on your base station. You should see the below interface.
+1. Start Cleanflight Configurator on your base station. You should see the below interface.
 
-```{figure} ../_images/software-initialization/CFC_welcome_screen.png
+    ```{figure} ../_images/software-initialization/CFC_welcome_screen.png
 
-Cleanflight Configurator (CFC) welcome screen
-```
+    Cleanflight Configurator (CFC) `welcome screen`
+    ```
 
 ## Flashing the correct firmware
 
-### Updating the Flight Controller firmware (Flashing the FC)
+### Updating the Flight Controller firmware (Flashing the Flight Controller)
 
-FCs might have different versions of firmware (i.e., the software that runs on the FC’s micro-controller) out of the factory. Normally, this only needs to be done once initially. Follow this procedure to update your firmware.
+Flight Controllers might have different versions of firmware (i.e., the software that runs on the Flight Controller microcontroller) out of the factory. Normally, this only needs to be done once initially. Follow this procedure to update your firmware.
 
 ```{important}
-During flashing, do not press the `“Connect”` button in CFC. 
+During flashing, do not press the `“Connect”` button in Cleanflight Configurator. 
 ```
 
 Our current target firmware is: 
@@ -59,7 +59,7 @@ Regardless of the firmware version, if it is the first time setting up the Fligh
 
 Perform the following 2 steps with the Flight Controller **disconnected**.
 
-*   In the default Welcome page of CFC, in the left sidebar, please click on the `Firmware Flasher` tab 
+*   In the default Welcome page of Cleanflight Configurator, in the left sidebar, please click on the `Firmware Flasher` tab 
     ```{figure} ../_images/software-initialization/cleanflight_flasher.png
 
     `Firmware Flasher` tab in Cleanflight Configurator
@@ -83,7 +83,7 @@ If you have the `OSD` version of the Flight Controller you need to solder the mi
 ```
 
 ```{seealso}
-Identify your flight controller in [**this chapter**](fc_identification).
+Identify your flight controller in [**this chapter**](identifying_fc).
 ```
 
 
@@ -107,8 +107,9 @@ You will need to solder the pins to the microUSB board and connect it to the Fli
 
 1.  Solder the 90° pins to the microUSB board as shown
     ```{figure} ../_images/software-initialization/OSD_usb_board.jpg
+    :width: 300px
 
-    Pins soldered to the microUSB board [USE BETTER PIC]
+    Pins soldered to the microUSB board
     ```
 
 2.  Connect the 6 pins cable that came with the Flight Controller to the microUSB board according to the following table (there's one unused `GND` pin on the board). 
@@ -125,6 +126,15 @@ You will need to solder the pins to the microUSB board and connect it to the Fli
 
     USB board pinout connection
     ```
+    
+    ````{attention}
+    **Once you verify the connection** between the base station and the Flight Controller, it is recommended to hot glue the pins in place.
+
+    ```{image} ../_images/software-initialization/OSD_usb_hot_glued.png
+    :width: 300px
+    ```
+
+    ````
 
 3.  Connect the white connector of the 6 pins cable to the Flight Controller port shown here.
     ```{figure} ../_images/software-initialization/usb_connector_port_OSD.jpg
@@ -179,7 +189,10 @@ To flash the firmware, we need the Flight Controller to be in `bootloader mode`.
 
 1. Once connected, you can take the pin-shorting material/tool away
 
-1. **check** there is no red blinking LED. There should be no LED on now on the Flight Controller (there is a red LED on the USB board).
+    ```{admonition} Check
+    :class: seealso
+
+    there is no red blinking LED. There should be no LED on now on the Flight Controller (there is a red LED on the USB board).
 
 1. The Flight Controller is now in `bootloader mode`
 
@@ -208,13 +221,21 @@ To flash the firmware, we need the Flight Controller to be in `bootloader mode`.
 
 Now that the Flight Controller is in `bootloader mode` you can flash the correct firmware:
 
-1.  In the CFC Firmware Flasher tab, click the `Load Firmware [Local]` button (bottom right), and select the `.hex` file downloaded at the beginning of this section.
+1.  In the Cleanflight Configurator Firmware Flasher tab, click the `Load Firmware [Local]` button (bottom right), and select the `.hex` file downloaded at the beginning of this section.
 
-    - **check** The progress bar should look like `“Loaded Local Firmware: (… bytes)”`
+    ```{admonition} Check
+    :class: seealso
+
+    The progress bar should look like `“Loaded Local Firmware: (… bytes)”`
+    ```
 
 1.  Click the Flash Firmware button (bottom right) and check the progress bar.
 
-    -   **check** The progress bar shows: `“Flashing…”` => `“Verifying…”` => `“Programming SUCCESSFUL”`
+    ```{admonition} Check
+    :class: seealso
+    
+    The progress bar shows: `“Flashing…”` => `“Verifying…”` => `“Programming SUCCESSFUL”`
+    ```
 
     ```{tip}
     In case the progress bar turns red, see the [Troubleshooting section below](fc_initialization_troubleshooting)
@@ -223,10 +244,11 @@ Now that the Flight Controller is in `bootloader mode` you can flash the correct
 3.  If successful, without needing to reconnect the cable, the Flight Controller should go back to the `Normal mode`.
 
     ```{admonition} **Check**
-    
-    * Verify the red blinking LED is back on
+    :class: seealso
 
-    * Click `“Connect”` and verify the firmware version is correct as detailed below
+    1. Verify the red blinking LED is back on
+
+    1. Click `“Connect”` and verify the firmware version is correct as detailed below
     ```
 
 To see the whole process for your version of the Flight Controller choose the correct tab below:
@@ -260,7 +282,7 @@ To see the whole process for your version of the Flight Controller choose the co
 1. Identify the `"Connect"` button in the top right corner (right now it will be green as the Flight Controller is not connected yet)
     ```{figure} ../_images/software-initialization/CFC_connect_button.png
 
-    `"Connect"` button in the top-right corner of CFC
+    `"Connect"` button in the top-right corner of Cleanflight Configurator
 
 1. Select the correct connection port
 
@@ -294,11 +316,49 @@ Please check below that you have the correct versions of both:
 
 ### Checking the firmware version
 
-On the top left of the CFC interface, one could check for the Firmware version. For example, in the figure below, the firmware version of the Flight Controller is `BTFL 3.3.3`.
+On the top left of the Cleanflight Configurator interface, one could check for the Firmware version. For example, in the figure below, the firmware version of the Flight Controller is `BTFL 3.3.3`.
 
 ```{figure} ../_images/software-initialization/cleanflight_firmware_version.png
 
-Top left of CFC, check CFC version and Flight Controller firmware version here
+Top left of Cleanflight Configurator, check Cleanflight Configurator version and Flight Controller firmware version here
+```
+
+## Restoring the correct settings
+We will restore the correct settings for the Flight Controller that reflect the setup we have on Duckiedrones (i.e. Flight Controller upside down, ESCs communication protocol, etc.)
+
+The settings for the Flight Controller can be saved and restored through the CLI interface of Cleanflight, which is akin to a shell used to interact with the firmware.
+
+We have created a file with the required setup for you, so you will only need to restore it without having to tweak parameters through the Cleanflight Configurator.
+
+To do this:
+
+1.  Download [this](https://assets.duckietown.com/robot/duckiedrone/cleanflight_cli_dump.txt) `.txt` configuration file.
+
+1.  Open it in the notepad app of your base station
+
+1.  Copy all content of the file from the notepad by simply clicking on the text and using <kbd>CTRL</kbd> + <kbd>A</kbd> or <kbd>CMD</kbd> + <kbd>A</kbd>
+
+1.  Go in the `CLI` tab of Cleanflight Configurator
+    ```{figure} ../_images/software-initialization/fc_cli_tab.png
+    :width: 300px
+
+    CLI tab
+    ```
+1.  Paste all the text you previously copied using <kbd>CTRL</kbd> + <kbd>V</kbd> or <kbd>CMD</kbd> + <kbd>V</kbd> in the text field at the bottom (the one with the text  `Write your command here. Press Tab for AutoComplete`).
+    ```{figure} ../_images/software-initialization/fc_cli_interface.png
+
+    CLI interface
+    ```
+1.  Press `Enter` on your keyboard to execute the commands and wait for the shell to finish (it should take about 30 seconds)
+
+1.  Save the configuration by executing the command `save` in the CLI.
+
+The Flight Controller will now reboot and reconnect.
+
+```{admonition} Check
+:class: seealso
+
+In the `setup` tab check that the drone now results facing up when the side of the Flight Controller with the chips faces downward.
 ```
 
 (fc_initialization_troubleshooting)=
@@ -320,6 +380,26 @@ It might happen when, on the Firmware Flasher tab, the Flash Firmware button is 
 `"Flashing..."` started, but progress bar turns red with a `"Timeout"` error
 ---
 It might happen during “Flashing…” or “Verifying…”. Click the `Flash Firmware` button and try again
+```
+
+````{trouble}
+On Linux, Cleanflight Configurator doesn't connect to the Flight Controller and an error `Failed to open serial port` appears in the log 
+---
+This is a permission issue to access the serial port of the Flight Controller. 
+First try to run `sudo usermod -a -G dialout <USERNAME> `, replacing <USERNAME> with your base station username; this will add your user to the group that has access to the serial ports. **Reboot** for the change to take effect.
+
+If this doesn't work, the quickest solution is to run `sudo chmod 0777 /dev/tty*` while Cleanflight Configurator is open, where `/dev/tty* is the port you're using to connect to the Flight Controller.
+
+This second procedure has to be done each time the Flight Controller is reconnected to the base station.
+
+````
+
+
+```{trouble}
+   
+I'm using Ubuntu 22.04 and Cleanflight Configurator doesn't open or install!
+---
+If that's the case use Cleanflight Configurator v2.6.0 from [here](https://github.com/cleanflight/cleanflight-configurator/releases/tag/CLFL_v2.6.0)
 ```
 
 ```{trouble}
