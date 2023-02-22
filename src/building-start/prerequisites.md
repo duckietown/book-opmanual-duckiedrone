@@ -49,10 +49,6 @@ Below, there are brief resources on soldering, please review them before startin
 ### Resources
 For a quick overview of soldering, [watch this](https://www.youtube.com/watch?v=Qps9woUGkvI) beginner soldering tutorial YouTube video. For a more in-depth introduction, review [this article](https://www.circuitrework.com/guides/7-1-1.html).
 
-## Basics of electrical circuits
-
-We recommend that you get an introduction to electrical circuits  like the ones you will be creating before starting the build. For an introduction or review of circuit basics and Ohm’s Law, $V=IR$, check out this [SparkFun article](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law).
-
 (build-troubleshooting)=
 ## Troubleshooting
 
