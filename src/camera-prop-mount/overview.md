@@ -130,3 +130,24 @@ Useful to secure the battery to the frame of the drone.
 
 ```{image} ../_images/components-official/black_velcro.png
 ```
+
+### Battery Monitor
+
+```{note} 
+Using the Battery Monitor is optional.
+```
+
+The Battery Monitor is a safety device that connects to the battery and monitors its voltage, emitting a very loud sound when it goes below a certain threshold voltage.
+
+This warns you to disconnect the LiPo battery from the PDB to avoid draining it too low, thus damaging its cells.
+
+It also display the voltage of each cell and the cumulative voltage of the battery on the 7-segments displays on the front, just like the battery charger does.
+
+```{figure} ../_images/components-official/battery_monitor.png
+
+Battery Monitor
+```
+
+```{seealso}
+To learn how to setup the Battery Monitor watch [this short video](https://www.youtube.com/watch?time_continue=3&v=0cD8ybGYGqc&embeds_euri=https%3A%2F%2Fwww.google.com%2F&feature=emb_logo).
+```
