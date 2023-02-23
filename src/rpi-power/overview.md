@@ -51,7 +51,7 @@ LiPo Battery
 The Battery on your drone is a 1500mAh 3S 20C LiPo Battery. Let's go over what all that means.
 
 #### Capacity
-The unit milliAmp hour, or `mAh`, is a measure of how much charge a battery can hold. The higher this number is, the more charge the battery can hold; therefore, the battery will "last" longer and your drone will fly for a longer time without needing to be recharged.
+The unit milliampere-hour, or `mAh`, is a measure of how much charge a battery can hold. The higher this number is, the more charge the battery can hold; therefore, the battery will "last" longer and your drone will fly for a longer time without needing to be recharged.
 
 #### Structure
 A Lithium-ion polymer (LiPo) battery is made up of one or more LiPo cells. Each cell has a voltage of 3.7 V when it is discharged, and 4.2 V when it is charged. The cells in your battery are connected in series, so that the voltages add together to get a total of 11.1 V when discharged, and **12.6 V when charged**. There are three cells connected in series in your battery, so it is called a 3S battery.
