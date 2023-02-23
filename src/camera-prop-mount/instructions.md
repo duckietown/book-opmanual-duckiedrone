@@ -214,3 +214,34 @@ Screw bolts down tightly, but not so tight that you could not remove the propell
 
 Propeller attached to the motors
 ```
+
+## Battery Monitor
+In your Duckiebox there is one item that we haven't used so far: the Battery Monitor.
+
+```{note}
+This is optional and not required for flight.
+```
+
+To use this safety device you are going to have to connect it to the 4-pins connector of the LiPo battery, when it is not charging: 
+
+1.  Identify the row of pins at the bottom of the Battery Monitor.
+1.  Connect the 4-pins connector to the left-most pins, having the first pin connected to the black (`-`) wires of the connector.
+    ```{figure} ../_images/camera-mounting-hw/battery_monitor_connector.png
+
+    Battery connected to the Battery Monitor
+    ```
+1.  Secure the battery monitor to the chassis of the Duckiedrone.
+
+    ````{note}
+    Due to the length of the battery cable and the limited space on the frame there is not a great mounting spot.
+
+    You should pick one making sure that:
+
+    *   The Battery Monitor and battery wire do not interfere with the propellers.
+    *   The Battery Monitor will not move during flight.
+
+    ```{figure} ../_images/camera-mounting-hw/battery_monitor_location.png
+
+    A possible location to attach the Battery Monitor
+    ````
+
