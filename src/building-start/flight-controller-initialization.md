@@ -20,7 +20,7 @@ The Flight Controller (FC) implements several low-level behaviors, e.g., stabili
 Cleanflight Configurator is an app that allows the base station to connect directly to the Flight Controller and access its configuration interface.
 
 ```{note}
-Cleanflight Configurator used to be a Chrome App, however Chrome Apps' support has been dropped from Google so we'll use native apps for your OS.
+Cleanflight Configurator used to be a Chrome App, however Chrome Apps' support has been dropped from Google so you will use the native app for your OS.
 ```
 
 Steps:
@@ -48,7 +48,7 @@ During flashing, do not press the `“Connect”` button in Cleanflight Configur
 
 Our current target firmware is: 
 
-*   **BTFL v3.3.3**  (Download the `.hex` file below to your base station) [Download BTFL v3.3.3 here](https://github.com/betaflight/betaflight/releases/download/v3.3.3/betaflight_3.3.3_SPRACINGF3.hex)
+*   **BTFL v3.3.3** (Download the `.hex` file below to your base station) [Download BTFL v3.3.3 here](https://github.com/betaflight/betaflight/releases/download/v3.3.3/betaflight_3.3.3_SPRACINGF3.hex)
 
 
 ### Prepare for flashing the Flight Controller firmware
@@ -397,7 +397,7 @@ This second procedure has to be done each time the Flight Controller is reconnec
 
 ```{trouble}
    
-I'm using Ubuntu 22.04 and Cleanflight Configurator doesn't open or install!
+I'm using Ubuntu 22.04 and Cleanflight Configurator does not open nor install.
 ---
 If that's the case use Cleanflight Configurator v2.6.0 from [here](https://github.com/cleanflight/cleanflight-configurator/releases/tag/CLFL_v2.6.0)
 ```
