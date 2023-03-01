@@ -61,3 +61,4 @@ parts:
       numbered: False
       chapters:
           - file: flying/environment-setup
+          - file: flying/flying-your-drone
