@@ -37,6 +37,11 @@ To make it possible for you to develop your own code on the drone, you need to s
     ```{note}
     You will need to do this each time you reboot the drone.
     ```
+    ```{warning}
+    If you are running the access point (**AP**) configuration by shorting the pins on the Raspberry Pi Hat, **do not** stop the container `dt-wifi-access-point`.
+    
+    Doing so will make the AP stop and you will lose your connection, requiring to reboot.
+    ```
 
 1.  You also need to download the `raspicam_node` package to be installed later:
 
