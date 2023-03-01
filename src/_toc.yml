@@ -52,6 +52,7 @@ parts:
           - file: first-boot
           - file: calibrations
           - file: drone-handling/first-connection
+          - file: drone-handling/troubleshooting
           
           - file: drone-handling/dashboard/index
             sections:
@@ -61,3 +62,4 @@ parts:
       numbered: False
       chapters:
           - file: flying/environment-setup
+          - file: flying/flying-your-drone
