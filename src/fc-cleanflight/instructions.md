@@ -244,6 +244,7 @@ For each motor that is spinning in the **incorrect** direction:
 
 Re-connect a power supply to your drone and check that the motors are now spinning in the correct direction. If not, repeat the swapping process.
 
+(esc_calibration)=
 ## Calibrate the ESCs
 
 By this point, your drone's Flight Controller should be able to spin up each of the 4 motors. This is possible because the Flight Controller is sending *PWM signals* to each of the 4 ESCs, which in turn sends electrical signals to each of the 4 motors.
