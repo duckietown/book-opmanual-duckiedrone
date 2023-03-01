@@ -53,20 +53,20 @@ For a quick overview of soldering, [watch this](https://www.youtube.com/watch?v=
 ## Troubleshooting
 
 ```{trouble}
-I accidentally cut off a chunk of my wire while stripping!
+I accidentally cut off too much wire while stripping.
 ---
 Grab another wire of the same color, then strip and tin it on one end. Solder this new wire to your original wire. Cover the solder joint with either a heat shrink or electrical tape.
 ```
 
 ```{trouble}
-I cut off several strands of wire while stripping!
+I cut off several strands of wire while stripping.
 ---
 If you cut off just a couple of strands, then the wire is probably still safe to use. If you cut off a large percentage of strands, then you will need to get a new wire.
 ```
 
 ```{trouble}
 
-I put too much solder on my wire while tinning
+I put too much solder on my wire while tinning.
 ---
 The easiest way to remove excess solder is to use a solder sucker or copper wick. Alternatively, excess solder can be removed by carefully picking up the excess with a soldering iron, then cleaning the soldering iron with soldering wool. Repeat as needed
 ```
@@ -79,25 +79,25 @@ Clean the tip of your soldering iron with soldering wool. For future prevention,
 ```
 
 ```{trouble}
-The alligator clips of my helping hands are loose
+The alligator clips of my helping hands are loose.
 ---
 Remove the offending alligator clip from the helping hands, then use pliers to carefully pinch the end tighter. Re-insert once fit is tight
 ```
 
 ```{trouble}
-I burned some insulator onto my wire while tinning
+I burned some insulator onto my wire while tinning.
 ---
 A little bit of insulator burn is probably fine. If a lot has been burned, use a wire cutter to carefully cut off the burned parts. If that fails, you will need another wire
 ```
 
 ```{trouble}
-I can't tell if I tinned my wire properly
+I can't tell if I tinned my wire properly.
 ---
 Use a wire cutter to cut off the tip of the tinned wire. Visually inspect the core. If solder is not in the core or if the wire strands can be spread with your fingers, then the wire is not tinned properly
 ```
 
 ```{trouble}
-My solder keeps melting into a sphere shape instead of melting onto a wire
+My solder keeps melting into a sphere shape instead of melting onto a wire.
 ---
 This happens because the solder is not getting hot enough to fully melt. This could be a consequence of:
 
