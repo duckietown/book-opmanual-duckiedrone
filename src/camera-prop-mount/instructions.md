@@ -33,7 +33,7 @@ Battery secured to the frame using zip ties and velcro strap
 ```
 ## Attach the ToF sensor
 
-```{important}
+```{attention}
 There's a tiny piece of yellow tape on the black tab, make sure to remove it before attaching it to the drone
 ```
 
@@ -67,7 +67,7 @@ The Raspberry Pi Camera has tape on the back of the black lens assembly that has
 
 1. Attach the large nylon spacers through the small screw holes using four M2 nylon screws.
 
-    ```{important}
+    ```{attention}
     Make sure the upper frame is oriented in the correct direction, as shown in the figure.
 
     There is a larger rectangular opening in it that shall be oriented towards the back of the drone.
@@ -100,7 +100,7 @@ Now you are going to attach the Raspberry Pi to the top of the frame using zip t
 ## Connect the camera and attach the Raspberry Pi Hat
 You will now connect the camera to the Raspberry Pi and attach the Raspberry Pi Hat. 
 
-```{important}
+```{attention}
 The camera connector cable (called *FFC*) has to go through the opening of the Raspberry Pi Hat *before* this is attached to the Raspberry Raspberry Pi in order to be able to connect it to the Raspberry Pi.
 ```
 
@@ -190,7 +190,7 @@ Properly tied ESCs cables
 ## Attach propellers
 Attach the propellers to the drone so that it may fly: attach CW propellers to the CW motors, and CCW propellers to the CCW motors. 
 
-````{important}
+````{attention}
 The propellers have small arrows on them in the center to indicate which type they are.
 
 ```{figure} ../_images/camera-mounting-hw/propellers_arrows.jpg

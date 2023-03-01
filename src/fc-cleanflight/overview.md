@@ -145,7 +145,7 @@ Nylon M3 bolts (8) and nuts (11)
 
 (identifying_fc)=
 ## Identifying your Flight Controller board
-```{important}
+```{attention}
 There are currently 2 types of Flight Controller hardware.
 
 Identify here which type of Flight Controller you have and use the steps corresponding to your hardware.

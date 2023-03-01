@@ -2,7 +2,7 @@
 
 This section contains information about the most important skills used in the build. 
 
-```{important}
+```{warning}
 Whether you're new to soldering or not, we recommend reading through this page to review the basic techniques used in the build.
 ```
 
@@ -34,7 +34,7 @@ Soldering is the process of joining two metal components by melting an alloy; na
 
 Below, there are brief resources on soldering, please review them before starting the build.
 
-```{caution}
+```{danger}
 * Be careful holding wires and components with your bare hands while soldering, as **they will get very hot very quickly**. We recommend using long-nose pliers or helping hands whenever possible.
 
 * Don't touch the soldering iron tip (or any other metal piece) while the soldering iron is on, since doing so can cause burns. If you get burned, rinse the affected area with cold water immediately.

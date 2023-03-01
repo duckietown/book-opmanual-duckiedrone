@@ -17,7 +17,7 @@ Calibrating the accelerometer provides the “zero” plane around which the Fli
     
 3.  Place the drone on a (very) flat surface
     
-    ```{important}
+    ```{attention}
     Make sure the drone is level on the flat surface.
     ```
         

@@ -88,7 +88,7 @@ Do not interrupt the first boot procedure, e.g., by removing power to the Raspbe
 
 4.  If you haven't already, insert the initialized micro SD card inside the micro SD card slot of the Raspberry Pi.
     
-    ```{important}
+    ```{attention}
     **Do not** connect the SD card inside the adapter to a USB-A port of the Raspberry Pi. 
     ```
 
@@ -125,7 +125,7 @@ Do not interrupt the first boot procedure, e.g., by removing power to the Raspbe
     A detailed guide on how to change `wpa_supplicant.conf` can be found in [](sw-initialization).
     ```
 
-    ```{hint}    
+    ```{tip}    
     If you already know the format of the `wpa_supplicant.conf` file, you can add different networks by manually editing it in the SD card’s `config` partition. 
 
     To edit this file, you will need to:
