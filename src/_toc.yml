@@ -52,6 +52,7 @@ parts:
           - file: first-boot
           - file: calibrations
           - file: drone-handling/first-connection
+          - file: drone-handling/troubleshooting
           
           - file: drone-handling/dashboard/index
             sections:
