@@ -56,3 +56,8 @@ parts:
           - file: drone-handling/dashboard/index
             sections:
               - file: drone-handling/dashboard/robot/info
+    - caption: Arming the drone
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: flying/environment-setup
