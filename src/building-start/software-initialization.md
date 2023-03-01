@@ -81,7 +81,7 @@ Examples:
 * ❌ `Argo`
 ```
 
-```{important}
+```{attention}
 If you are in an environment where multiple drones are operating at the same time, make sure your `hostname` is unique!
 ```
 
@@ -111,7 +111,7 @@ If you are in an environment where multiple drones are operating at the same tim
 
 1. Open the `hostname` file with any text editor program (e.g., Notepad on Windows) and replace the default robot name, `amelia`, with one of your choosing.  
 
-    ```{caution}
+    ```{warning}
     Make sure to follow the naming guidelines in the `attention` box above. 
     ```
 

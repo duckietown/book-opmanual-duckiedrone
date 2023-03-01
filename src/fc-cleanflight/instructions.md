@@ -92,7 +92,7 @@ The axes of the Flight Controller, according to the measurements of linear and a
 
 *    `uy` is such that (`ux`, `uy`, `uz`) is a right-handed reference system.
 
-```{important}
+```{attention}
 
 Make sure to orient the arrow on the Flight Controller towards the front side of the Duckiedrone.
 ```{image} ../_images/fc-cleanflight/arrow_flight_controller.png
@@ -109,7 +109,7 @@ To fix the flight controller to the frame use the 4 white M3 Nylon screws:
 
 1.  Screw the nuts on the bolts from the bottom side.
 
-```{important}
+```{attention}
 The `OSD` version of the Flight Controller has the soldered battery leads header pins partially occluding the space for the nut to be screwed.
 
 The suggested solution is to simply file the nut about 1 mm to have enough clearance once screwed on the bolt.
@@ -150,7 +150,7 @@ Motors numbering
 
 ````
 
-```{caution}
+```{attention}
 There is a correct way to connect an ESC cable to the Flight Controller.
 
 See below on how to connect your Flight Controller version to the ESCs.

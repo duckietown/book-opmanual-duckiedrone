@@ -57,7 +57,7 @@ Pin header inserted into the back of Raspberry Pi Hat
 
 ### 2 - Solder the Pin Header
 
-```{important}
+```{attention}
 1. Review the [through-hole soldering technique](sec:soldering)
 
 1. Use the helping hands to assist as you solder the pin header
@@ -256,7 +256,7 @@ Verify there is:
 ```{admonition} Check
 :class: seealso
 
-**ONLY** if the connectivity check passed, do a _DC voltage_ check on the PDB.
+**only** if the connectivity check passed, do a _DC voltage_ check on the PDB.
 
 Plug in a 12V battery and verify there is:
 * ~0V between any positive (`+`) pad and any other positive (`+`) pad
@@ -276,7 +276,7 @@ If the battery is charged to X volts instead of 12 volts (e.g. 10), then the mul
 ```{admonition} Check
 :class: seealso
 
-**ONLY** if the DC voltage check passed, re-connect a battery to your drone and verify the following:
+**only** if the DC voltage check passed, re-connect a battery to your drone and verify the following:
 
 * red LEDs on the PDB light up.
 

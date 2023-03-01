@@ -10,7 +10,7 @@ Verify the following:
 * The wires on the `INPUT` side - **NOT** the `OUTPUT` side - of the BEC are soldered to the PDB
 * For the battery monitor lead: the red wire is connected to a positive (`+`) pad while the brown wire is connected to a negative (`-`) pad
 
-```{important}
+```{attention}
 Do a **connectivity check** on the PDB.
 
 Verify there is:
@@ -21,9 +21,9 @@ Verify there is:
 ```
 
 ### Do a *DC voltage check* on the PDB.
-```{important}
+```{warning}
 
-Perform the voltage check **ONLY** if the connectivity check passed. 
+Perform the voltage check **only** if the connectivity check passed. 
 ```
 Plug in a 12V battery and verify there is:
 
@@ -36,7 +36,7 @@ Plug in a 12V battery and verify there is:
 ```
 
 ## ESC check
-```{warning} **ONLY** if the DC voltage check passed (in the previous section), perform the ESC check.
+```{warning} **only** if the DC voltage check passed (in the previous section), perform the ESC check.
 ```
 Re-connect the battery to your drone.
 

@@ -42,7 +42,7 @@ Steps:
 
 Flight Controllers might have different versions of firmware (i.e., the software that runs on the Flight Controller microcontroller) out of the factory. Normally, this only needs to be done once initially. Follow this procedure to update your firmware.
 
-```{important}
+```{attention}
 During flashing, do not press the `“Connect”` button in Cleanflight Configurator. 
 ```
 
@@ -53,7 +53,7 @@ Our current target firmware is:
 
 ### Prepare for flashing the Flight Controller firmware
 
-```{important}
+```{attention}
 Regardless of the firmware version, if it is the first time setting up the Flight Controller, we recommend performing the below flashing procedure once anyways in order to start from a clean state.
 ```
 
@@ -273,7 +273,7 @@ To see the whole process for your version of the Flight Controller choose the co
 
 1.  Unplug the battery from your drone
 
-    ```{important}
+    ```{attention}
     Double-check the battery is unplugged
     ```
 

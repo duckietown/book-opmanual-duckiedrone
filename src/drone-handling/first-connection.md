@@ -52,7 +52,7 @@ For best performance, we recommend using Google Chrome as browser.
     
     *  Follow the "Setup Duckietown Account” instruction (Sec. 2.1, 2.2) [here](https://docs.duckietown.org/daffy/opmanual_duckiebot/out/dt_account.html)  
 
-        ````{hint}
+        ````{tip}
         The token will look something like this:  
         
         ```
