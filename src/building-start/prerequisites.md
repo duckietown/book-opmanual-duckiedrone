@@ -104,6 +104,5 @@ This happens because the solder is not getting hot enough to fully melt. This co
 1. the soldering iron tip has reached the end of its life
 2. the solder has expired
 3. the soldering iron station no longer works properly. 
-
-Systematic debugging is required to determine the cause, preferably in the order listed. When the culprit part is determined, replace with a new one
+4. you are not using rosin core solder, try painting some soldering flux on the wires or try different solder.
 ```
