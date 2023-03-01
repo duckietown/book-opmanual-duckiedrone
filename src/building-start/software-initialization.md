@@ -70,7 +70,7 @@ The `hostname` can only be changed at this stage in the process. **It cannot be 
 ```{attention}
 The `hostname` **must start with a lower case letter and can contain only lower case letters** (of the latin alphabet) **and numbers**:
 
-Using special charachters will brake things and require re-flashing
+Using special characters will break things and require re-flashing
 
 Examples:
 
