@@ -36,7 +36,7 @@ Lithium Polymer (LiPo) batteries are very commonly used in RC devices (as well a
 - If the battery or charger starts smoking when you plug in the battery to charge, unplug it immediately and get a new battery and charger (this happened once as a result of a faulty charger, but the battery was fine).
 - Never overcharge the battery
 - Always have a fire extinguisher nearby in case of fire. - If one is not readily available, drenching the battery and surrounding area with water will work.
-- Always inspect your battery for signs of damage such as punctures or if it is puffy. If there are any signs of damage to your battery, properly [dispose of it following this article](http://modelaviation.com/lipo4).
+- Always inspect your battery for signs of damage such as punctures or if it is puffy. If there are any signs of damage to your battery, properly [dispose of it following this article](https://modelaviation.com/lipo4).
 - It is recommended that you add the battery in the drone before screwing on the second level of the frame.
 ```
 
