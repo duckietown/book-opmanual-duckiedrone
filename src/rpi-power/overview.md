@@ -93,7 +93,7 @@ During development/testing you might need to keep your drone on for more time th
 
 A good solution for this scenario is to connect the Raspberry Pi to an external power supply, disconnecting the battery from the PDB.
 
-In this way you can activate all the nodes (including Flight Controller) but the motors won't get power to spin.
+In this way you can activate all the nodes (including Flight Controller) but the motors will not get power to spin.
 ```
 
 ### Power Distribution Board (PDB)
