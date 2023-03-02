@@ -29,14 +29,6 @@ An ESC (i.e. Electronic Speed Control) is a component which requires power. It t
 Schematic of motors-ESCs connections
 ```
 
-```{warning}
-Do not solder the wires flat against the PDB.
-
-**Solder the ESCs wires at ~20° angle**.
-
-If you solder them flat, then you will not be able to fit the PDB into the drone frame.
-```
-
 Solder each of your 4 ESCs to the PDB:
 1. Strip about 5 mm of wire from (`+`) red and (`-`) black cables of ESC
 1. Tin the wire
