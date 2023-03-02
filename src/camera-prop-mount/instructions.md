@@ -37,7 +37,7 @@ Battery secured to the frame using zip ties and velcro strap
 There's a tiny piece of yellow tape on the black tab, make sure to remove it before attaching it to the drone
 ```
 
-1. Place the ToF sensor on the left hole, making sure to align the small black plastic tab with it.
+1. Place the ToF sensor on the smaller left hole, making sure to align it so that the small black chip is looking down **through** the hole.
 
 1. Using one M3 nylon bolt and nut, screw the ToF sensor to the frame.
 
@@ -201,7 +201,7 @@ Arrows on the propellers indicating spin direction
 ````
 
 ```{tip}
-The bolts on the motors that spin CCW tighten when turned CW, and the bolts on the motors that spin CW tighten when turned CCW.
+The nuts for the motors that spin CCW tighten when turned CW, and the ones on the motors that spin CW tighten when turned CCW.
 ```
 
 Use the 8 mm wrench to tighten the bolts down so that the bottom of the propeller is flat on the top of the motor.
@@ -216,6 +216,7 @@ Propeller attached to the motors
 ```
 
 ## Battery Monitor
+
 In your Duckiebox there is one item that we haven't used so far: the Battery Monitor.
 
 ```{note}
@@ -230,6 +231,13 @@ To use this safety device you are going to have to connect it to the 4-pins conn
 
     Battery connected to the Battery Monitor
     ```
+
+    ```{warning}
+    The battery monitor makes a **very loud** sound when it powers up.
+    
+    You can cover the speaker holes on the opposide side from the row of pins to protect your ears.
+    ```
+
 1.  Secure the battery monitor to the chassis of the Duckiedrone.
 
     ````{note}
