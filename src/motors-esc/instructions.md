@@ -29,14 +29,6 @@ An ESC (i.e. Electronic Speed Control) is a component which requires power. It t
 Schematic of motors-ESCs connections
 ```
 
-```{warning}
-Do not solder the wires flat against the PDB.
-
-**Solder the ESCs wires at ~20° angle**.
-
-If you solder them flat, then you will not be able to fit the PDB into the drone frame.
-```
-
 Solder each of your 4 ESCs to the PDB:
 1. Strip about 5 mm of wire from (`+`) red and (`-`) black cables of ESC
 1. Tin the wire
@@ -106,7 +98,7 @@ PDB Secured in Drone Frame (front side up)
 
 ### Attach motors
 
-There are two clockwise and two counter-clockwise motors.  Unfortunately the motors themselves are not labeled, so only the color of the screw will let you tell the difference.  The clockwise motors have a nut threaded so that when the propellers spin clockwise, the nut will tend to tighten, and the counter-clockwise motors are the opposite.  
+There are two clockwise and two counter-clockwise motors.  Unfortunately the motors themselves are not labeled, so only the color of the nut will let you tell the difference.  The clockwise motors have a nut threaded so that when the propellers spin clockwise, the nut will tend to tighten, and the counter-clockwise motors are the opposite.  
 
 ```{attention}
 * The counter-clockwise motors have a red nut. 
@@ -115,7 +107,9 @@ There are two clockwise and two counter-clockwise motors.  Unfortunately the mot
 
 Take the motors out of their bags.  
 
-```{attention} Immediately screw on the red or black nut into the main screw sticking out of the motor.
+```{attention}
+Immediately screw the nut that came in the bag onto the main bolt sticking out of the motor. 
+Screw the nuts on gently by hand - **do not** force it.
 ```
 
 This will prevent you from mixing up the motors.

@@ -1,6 +1,8 @@
 (overview_fc)=
 # Overview
-In this phase of the build, you will configure and calibrate the Flight Controller and ESCs. You will flash the correct Firmware. It's a special type of software that controls the hardware on a device.
+In this phase of the build, you will attach the Flight Controller to your drone and to the ESCs.
+
+You have already configured the Flight Controller software, now you will use it to test and calibrate ESCs. 
 
 ## Flight Controller
 ```{warning}
@@ -128,7 +130,7 @@ M3 Rubber spacers
 These plastic bolts are used to attach the PDB to the frame of the Duckiedrone.
 
 ```{warning}
-You will fing both M3 and M2 bolts and nuts in your Duckiebox, pay attention to use the M3 in this section.
+You will find both M3 and M2 bolts and nuts in your Duckiebox, pay attention to use the M3 in this section.
 
 You can distinguish them by:
 1. comparing the two; the M3 bolts will be slightly thicker

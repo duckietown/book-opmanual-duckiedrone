@@ -19,7 +19,11 @@ The battery takes about 2 hours to charge.  When charging, the battery flashes b
 
 ```{warning}
 
-The battery is fully charged when `"ALL"` is 12.5 volts.
+The battery is fully charged when `"ALL"` is 12.6 volts.
+
+The charger will also start emitting a `BEEP` sound when charging is complete.
+
+Disconnect your battery.
 ```
 
 You can also tell by measuring the voltage across the battery's power and ground with a multimeter.  When the battery is plugged into a charger and the charger is not plugged into a wall, it uses power from the battery to display the voltage on the battery.  Over time this will drain the battery.  If a battery's voltage gets too low, the battery can then no longer be charged.  
@@ -172,9 +176,9 @@ The PDB (Power distribution board) takes power from the battery and distributes 
 ### Tin the PDB
 Similar to exposed wires, the metal pads on a PDB need to be tinned. This will allow tinned wires to be joined to the pads - and therefore the PDB. 
 
-```{warning} It is **very important** to use a chisel tip soldering iron rather than the pointed tip you used for soldering header to the Raspberry Pi Hat.
+```{warning} It is **very important** to use a chisel tip soldering iron rather than the pointed tip you used for soldering the header to the Raspberry Pi Hat.
 
-Make sure to power down your soldering iron, cool it completely, and switch to a chisel tip.
+Make sure to unplug your soldering iron and let it cool down **completely** before switching the tip.
 
 This tip applies more heat quickly to the pad, so that the solder flows onto the pad when you tin it.
 ```
