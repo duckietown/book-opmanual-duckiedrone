@@ -88,6 +88,14 @@ Battery charger
 Charging adapter
 ```
 
+```{tip}
+During development/testing you might need to keep your drone on for more time than the battery allows.
+
+A good solution for this scenario is to connect the Raspberry Pi to an external power supply, disconnecting the battery from the PDB.
+
+In this way you can activate all the nodes (including Flight Controller) but the motors won't get power to spin.
+```
+
 ### Power Distribution Board (PDB)
 ```{figure} ../_images/components-official/PDB.png
 Power Distribution Board (PDB)
