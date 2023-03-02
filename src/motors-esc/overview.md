@@ -5,35 +5,20 @@
 In this phase of the build, you’ll be adding the essential elements of every drone– the motors, ESCs, and the Flight Controller.
 
 ## Required Materials
-````{admonition} What you will need
-```{list-table}
-:header-rows: 1
-:name: materials-motors-esc
-
-* - Part
-  - Quantity
-* - Counter-clockwise Motors
-  - 2
-* - Clockwise Motors 
-  - 2
-* - Long gray metal M3 Bolts 
-  - 16
-* - Nylon M3 Bolts and nuts
-  - 4 pairs
-* - Electronic Speed Controllers (ESCs)
-  - 4
-* - Propeller guards
-  - 4
-* - Plastic standoffs
-  - 4
-* - Battery leads Wire
-  - 1
-* - Soldering Tools
-  - 1
-* - Zip ties
-  - ~ 8
+```{needget}
+* Counter-clockwise Motors
+* Clockwise Motors 
+* Long gray metal M3 Bolts 
+* Nylon M3 Bolts and nuts
+* Electronic Speed Controllers (ESCs)
+* Propeller guards
+* Plastic standoffs
+* Battery leads Wire
+* Soldering Tools
+* Zip ties
+---
+* Motors connected to power
 ```
-````
 
 ## Detailed Hardware Descriptions
 

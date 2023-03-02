@@ -9,30 +9,15 @@ Two different versions of Flight Controllers are shipped depending on supplies.
 Make sure to check which version you have and **follow the appropriate instructions** by selecting the correct tab when needed.
 
 Check [this section](identifying_fc) if you're not sure which version you have.
-```
 
-````{admonition} What you'll need
-```{list-table}
-:header-rows:   1
-:name:  materials-fc
-
-*   - Parts
-    - Quantity
-
-*   - Flight Controller
-    - 1
-
-*   - USB to Micro USB cable
-    - 1
-
-*   - Nylon M3 white bolts and nuts
-    - 4 pairs
-
-*   - M3 Rubber spacers
-    - 4
-
-*   - Base station
-    - 1
+```{needget}
+*  Flight Controller
+*  USB to Micro USB cable
+*  Nylon M3 white bolts and nuts
+*  M3 Rubber spacers
+*  Base station
+---
+*  Working Flight Controller stack.
 ````
 
 ### Flight Controller

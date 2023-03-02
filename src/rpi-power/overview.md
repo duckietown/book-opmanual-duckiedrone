@@ -24,7 +24,7 @@ First, we will introduce you to the components that you will be working with. Th
 
 ---
 
-* fully assembled Duckiedrone
+* Assembled Raspberry Pi Hat and PDB
 ```
 
 ## Detailed Hardware Descriptions
