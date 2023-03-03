@@ -11,6 +11,7 @@ Two different versions of Flight Controllers are shipped depending on supplies.
 Make sure to check which version you have and **follow the appropriate instructions** by selecting the correct tab when needed.
 
 Check [this section](identifying_fc) if you're not sure which version you have.
+```
 
 ```{needget}
 *  Flight Controller
@@ -20,7 +21,7 @@ Check [this section](identifying_fc) if you're not sure which version you have.
 *  Base station
 ---
 *  Working Flight Controller stack.
-````
+```
 
 ### Flight Controller
 The Flight Controller (i.e. Flight Controller) contains multiple sensors: an Inertial Measurement Unit (IMU) and a gyroscope. The IMU measures linear accelerations and the gyroscope measures angular velocities. The Flight Controller also receives commands from the Raspberry Pi and then sends electrical signals to the ESCs which in turn change the speeds of the motors.
