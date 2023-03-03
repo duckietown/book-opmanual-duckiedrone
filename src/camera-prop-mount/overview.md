@@ -4,48 +4,21 @@
 
 In this section of the build, you will attach the camera, and finalize the drone assembly.
 
-````{admonition} What you will need
-```{list-table}
-:header-rows: 1
-:name: materials-tof-sensor
-
-*   - Part
-    - Quantity
-
-*   - Raspberry Pi Camera 
-    - 1
-
-*   - Frame nylon standoffs 
-    - 4
-
-*   - CW Propellers 
-    - 2
-
-*   - CCW Propellers 
-    - 2
-
-*   - Nylon M2.5 bolts 
-    - 8
-
-*   - Nylon M3 bolts and nuts 
-    - 1
-
-*   - Steel M2 bolts and nuts 
-    - 4
-
-*   - 8mm Wrench 
-    - 1
-
-*   - Zip Ties 
-    - 10+
-
-*   - Double sided tape
-    - 1
-
-*   - Velcro strap
-    - 1
+```{needget}
+* Raspberry Pi Camera 
+* Frame nylon standoffs 
+* CW Propellers 
+* CCW Propellers 
+* Nylon M2.5 bolts 
+* Nylon M3 bolts and nuts 
+* Steel M2 bolts and nuts 
+* 8mm Wrench 
+* Zip Ties 
+* Double sided tape
+* Velcro strap
+---
+* Fully assembled Duckiedrone
 ```
-````
 
 ## Hardware overview
 

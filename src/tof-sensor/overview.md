@@ -14,21 +14,15 @@ In this part of the build, you will be adding your first sensor to the drone: th
 ```{attention} You will need to have completed the Raspberry Pi and PDB section before you can begin this build section.
 ```
 ## Required Materials
-````{admonition} What you will need
-```{list-table}
-:header-rows: 1
-:name: materials-tof-sensor
+```{needget}
+* ToF Sensor
+* ToF Sensor wire
+* Soldering tools
 
-* - Part
-  - Quantity
-* - ToF Sensor
-  - 1
-* - ToF Sensor wire
-  - 1
-* - Soldering tools
-  - 1
+---
+
+* Connection to ToF Sensor
 ```
-````
 ## ToF Sensor
 The ToF (**Li**ght **d**etection **a**nd **r**anging - **Lidar**) sensor is used to measure distance. On the drone, we use this sensor to measure the height of the drone above the ground. Lidar enables autonomous vehicles to “see” by generating and measuring millions of data points in real time, creating a precise map of its ever-changing surroundings for safe navigation.
 
