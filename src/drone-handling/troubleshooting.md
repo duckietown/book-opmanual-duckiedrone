@@ -22,11 +22,13 @@ My Raspberry Pi does not boot.
 You should verify that each part of the drone is receiving power.  The
 Raspberry Pi indicates it has power with a *red* power LED.
 
-If your Raspberry Pi is not powering on, verify with a multimeter that the Pi
+If your Raspberry Pi is not powering on, verify with a multimeter that the Raspberry Pi
 pins are receiving the right voltage on input.  You can find a mapping
 of the GPIO pins [here](https://www.raspberrypi.org/documentation/usage/gpio/).
 Verify that each power pin is receiving 5 Volts compared to each ground pin with the multimeter.
 
+If you used metal screws to mount the camera to the frame try using tape instead. Sometimes screwing the screws too tight can cause a short.
+ 
 If your Raspberry Pi is receiving 5 volts on its power/ground pins, but no red
 light turns on, then it might have gotten fried.  This can happen if
 you wire or short the power/ground pins on it, so try replacing
