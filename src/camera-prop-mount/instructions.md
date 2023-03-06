@@ -55,8 +55,8 @@ The Raspberry Pi Camera has tape on the back of the black lens assembly that has
 
     Camera with lens assembly attached and connected
     ```
-1. Screw the Raspberry Pi Camera to the right hole in the front part of the drone using the small metal bolts and nuts. Attach the camera on the bottom side, so that the camera faces downward, and the FFC goes **away** from the drone's battery.
-Place 4 rubber spacers between the camera PCB and the frame to have it level.
+1. Screw the Raspberry Pi Camera to the right hole in the front part of the drone using the M2 metal bolts and the M2 nylon nuts. Attach the camera on the bottom side, so that the camera faces downward, and the FFC goes **away** from the drone's battery.
+Place 4 rubber spacers between the camera PCB and the frame to make it level.
 
     ```{figure} ../_images/camera-mounting-hw/camera_tof_sensor_attached.png
 
@@ -69,7 +69,7 @@ Place 4 rubber spacers between the camera PCB and the frame to have it level.
     ```
 
     ```{warning}
-    If you have metal screws, do not tighten the screws excessively as they might short the PCB.
+    Do not use the metal M2 screws as they might short the PCB.
     ```
 
 % TODO: update with new procedure when new frame is made
