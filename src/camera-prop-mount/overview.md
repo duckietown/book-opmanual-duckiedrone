@@ -11,7 +11,8 @@ In this section of the build, you will attach the camera, and finalize the drone
 * CCW Propellers 
 * Nylon M2.5 bolts 
 * Nylon M3 bolts and nuts 
-* Steel M2 bolts and nuts 
+* Steel M2 bolts
+* Nylon M2 nuts 
 * 8mm Wrench 
 * Zip Ties 
 * Double sided tape
@@ -83,10 +84,19 @@ You will use one nylon bolt and nut to attach the ToF sensor to the frame.
 ```{image} ../_images/components-official/nylon_M3_bolts_nuts.png
 ```
 
-### Metal M2 bolts and nuts
+### Metal M2 bolts
 You will use them to secure the camera to the frame of the Duckiedrone.
 
-```{image} ../_images/components-official/M2_metal_bolts.png
+```{figure} ../_images/components-official/M2_metal_bolts.png
+
+The M2 metal bolts are in a bag with banana connectors
+```
+
+### Nylon M2 nuts
+These will screw on the M2 bolts to secure the camera to the frame.
+
+```{image} ../_images/components-official/M2_nylon_nuts.png
+:width: 500px
 ```
 
 ### Wrench

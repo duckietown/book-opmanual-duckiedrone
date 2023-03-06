@@ -27,7 +27,7 @@ pins are receiving the right voltage on input.  You can find a mapping
 of the GPIO pins [here](https://www.raspberrypi.org/documentation/usage/gpio/).
 Verify that each power pin is receiving 5 Volts compared to each ground pin with the multimeter.
 
-If you used metal screws to mount the camera to the frame try using tape instead. Sometimes screwing the screws too tight can cause a short.
+Make sure you did not use metal screws to mount the camera to the frame as they can cause a short.
  
 If your Raspberry Pi is receiving 5 volts on its power/ground pins, but no red
 light turns on, then it might have gotten fried.  This can happen if
