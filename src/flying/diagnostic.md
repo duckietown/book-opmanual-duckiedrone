@@ -31,7 +31,7 @@ The flight code does not start
 Make sure you are running the start script in the correct directory: `~/ws/src/pidrone_pkg`, **inside** the container.
 ```
 
-```
+```{trouble}
 The `roscore` screen does not startup.
 ---
 Quit the screen by typing the tick (\`) followed by colon (`:`) and the type the word `quit` and press enter. You will not see the tick and colon typing, but you will see "quit" as you type at the bottom of the screen. 
@@ -91,7 +91,7 @@ In the state estimator screen the last line printed out should state `Starting f
 - make sure the flight controller node is running, as data is needed from the imu to start the filter.
 
 - continue with the checks to make sure the other sensors are working, then try rerunning this script
-
+```
 
 ```{trouble}
 The vision node is not running.
@@ -127,7 +127,7 @@ If not:
 try rerunning the script.
 ```
 
-```
+```{trouble}
 The web interface does not say `connected` at the top.
 
 ---
