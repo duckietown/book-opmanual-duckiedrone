@@ -55,21 +55,23 @@ The Raspberry Pi Camera has tape on the back of the black lens assembly that has
 
     Camera with lens assembly attached and connected
     ```
-1. Screw the Raspberry Pi Camera to the right hole in the front part of the drone using the M2 metal bolts and the M2 nylon nuts. Attach the camera on the bottom side, so that the camera faces downward, and the FFC goes **away** from the drone's battery.
+1. Screw the Raspberry Pi Camera to the right hole in the front part of the drone using the M2 nylon bolts and the M2 nylon nuts. Attach the camera on the bottom side, so that the camera faces downward, and the FFC goes **away** from the drone's battery.
 Place 4 rubber spacers between the camera PCB and the frame to make it level.
 
-    ```{figure} ../_images/camera-mounting-hw/camera_tof_sensor_attached.png
+    %```{figure} ../_images/camera-mounting-hw/camera_tof_sensor_attached.png
 
-    Camera (and ToF sensor) attached to the front of the frame
-    ```
+    %Camera (and ToF sensor) attached to the front of the frame
+    %```
 
-    ```{figure} ../_images/camera-mounting-hw/camera_rubber_spacers.png
+    ```{figure} ../_images/camera-mounting-hw/camera_mounted_nylon_screws.png
 
     Rubber spacers placed between the camera and the frame (on the **bottom** side)
     ```
 
     ```{warning}
     Do not use the metal M2 screws as they might short the PCB.
+
+    Only use them if you have an old hardware revision, see Troubleshooting if you have power issues.
     ```
 
 % TODO: update with new procedure when new frame is made
@@ -104,20 +106,25 @@ Now you are going to attach the Raspberry Pi to the top of the frame using zip t
 
 1.  Place the Raspberry Pi on top, taking care not to move the spacers
 
-1.  Use 4 small zip ties to secure the Raspberry Pi in place
-    ```{image} ../_images/camera-mounting-hw/raspberry_pi_attached.png
+1.  Mount the Raspberry Pi on top using the 4 M2.5 nylon screws: insert them from the bottom and screw them in the short M2.5 spacers.
+    ```{figure} ../_images/camera-mounting-hw/raspberry_pi_with_spacers.jpg
+    :name: complete-raspberry-hat
+
+    Raspberry Pi mounted on the upper frame (with Raspberry Pi Hat)
     ```
+    
+```{note}
+Some old hardware revisions did not have enough M2.5 nylon screws. If this is the case you can use 4 small zip ties to secure the Raspberry Pi in place.
+    ![](../_images/camera-mounting-hw/raspberry_pi_attached.png)
+```
 
 ## Connect the camera and attach the Raspberry Pi Hat
 You will now connect the camera to the Raspberry Pi and attach the Raspberry Pi Hat. 
 
 ```{attention}
-The camera connector cable (called *FFC*) has to go through the opening of the Raspberry Pi Hat *before* this is attached to the Raspberry Raspberry Pi in order to be able to connect it to the Raspberry Pi.
+The camera connector cable (called *FFC*) has to go through the opening of the Raspberry Pi Hat *before* this is attached to the Raspberry Pi in order to be able to connect it to the Raspberry Pi.
 ```
 
-```{attention} 
-The flex cable has to be twisted in order to have the correct orientation **before being inserted** through the opening on the Raspberry Pi Hat
-```
 
 1.  Feed the *FFC* cable through the opening of the Raspberry Pi Hat as shown in the picture. 
     ```{note}
@@ -138,6 +145,7 @@ The flex cable has to be twisted in order to have the correct orientation **befo
 
 1.  Attach the Raspberry Pi Hat to the GPIO pins of the Raspberry Pi being careful when handling the flexible camera cable.
 
+1.  Screw the M2.5 nylon nuts on the 4 spacers sticking out from the corners of the Raspberry Pi Hat (See fig {numref}`complete-raspberry-hat`).
 ## Attach the UBEC
 
 Use a piece of foam double-sided tape to attach the UBEC to the top of the USB ports of the Raspberry Pi as shown.

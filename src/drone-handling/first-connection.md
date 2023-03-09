@@ -5,7 +5,7 @@ You are now ready to connect to your Duckiedrone through the Duckietown Dashboar
 
 ```{needget}
 
-*   A live `DD21` ([First Boot](first-boot))
+*   A live `DD21` ([First Boot](../first-boot.md))
 
 *   A Duckietown token ([See here](https://docs.duckietown.org/daffy/opmanual_duckiebot/out/dt_account.html) how to obtain it)
 
