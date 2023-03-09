@@ -145,3 +145,11 @@ Albeit connected to the Duckiedrone, we need to provide our Duckietown user prof
     ```
 
 We are now ready to investigate some of the most exciting features of the Duckiedrone Dashboard.
+
+## Troubleshooting
+
+```{trouble}
+I cannot connect to my Duckiedrone in AP mode.
+---
+Try using client mode and shut down the docker container `dt-access-point` through the Portainer interface (accessible through your browser from your base station at `<hostname>.local:9000`)
+```
