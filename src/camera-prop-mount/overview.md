@@ -12,7 +12,7 @@ In this section of the build, you will attach the camera, and finalize the drone
 * Nylon M2.5 bolts 
 * Nylon M3 bolts and nuts 
 * Steel M2 bolts
-* Nylon M2 nuts 
+* Nylon M2 bolts and nuts
 * 8mm Wrench 
 * Zip Ties 
 * Double sided tape
@@ -72,8 +72,14 @@ These long (30 mm) nylon standoffs are used to mount the top part of the Duckied
 Frame M2 nylon standoffs
 ```
 
+### Short M2.5 standoffs and spacers
+Used to mount the Raspberry Pi Hat on the Raspberry Pi.
+
+```{figure} ../_images/components-official/M2_5_short_standoffs_spacers.png
+```
+
 ### Nylon M2.5 bolts and nuts
-Used to mount the frame with the frame standoffs.
+Used to mount the frame and the standoffs.
 
 ```{image} ../_images/components-official/M2_5_bolts_nuts_nylon.png
 ```
@@ -84,19 +90,29 @@ You will use one nylon bolt and nut to attach the ToF sensor to the frame.
 ```{image} ../_images/components-official/nylon_M3_bolts_nuts.png
 ```
 
+<!-- [Moved to M2 nylon bolts]
 ### Metal M2 bolts
 You will use them to secure the camera to the frame of the Duckiedrone.
 
 ```{figure} ../_images/components-official/M2_metal_bolts.png
 
 The M2 metal bolts are in a bag with banana connectors
-```
+``` 
+-->
 
-### Nylon M2 nuts
-These will screw on the M2 bolts to secure the camera to the frame.
+### Nylon M2 bolts and nuts
+These will secure the camera to the frame.
 
 ```{image} ../_images/components-official/M2_nylon_nuts.png
 :width: 500px
+```
+```{image} ../_images/camera-mounting-hw/m2x10_bolts.jpg
+:width: 500px
+```
+```{note}
+Old hardware revisions of the Duckiedrone only had metal M2 bolts. In this case screw the M2 nylon nuts on the metal bolts.
+
+Sometimes if screwed too tight they can short the camera and make the Raspberry Pi misbehave; if this is the case mount the camera with tape.
 ```
 
 ### Wrench
@@ -124,7 +140,7 @@ The Battery Monitor is a safety device that connects to the battery and monitors
 
 This warns you to disconnect the LiPo battery from the PDB to avoid draining it too low, thus damaging its cells.
 
-It also display the voltage of each cell and the cumulative voltage of the battery on the 7-segments displays on the front, just like the battery charger does.
+It also displays the voltage of each cell and the cumulative voltage of the battery on the 7-segments displays on the front, just like the battery charger does.
 
 ```{figure} ../_images/components-official/battery_monitor.png
 
