@@ -43,7 +43,7 @@ Watch this video to see how the process looks like.
 
 <div style="padding:61.68% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/795166491?h=ad68dd5e48&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Screencast from 01-02-2023 170837"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-```{warning} **Double check that the "drive" is your micro SD card**.
+```{warning} **Double check** that the "drive" is your micro SD card.
 
 You may be prompted to enter the base station password to proceed. This is normal: flashing an SD card deletes everything that is on it, so Etcher is making sure this process is OK with you.
 ```
@@ -64,11 +64,11 @@ Skipping it means having to re-flash the SD card.
 Changing the Duckiedrone `hostname` (also known as the “robot name") is needed to prevent conflicts when multiple Duckiedrones are operating in the same environment. If you intend to operate the drone in isolation from other Duckiedrones (e.g., at home), you can maintain the default settings. 
 
 ```{warning}
-The `hostname` can only be changed at this stage in the process. **It cannot be changed later.**
+The `hostname` can only be changed at this stage in the process. **It cannot** be changed later.
 ```
 
 ```{attention}
-The `hostname` **must start with a lower case letter and can contain only lower case letters** (of the latin alphabet) **and numbers**:
+The `hostname` **must** start with a lower case letter and can contain **only** lower case letters (of the latin alphabet) and numbers:
 
 Using special characters will break things and require re-flashing
 
@@ -90,12 +90,12 @@ If you are in an environment where multiple drones are operating at the same tim
 
     * You will have to unplug it from your base station first and plug it back in as Balena Etcher dismounts the drive after finishing the flashing process. 
 
-    * If the flashing is successful, you will see that it has one partition named `boot`, with many files inside and `overlays` folder. **Do not manually alter these files**.
+    * If the flashing is successful, you will see that it has one partition named `boot`, with many files inside and `overlays` folder. **Do not** manually alter these files.
 
       ```{figure} ../_images/rpi-sw-initialization/boot_partition.png
       :width: 200px
 
-      `boot` partition, **do not alter!**
+      `boot` partition, **do not** alter!
       ```
 
 1. There will be a second partition called `config`. Open this partition. You will find two files inside:
@@ -118,12 +118,12 @@ If you are in an environment where multiple drones are operating at the same tim
     A wrong `hostname` will mean having to reflash the SD card and start from step 1.
 
     ```{attention}
-    **Save the file before closing it**.
+    **Save** the file before closing it.
     ```
 
 1. Open the `wpa_supplicant.conf` with a text editor of your choice and either edit the default connection settings or duplicate them to add a new network. These parameters will be used only when booting the Duckiedrone in client-network mode, i.e. connecting to an existing Wi-Fi access point.
 
-    ```sh
+    ```bash
     ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
     update_config=1
     country=US
@@ -178,7 +178,7 @@ If you are in an environment where multiple drones are operating at the same tim
     }
     ```
 
-1. **Eject your SD card safely**.
+1. **Eject** your SD card safely.
 
     ````{warning}
     Do not just unplug the SD crad from the base station
@@ -191,7 +191,7 @@ If you are in an environment where multiple drones are operating at the same tim
 
 
 
-**You are now ready for the first boot**.
+You are now ready for the first boot.
 
 ## Troubleshooting
 :::{trouble}
