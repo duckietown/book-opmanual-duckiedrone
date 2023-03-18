@@ -1,5 +1,32 @@
 (environment_setup)=
-# Docker container setup
+# Environment setup
+
+## Stopping the standard containers
+
+To setup the development environment you need to bring
+down all docker containers and then setup a special development container.
+
+To do so:
+
+1.  Bring down all the containers by going to `http://<hostname>.local:9000/#/containers` in your browser and stopping each container. 
+    
+    ```{note}
+    The only exception would be the `wifi-access-point` container. Keep it running if you want to be able to connect to the Duckiedrone own access point.
+    ```
+
+1.  Reboot, and run 
+    
+    ```bash
+    docker update --restart=no <CONTAINER_NAME_1> <CONTAINER_NAME_2> <...>
+    ```
+    
+    for all containers that you had stopped and automatically restarts.
+
+
+
+1.  Reboot again. When you are done, `docker ps -a` should show no containers running.
+
+## Development container setup
 
 To make it possible for you to develop your own code on the drone, you need to set up a docker workspace from the source code of the repository `pidrone_pkg`.
 
