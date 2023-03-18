@@ -58,7 +58,7 @@ parts:
           - file: drone-handling/first-connection
           - file: drone-handling/troubleshooting
 
-    - caption: Testing the drone
+    - caption: Using the drone
       maxdepth: 2
       numbered: False
       chapters:
