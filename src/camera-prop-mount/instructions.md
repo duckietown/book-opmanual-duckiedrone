@@ -198,6 +198,11 @@ Angle it so that the USB connector doesn't protrude much, otherwise you might en
 
 Make sure to attach all dangling cables using zip ties to the frame, such that no wires can hit the propellers.
 
+```{attention}
+Fix the cables to allow the drone to lie flat on the ground.
+This is important to calibrate the Flight Controller.
+```
+
 ```{figure} ../_images/camera-mounting-hw/pwm_wires_fixed.png
 :width: 400px
 
@@ -282,3 +287,7 @@ To use this safety device you are going to have to connect it to the 4-pins conn
 
     A possible location to attach the Battery Monitor
     ````
+
+    ```{tip}
+    You can use some double-sided tape to fix the battery monitor.
+    ```
