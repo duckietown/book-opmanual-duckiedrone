@@ -18,7 +18,7 @@ And you will be able to play with them!
 
 ## Expectation with good parameter settings
 
-The flight controller (FC) runs high-frequency control loops to make the drone stablilize. It utilizes the sensors (e.g. IMU & Gyro) to estimate the states of the drone. In the **Angle Mode** that we configure the FC to, the following is expected:
+The Flight Controller (FC) runs high-frequency control loops to stabilize the drone. It utilizes the sensors (e.g. IMU & Gyro) to estimate the state of the drone. In the **Angle Mode** that we configure the FC to, the following is expected:
 * On the roll / pitch axis:
   * when commands are issued, the FC tries to make the drone reach the commanded roll/pitch as soon as possible, and minimize the fluctuation and stay at the designated angle.
   * When no commands are given, the drone would try to return to a neutral roll and pitch.
@@ -28,7 +28,7 @@ The flight controller (FC) runs high-frequency control loops to make the drone s
 
 ## PID terms in drones and tuning
 
-Primarily, a **proportional–integral–derivative controller** ([PID controller](https://en.wikipedia.org/wiki/PID_controller)) is used on the FC to achieve these. Here are some materials helping explain the influence of `P`, `I` and `D` terms , in the context of drones, and how should they be tuned based on the behaviors of the drone.
+Primarily, a **proportional–integral–derivative controller** ([PID controller](https://en.wikipedia.org/wiki/PID_controller)) is used on the FC to achieve these. Here are some materials helping explain the influence of `P`, `I` and `D` terms, in the context of drones, and how should they be tuned based on the behaviors of the drone.
 
 * [FPV Drone PID Explaned by Oscar Liang](https://oscarliang.com/pid/)
 * [CleanFlight PID Tuning on OpenTXU by John Case](http://open-txu.org/home/special-interests/multirotor/cleanflight-pid-tuning/)
@@ -50,7 +50,7 @@ As shown in {numref}`fig-fc-pid-setting-fc-pid-starter`, here is how to set the 
 1. Go to the “PID Tuning” tab.
 1. Change the values and click "Save" on the bottom right of the tab
 
-### Recommended starter values
+### Recommended starting values
 
 | Axis  | P   | I   | D   | RC Rate | Super Rate  | Max Vel |
 | ---   | --- | --- | --- | ---     | ---         | ---     |
