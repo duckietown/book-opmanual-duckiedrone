@@ -63,9 +63,10 @@ In addition, change the Angle Limit to 55.
 Finally, click “Save”.
 
 ### Your tuning loop
-:::{note}
+
+```{note}
 In your own PID tuning process, you should only change the `P`, `I` and `D` on ROLL, PITCH and `P` and `I` on YAW. Only change the other values if you are sure what they mean and what you are doing.
-:::
+```
 
 After apply the recommended starter values, with the knowledge from the previous subsection, you can keep trying the following for improving the basic manual performance of your Duckiedrone: 
 * Flying the drone manually and look out for erroneous behaviors
