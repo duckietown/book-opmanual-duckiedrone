@@ -212,6 +212,8 @@ For the remainder of the instructions, unless stated otherwise, **red** wires sh
 ```{tip} This wire is very thick and it will take a while for the solder to melt.
 
 Make sure your soldering iron is turned all the way up, you're using a chisel tip and be patient.
+
+It also helps to keep the cable at an angle to have it touch the copper hole while soldering.
 ```
 
 ```{figure} ../_images/rpi-power/pdb_soldered_XT60.jpg
