@@ -12,7 +12,7 @@ parts:
         - file: building-start/prerequisites
         - file: multimeters
         - file: building-start/included-materials
-        - file: building-start/excluded-materials
+        - file: building-start/other-materials
         - file: building-start/software-initialization
         - file: building-start/flight-controller-initialization
 
