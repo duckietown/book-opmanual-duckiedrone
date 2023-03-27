@@ -64,4 +64,5 @@ parts:
       chapters:
           - file: flying/environment-setup
           - file: flying/flying-your-drone
+          - file: flying/cleanflight-pid-settings
           - file: flying/diagnostic
