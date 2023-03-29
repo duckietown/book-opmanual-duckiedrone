@@ -251,7 +251,9 @@ Now that the Flight Controller is in `bootloader mode` you can flash the correct
     1. Click `“Connect”` and verify the firmware version is correct as detailed below
     ```
 
+```{attention}
 To see the whole process for your version of the Flight Controller choose the correct tab below:
+```
 
 ::::{tab-set}
 

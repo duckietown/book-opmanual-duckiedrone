@@ -149,7 +149,8 @@ Verify there is
 no short between the `+5V` rail and the `GND` rail on the Raspberry Pi Hat
 ```
 
-## Attaching WiFi mode pins
+## Attaching Wi-Fi mode pins
+
 The Raspberry Pi has a unique way to understand how to switch between its two different Wi-Fi modes.
 
 You will be soldering another set of 90 degree pins in port `#5` and port `#6` of the Raspberry Pi Hat as shown in the following image.
@@ -162,12 +163,16 @@ WiFi mode pins with jumper (not inserted in the pic)
 ```
 
 ```{attention}
-The second piece shown in the image is a jumper to short the pins. This piece is very small, be careful not to lose this. 
+The other piece of hardware shown in the image, which is a black cap-like device next to the soldered pins, is a jumper to short the pins. This piece is very small, be careful not to lose this. 
 
 It is advised to insert it into the pins for safe keeping.
 ```
+
 ```{warning}
-Remember that it does matter if the jumper is plugged into both pins or just one when booting your Pi up.
+Remember that it does matter whether the jumper is plugged into both pins or just one when booting your Raspberry Pi up:
+
+* Jumper plugged in both pins → **access point mode**
+* Jumper plugged in only one pin → **client mode**
 ```
 
 ## Preparing the PDB
@@ -197,8 +202,8 @@ For the remainder of the instructions, unless stated otherwise, **red** wires sh
 ```
 
 ### Solder the XT60 Battery Connector to the PDB
-1. **Strip** the ends of the battery connector so that about 1 cm of wire is exposed
 
+1. **Strip** the ends of the battery connector so that about 1 cm of wire is exposed
 
 1. **Tin** the exposed ends of the XT60 connector
 
@@ -207,6 +212,8 @@ For the remainder of the instructions, unless stated otherwise, **red** wires sh
 ```{tip} This wire is very thick and it will take a while for the solder to melt.
 
 Make sure your soldering iron is turned all the way up, you're using a chisel tip and be patient.
+
+It also helps to keep the cable at an angle to have it touch the copper hole while soldering.
 ```
 
 ```{figure} ../_images/rpi-power/pdb_soldered_XT60.jpg
