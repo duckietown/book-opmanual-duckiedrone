@@ -184,17 +184,15 @@ If you are in an environment where multiple drones are operating at the same tim
     }
     ```
 
-1. **Eject** your SD card safely.
+````{admonition} Eject your SD card safely.
+:class: warning
 
-    ````{admonition} Eject your SD card safely.
-    :class: warning
+Do not just unplug the SD crad from the base station
 
-    Do not just unplug the SD crad from the base station
-
-    ```{image} ../_images/rpi-sw-initialization/eject_sd.png
-    :width: 300px
-    ```
-    ````
+```{image} ../_images/rpi-sw-initialization/eject_sd.png
+:width: 300px
+```
+````
 
 You are now ready for the first boot.
 
