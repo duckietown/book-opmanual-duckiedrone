@@ -17,30 +17,6 @@ You are now ready to connect to your Duckiedrone through the Duckietown Dashboar
 
 ```
 
-```{admonition} Cheatsheet
-:class: note
-
-Default robot name: `amelia`
-
-Default user name: `duckie`
-
-Default user password: `quackquack`
-
-Ssh always possible: `ssh duckie@amelia.local`
-
-**Default** access point (**AP**) network configuration:
-
-*   SSID: `duckietown-amelia-ap`
-    
-*   Password: `quackquack`
-    
-
-**Default** client (**CL**) network configuration:
-
-*   SSID: `duckietown`
-    
-*   Password: `quackquack`
-```
 
 ## Connecting to the Duckiedrone  
 
@@ -138,13 +114,45 @@ Albeit connected to the Duckiedrone, we need to provide our Duckietown user prof
     ```
     
 2.  Click on {bdg-warning}`Sign in with Duckietown` and provide your Duckietown token (you should have this written down). Click {bdg-dark-line}`Login` to proceed.  
-      
+    
     You should now be redirected to your User profile page, and be able to see many more options in the left nav bar:
     
     ```{image} ../_images/first-connection/setup_complete.png
     ```
+    
+    ```{warning}
+    Be careful about not showing your Duckietown token around, it should be kept secret.
+    ```
 
 We are now ready to investigate some of the most exciting features of the Duckiedrone Dashboard.
+
+## Cheatsheet
+
+
+```{admonition} Cheatsheet
+:class: note
+
+Default robot name: `amelia`
+
+Default user name: `duckie`
+
+Default user password: `quackquack`
+
+Ssh always possible: `ssh duckie@amelia.local`
+
+**Default** access point (**AP**) network configuration:
+
+*   SSID: `duckietown-amelia-ap`
+    
+*   Password: `quackquack`
+    
+
+**Default** client (**CL**) network configuration:
+
+*   SSID: `duckietown`
+    
+*   Password: `quackquack`
+```
 
 ## Troubleshooting
 
