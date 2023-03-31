@@ -1,11 +1,11 @@
-(first-connection)=
+(first_connection)=
 # First connection
 
 You are now ready to connect to your Duckiedrone through the Duckietown Dashboard.
 
 ```{needget}
 
-*   A live `DD21` ([First Boot](../first-boot.md))
+*   A live `DD21` ([First Boot](sec:first-boot))
 
 *   A Duckietown token ([See here](https://docs.duckietown.org/daffy/opmanual_duckiebot/out/dt_account.html) how to obtain it)
 

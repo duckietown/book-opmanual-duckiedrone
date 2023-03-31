@@ -1,3 +1,4 @@
+(sec:first-boot)=
 # First boot
 
 There is only one first time you can connect to your Duckiedrone. Savor the experience.
@@ -58,7 +59,7 @@ Do not interrupt the first boot procedure, e.g., by removing power to the Raspbe
 
         * __short__ pins `5` & `6` on the breadboard by using the provided jumper.
         
-        ```{figure} ./_images/first-boot/wifi_pins_shorted.png
+        ```{figure} ../_images/first-boot/wifi_pins_shorted.png
         :width: 500px
         
         Pins `5` & `6` shorted.
@@ -83,7 +84,7 @@ Do not interrupt the first boot procedure, e.g., by removing power to the Raspbe
         Keep the jumper on _one_ pin to avoid misplacing and losing it!
         ```
 
-        ```{figure} ./_images/first-boot/wifi_pins_not_shorted.png
+        ```{figure} ../_images/first-boot/wifi_pins_not_shorted.png
         :width: 500px
 
         Pins `5` & `6` not shorted.
@@ -98,7 +99,7 @@ Do not interrupt the first boot procedure, e.g., by removing power to the Raspbe
     **Do not** connect the SD card inside the adapter to a USB-A port of the Raspberry Pi. 
     ```
 
-    ```{image} ./_images/first-boot/sd_card_insertion.png
+    ```{image} ../_images/first-boot/sd_card_insertion.png
     ```
 
 5.  Power the Raspberry Pi
@@ -116,7 +117,7 @@ Do not interrupt the first boot procedure, e.g., by removing power to the Raspbe
     
     Scan available networks through the base station: once the booting procedure is complete you will find a network called `duckietown-<hostname>-ap`, where `<hostname>` is the name of the robot, as determined during the initialization procedure. The default name is `amelia`.
 
-    ```{image} ./_images/first-boot/drone_wifi_ap.png
+    ```{image} ../_images/first-boot/drone_wifi_ap.png
     :width: 300px
     ```
  
