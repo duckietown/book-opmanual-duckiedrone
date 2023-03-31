@@ -60,6 +60,8 @@ parts:
       maxdepth: 2
       numbered: False
       chapters:
-          - file: software-architecture/introduction
-          - file: software-architecture/ros
-          - file: software-architecture/nodes
+          - file: software-architecture/index
+            sections:
+              - file: software-architecture/introduction
+              - file: software-architecture/ros
+              - file: software-architecture/nodes
