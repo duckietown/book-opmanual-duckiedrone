@@ -1,4 +1,3 @@
-(overview_fc)=
 # Overview
 In this phase of the build, you will attach the Flight Controller to your drone and to the ESCs.
 

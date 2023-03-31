@@ -1,4 +1,3 @@
-(overview_motors_esc)=
 # Overview
 ## Preface
 

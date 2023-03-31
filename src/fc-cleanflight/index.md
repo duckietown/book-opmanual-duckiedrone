@@ -1,3 +1,1 @@
 # Flight Controller & Cleanflight
-```{tableofcontents}
-```

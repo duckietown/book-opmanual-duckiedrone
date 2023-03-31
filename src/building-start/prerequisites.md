@@ -26,11 +26,9 @@ Sometimes parts will have wires already tinned out-of-the-box by the manufacture
 
 However, such tinning is often ineffective. Cut off any pre-tinned tips, then strip and tin the part yourself.
 ```
-
-(sec:soldering)=
 ## Soldering
-
 Soldering is the process of joining two metal components by melting an alloy; namely, solder. Since solder is conductive, the resulting joint acts as a bridge for electricity traveling between the two metal components.
+We recommend you complete the soldering module before starting the drone build to ensure you've had plenty of practice soldering practice parts before soldering your drone parts. Below, there are brief resources on soldering, as well as specific instructions for each type of soldering technique that will be used in the build.
 
 Below, there are brief resources on soldering, please review them before starting the build.
 
@@ -47,7 +45,9 @@ Below, there are brief resources on soldering, please review them before startin
 ```
 
 ### Resources
-For a quick overview of soldering, [watch this](https://www.youtube.com/watch?v=Qps9woUGkvI) beginner soldering tutorial YouTube video. For a more in-depth introduction, review [this article](https://www.circuitrework.com/guides/7-1-1.html).
+For a quick overview of soldering, watch this beginner soldering tutorial YouTube video. For a more in-depth introduction, review this article.
+
+### How to Fix Soldering Mistakes
 
 (build-troubleshooting)=
 ## Troubleshooting
