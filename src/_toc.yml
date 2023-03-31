@@ -53,9 +53,9 @@ parts:
       maxdepth: 2
       numbered: False
       chapters:
-          - file: first-boot
-          - file: calibrations
+          - file: drone-handling/first-boot
           - file: drone-handling/first-connection
+          - file: drone-handling/calibrations
           - file: drone-handling/troubleshooting
 
     - caption: Using the drone
