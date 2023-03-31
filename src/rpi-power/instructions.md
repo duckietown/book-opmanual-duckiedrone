@@ -5,9 +5,10 @@
 3 hours
 ```
 
-
 ## Preliminary Tasks
+
 ### Charge the Battery
+
 Start charging your drone battery so it is ready when you need it. To charge the battery connect it to the `3 Cells` plug of the charger and connect it to the charging adapter.
 
 ```{figure} ../_images/rpi-power/battery_charging.jpg
@@ -350,6 +351,7 @@ On the Raspberry Pi Hat, do another connectivity check to verify that there is *
 3. Verify that the Pi has a solid red light.
 ```
 
+(insert-sd-card)=
 ### Insert the SD card into the Pi
 
 ```{admonition} Disconnect the UBEC from the Raspberry Pi Hat
