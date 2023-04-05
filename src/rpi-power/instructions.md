@@ -299,7 +299,7 @@ If the battery is charged to X volts instead of 12 volts (e.g. 10), then the mul
 
 Attach the heat sinks to the Pi as shown in the pictures.
 
-```{figure} ../_images/rpi-power/rpi_top_heatsink.jpg
+```{figure} ../_images/rpi-power/rpi_top_heatsink.png
 :width: 400px
 :align: center
 
