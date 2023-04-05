@@ -366,16 +366,9 @@ Insert your (previously flashed) micro SD card into the micro SD card slot on th
 The micro SD card **direction does matter** - the lettering on the SD card should be facing downward.
 ```
 
-```{figure} ../_images/rpi-power/raspberry_inserting_sd_card.jpg
+```{figure} ../_images/rpi-power/raspberry-pi-sd-card.png
 :width: 300px
 :align: center
 
 Micro SD Card being inserted into the Raspberry Pi
-```
-
-```{figure} ../_images/rpi-power/raspberry_inserted_sd_card.jpg
-:width: 300px
-:align: center
-
-Micro SD Card fully inserted in the Raspberry Pi
 ```
