@@ -297,7 +297,7 @@ If the battery is charged to X volts instead of 12 volts (e.g. 10), then the mul
 
 ## Put Heat Sinks on Raspberry Pi
 
-Attach the heat sinks to the Pi as shown in the pictures.
+Attach the heat sinks to the Raspberry Pi as shown in the pictures.
 
 ```{figure} ../_images/rpi-power/rpi_top_heatsink.png
 :width: 400px
@@ -314,7 +314,7 @@ Bottom heatsink
 ```
 
 (attach_pi_hat)=
-## Attach the Raspberry Pi Hat to the Pi
+## Attach the Raspberry Pi Hat to the Raspberry Pi
 
 Align the 2x40 GPIO pins on the Raspberry Pi with the 2x40 pin header that you soldered to the Raspberry Pi Hat as shown in the image.
 
@@ -348,7 +348,7 @@ On the Raspberry Pi Hat, do another connectivity check to verify that there is *
 
 2. Verify that the BEC has a solid red light.
 
-3. Verify that the Pi has a solid red light.
+3. Verify that the Raspberry Pi has a solid red light.
 ```
 
 (insert-sd-card)=
