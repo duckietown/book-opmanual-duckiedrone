@@ -297,9 +297,9 @@ If the battery is charged to X volts instead of 12 volts (e.g. 10), then the mul
 
 ## Put Heat Sinks on Raspberry Pi
 
-Attach the heat sinks to the Pi as shown in the pictures.
+Attach the heat sinks to the Raspberry Pi as shown in the pictures.
 
-```{figure} ../_images/rpi-power/rpi_top_heatsink.jpg
+```{figure} ../_images/rpi-power/rpi_top_heatsink.png
 :width: 400px
 :align: center
 
@@ -314,7 +314,7 @@ Bottom heatsink
 ```
 
 (attach_pi_hat)=
-## Attach the Raspberry Pi Hat to the Pi
+## Attach the Raspberry Pi Hat to the Raspberry Pi
 
 Align the 2x40 GPIO pins on the Raspberry Pi with the 2x40 pin header that you soldered to the Raspberry Pi Hat as shown in the image.
 
@@ -348,7 +348,7 @@ On the Raspberry Pi Hat, do another connectivity check to verify that there is *
 
 2. Verify that the BEC has a solid red light.
 
-3. Verify that the Pi has a solid red light.
+3. Verify that the Raspberry Pi has a solid red light.
 ```
 
 (insert-sd-card)=
@@ -366,16 +366,9 @@ Insert your (previously flashed) micro SD card into the micro SD card slot on th
 The micro SD card **direction does matter** - the lettering on the SD card should be facing downward.
 ```
 
-```{figure} ../_images/rpi-power/raspberry_inserting_sd_card.jpg
-:width: 300px
+```{figure} ../_images/rpi-power/raspberry-pi-sd-card.png
+:width: 500px
 :align: center
 
 Micro SD Card being inserted into the Raspberry Pi
-```
-
-```{figure} ../_images/rpi-power/raspberry_inserted_sd_card.jpg
-:width: 300px
-:align: center
-
-Micro SD Card fully inserted in the Raspberry Pi
 ```
