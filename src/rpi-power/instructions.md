@@ -367,7 +367,7 @@ The micro SD card **direction does matter** - the lettering on the SD card shoul
 ```
 
 ```{figure} ../_images/rpi-power/raspberry-pi-sd-card.png
-:width: 300px
+:width: 400px
 :align: center
 
 Micro SD Card being inserted into the Raspberry Pi
