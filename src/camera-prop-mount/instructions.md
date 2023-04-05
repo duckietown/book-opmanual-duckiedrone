@@ -148,6 +148,18 @@ The camera connector cable (called *FFC*) has to go through the opening of the R
 
 1. Insert the cable to the *FFC* connector making sure to have the blue tape on the cable facing the black plastic tab on the connector and close the black plastic tab.
 
+    ```{figure} ../_images/camera-mounting-hw/attaching-camera-1.png
+    :width: 500px
+
+    Lift the camera connector plastic flap.
+    ```
+
+    ```{figure} ../_images/camera-mounting-hw/attaching-camera-2.png
+    :width: 500px
+
+    Insert the camera cable in the connector with the blue side facing towards the Ethernet port and close the plastic flap.
+    ```
+
     ```{seealso}
     Watch this video to understand how to attach the connector properly
     <iframe width="560" height="315" src="https://www.youtube.com/embed/VzYGDq0D1mw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
