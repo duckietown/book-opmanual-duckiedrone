@@ -77,7 +77,7 @@ To make it possible for you to develop your own code on the drone, you need to s
     git clone https://github.com/UbiquityRobotics/raspicam_node 
     ```
 
-1.  You can start the container and go inside it by running 
+1.  You can start the container and go inside it by running, from the `pidrone_pkg` directory:
 
     ```shell
     rake start
