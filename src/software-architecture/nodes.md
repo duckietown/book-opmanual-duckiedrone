@@ -121,8 +121,17 @@ The TOF node communicates with the VL53L0X Time Of Flight distance sensor using 
 ## \`8: rosbridge
 This node allows the web dashboard to communicate with ROS nodes on the drone.
 
+* Publishers:
+    * `/pidrone/desired/mode`
+    * `/pidrone/heartbeat/web_interface`
+    * `/pidrone/position_control`
+    * `/pidrone/desired/twist`
+    * `/pidrone/desired/pose`
+    * `/pidrone/reset_transform`
+    * `/pidrone/map`
+
 ## \`9: web_vid_serv
-This node allows the web dashboard to request a camera stream of the drone. This node doesn't run by default but if you want to see what the drone's camera is seeing and have the processing power to spare on the drone you can press enter on this screen.
+This node allows the web dashboard to request a camera stream of the drone. This node doesn't run by default but if you want to see what the drone's camera is seeing and if you have the processing power to spare on the drone you can press enter on this screen.
 
 ## \`10 free1
 This screen is an unused console that you can use to run any additional commands you need to. One way to get to this screen is to type \`9 then \`n
