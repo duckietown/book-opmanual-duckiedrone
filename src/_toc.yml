@@ -10,7 +10,7 @@ parts:
       chapters:
         - file: building-start/safety
         - file: building-start/prerequisites
-        - file: multimeters
+        - file: building-start/multimeters
         - file: building-start/included-materials
         - file: building-start/other-materials
         - file: building-start/software-initialization
@@ -48,6 +48,8 @@ parts:
             - file: camera-prop-mount/overview
             - file: camera-prop-mount/instructions
             - file: camera-prop-mount/checkpoint
+
+        - file: datasheets/index
         
     - caption: Drone handling
       maxdepth: 2
