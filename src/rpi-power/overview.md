@@ -7,40 +7,25 @@ In this first part of the build, you will create a circuit to provide power to t
 First, we will introduce you to the components that you will be working with. Then, you will do some preliminary tasks that will run in the background. As those tasks are running, you will go through the first portion of the build.
 
 ## Required Materials
-````{admonition} What you will need
 
-```{list-table} Materials
-:header-rows: 1
-:name: materials-rpi-power
+```{needget}
+* Battery 
+* Battery Charger 
+* Battery Charging Adapter 
+* Power Distribution Board (PDB)
+* Universal Battery Eliminator Circuit (UBEC)
+* Raspberry Pi Hat 
+* XT60 Connector 
+* Soldering Tools 
+* Raspberry Pi
+* Heat Sinks
+* Micro SD Card 
+* Base Station 
 
-* - Parts
-  - Quantity
-* - Battery 
-  - 1
-* - Battery Charger 
-  - 1
-* - Battery Charging Adapter 
-  - 1
-* - Power Distribution Board (PDB)
-  - 1
-* - Universal Battery Eliminator Circuit (UBEC)
-  - 1
-* - Raspberry Pi Hat 
-  - 1
-* - XT60 Connector 
-  - 1
-* - Soldering Tools 
-  - 1
-* - Raspberry Pi
-  - 1
-* - Heat Sinks
-  - 1 set
-* - Micro SD Card 
-  - 1
-* - Base Station 
-  - 1
+---
+
+* Assembled Raspberry Pi Hat and PDB
 ```
-````
 
 ## Detailed Hardware Descriptions
 ### Battery
@@ -74,7 +59,7 @@ Taking the proper precautions when using, storing, or charging is very important
 ```
 
 ### Battery charger and charging adapter
-The battery charger and charging adapter allow you to draw power from an outlet to recharge the LiPo battery of your Duckiedrone. The blue charger has a three 7-segments displays cycling through showing the voltage on each cell and the overall voltage of the battery while it is charging.
+The battery charger and charging adapter allow you to draw power from an outlet to recharge the LiPo battery of your Duckiedrone. The blue charger has a display that cycles through showing the voltage on each cell and the overall voltage of the battery while it is charging.
 
 ```{figure} ../_images/components-official/battery_charger.png
 :width: 400px
@@ -86,6 +71,14 @@ Battery charger
 :width: 400px
 
 Charging adapter
+```
+
+```{tip}
+During development/testing you might need to keep your drone on for more time than the battery allows.
+
+A good solution for this scenario is to connect the Raspberry Pi to an external power supply, disconnecting the battery from the PDB.
+
+In this way you can activate all the nodes (including Flight Controller) but the motors will not get power to spin.
 ```
 
 ### Power Distribution Board (PDB)

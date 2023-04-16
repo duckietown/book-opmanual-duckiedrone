@@ -1,3 +1,4 @@
+(sec:first-boot)=
 # First boot
 
 There is only one first time you can connect to your Duckiedrone. Savor the experience.
@@ -54,9 +55,11 @@ Do not interrupt the first boot procedure, e.g., by removing power to the Raspbe
             
         *   You might not have access to the internet (which is not required, but useful during development), unless your base station has a secondary network adapter (e.g., an Ethernet port) and you bridge the connection.  
                 
-    3.  How to: **short** pins `5` & `6` on the breadboard by using the provided jumper.
+    3.  How to:
+
+        * __short__ pins `5` & `6` on the breadboard by using the provided jumper.
         
-        ```{figure} ./_images/first-boot/wifi_pins_shorted.png
+        ```{figure} ../_images/first-boot/wifi_pins_shorted.png
         :width: 500px
         
         Pins `5` & `6` shorted.
@@ -68,16 +71,20 @@ Do not interrupt the first boot procedure, e.g., by removing power to the Raspbe
     
     If you want to have the drone connect to an existing local area network. This is the go-to choice if you have an existing network and admin powers to it in the environment where you are operating.  
 
-    1.  Pros: both your base station and your drone can talk with each other (and other devices on the network), and to the internet.  
+    1.  Pros:
+        * both your base station and your drone can talk with each other (and other devices on the network), and to the internet.  
 
-    2.  Cons: requires admin access to a pre-existing network in your space.  
+    2.  Cons:
+        * requires admin access to a pre-existing network in your space.  
     
-    3.  How to: **do not** **short** pins `5` & `6` on the breadboard by using the provided jumper.  
+    3.  How to:
+        * __do not__ short pins `5` & `6` on the breadboard by __not__ using the provided jumper.
+
         ```{tip}
-        Keep the jumper on at least one pin to avoid misplacing and losing it!
+        Keep the jumper on _one_ pin to avoid misplacing and losing it!
         ```
 
-        ```{figure} ./_images/first-boot/wifi_pins_not_shorted.png
+        ```{figure} ../_images/first-boot/wifi_pins_not_shorted.png
         :width: 500px
 
         Pins `5` & `6` not shorted.
@@ -86,13 +93,13 @@ Do not interrupt the first boot procedure, e.g., by removing power to the Raspbe
     
     ::::
 
-4.  If you haven't already, insert the initialized micro SD card inside the micro SD card slot of the Raspberry Pi.
+4.  If you haven't already, insert the initialized micro SD card inside the micro SD card slot of the Raspberry Pi, as shown [here](attach_pi_hat).
     
-    ```{important}
+    ```{attention}
     **Do not** connect the SD card inside the adapter to a USB-A port of the Raspberry Pi. 
     ```
 
-    ```{image} ./_images/first-boot/sd_card_insertion.png
+    ```{image} ../_images/first-boot/sd_card_insertion.png
     ```
 
 5.  Power the Raspberry Pi
@@ -110,7 +117,7 @@ Do not interrupt the first boot procedure, e.g., by removing power to the Raspbe
     
     Scan available networks through the base station: once the booting procedure is complete you will find a network called `duckietown-<hostname>-ap`, where `<hostname>` is the name of the robot, as determined during the initialization procedure. The default name is `amelia`.
 
-    ```{image} ./_images/first-boot/drone_wifi_ap.png
+    ```{image} ../_images/first-boot/drone_wifi_ap.png
     :width: 300px
     ```
  
@@ -125,7 +132,7 @@ Do not interrupt the first boot procedure, e.g., by removing power to the Raspbe
     A detailed guide on how to change `wpa_supplicant.conf` can be found in [](sw-initialization).
     ```
 
-    ```{hint}    
+    ```{tip}    
     If you already know the format of the `wpa_supplicant.conf` file, you can add different networks by manually editing it in the SD card’s `config` partition. 
 
     To edit this file, you will need to:

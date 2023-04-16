@@ -1,6 +1,8 @@
 (overview_fc)=
 # Overview
-In this phase of the build, you will configure and calibrate the Flight Controller and ESCs. You will flash the correct Firmware. It's a special type of software that controls the hardware on a device.
+In this phase of the build, you will attach the Flight Controller to your drone and to the ESCs.
+
+You have already configured the Flight Controller software, now you will use it to test and calibrate ESCs. 
 
 ## Flight Controller
 ```{warning}
@@ -11,29 +13,15 @@ Make sure to check which version you have and **follow the appropriate instructi
 Check [this section](identifying_fc) if you're not sure which version you have.
 ```
 
-````{admonition} What you'll need
-```{list-table}
-:header-rows:   1
-:name:  materials-fc
-
-*   - Parts
-    - Quantity
-
-*   - Flight Controller
-    - 1
-
-*   - USB to Micro USB cable
-    - 1
-
-*   - Nylon M3 white bolts and nuts
-    - 4 pairs
-
-*   - M3 Rubber spacers
-    - 4
-
-*   - Base station
-    - 1
-````
+```{needget}
+*  Flight Controller
+*  USB to Micro USB cable
+*  Nylon M3 white bolts and nuts
+*  M3 Rubber spacers
+*  Base station
+---
+*  Working Flight Controller stack.
+```
 
 ### Flight Controller
 The Flight Controller (i.e. Flight Controller) contains multiple sensors: an Inertial Measurement Unit (IMU) and a gyroscope. The IMU measures linear accelerations and the gyroscope measures angular velocities. The Flight Controller also receives commands from the Raspberry Pi and then sends electrical signals to the ESCs which in turn change the speeds of the motors.
@@ -128,7 +116,7 @@ M3 Rubber spacers
 These plastic bolts are used to attach the PDB to the frame of the Duckiedrone.
 
 ```{warning}
-You will fing both M3 and M2 bolts and nuts in your Duckiebox, pay attention to use the M3 in this section.
+You will find both M3 and M2 bolts and nuts in your Duckiebox, pay attention to use the M3 in this section.
 
 You can distinguish them by:
 1. comparing the two; the M3 bolts will be slightly thicker
@@ -145,7 +133,7 @@ Nylon M3 bolts (8) and nuts (11)
 
 (identifying_fc)=
 ## Identifying your Flight Controller board
-```{important}
+```{attention}
 There are currently 2 types of Flight Controller hardware.
 
 Identify here which type of Flight Controller you have and use the steps corresponding to your hardware.

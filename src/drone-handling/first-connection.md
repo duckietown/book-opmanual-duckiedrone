@@ -1,11 +1,11 @@
-(first-connection)=
+(first_connection)=
 # First connection
 
 You are now ready to connect to your Duckiedrone through the Duckietown Dashboard.
 
 ```{needget}
 
-*   A live `DD21` ([First Boot](first-boot))
+*   A live `DD21` ([First Boot](sec:first-boot))
 
 *   A Duckietown token ([See here](https://docs.duckietown.org/daffy/opmanual_duckiebot/out/dt_account.html) how to obtain it)
 
@@ -17,30 +17,6 @@ You are now ready to connect to your Duckiedrone through the Duckietown Dashboar
 
 ```
 
-```{admonition} Cheatsheet
-:class: note
-
-Default robot name: `amelia`
-
-Default user name: `duckie`
-
-Default user password: `quackquack`
-
-Ssh always possible: `ssh duckie@amelia.local`
-
-**Default** access point (**AP**) network configuration:
-
-*   SSID: `duckietown-amelia-ap`
-    
-*   Password: `quackquack`
-    
-
-**Default** client (**CL**) network configuration:
-
-*   SSID: `duckietown`
-    
-*   Password: `quackquack`
-```
 
 ## Connecting to the Duckiedrone  
 
@@ -52,7 +28,7 @@ For best performance, we recommend using Google Chrome as browser.
     
     *  Follow the "Setup Duckietown Account” instruction (Sec. 2.1, 2.2) [here](https://docs.duckietown.org/daffy/opmanual_duckiebot/out/dt_account.html)  
 
-        ````{hint}
+        ````{tip}
         The token will look something like this:  
         
         ```
@@ -138,10 +114,50 @@ Albeit connected to the Duckiedrone, we need to provide our Duckietown user prof
     ```
     
 2.  Click on {bdg-warning}`Sign in with Duckietown` and provide your Duckietown token (you should have this written down). Click {bdg-dark-line}`Login` to proceed.  
-      
+    
     You should now be redirected to your User profile page, and be able to see many more options in the left nav bar:
     
     ```{image} ../_images/first-connection/setup_complete.png
     ```
+    
+    ```{warning}
+    Be careful about not showing your Duckietown token around, it should be kept secret.
+    ```
 
 We are now ready to investigate some of the most exciting features of the Duckiedrone Dashboard.
+
+## Cheatsheet
+
+
+```{admonition} Cheatsheet
+:class: note
+
+Default robot name: `amelia`
+
+Default user name: `duckie`
+
+Default user password: `quackquack`
+
+Ssh always possible: `ssh duckie@amelia.local`
+
+**Default** access point (**AP**) network configuration:
+
+*   SSID: `duckietown-amelia-ap`
+    
+*   Password: `quackquack`
+    
+
+**Default** client (**CL**) network configuration:
+
+*   SSID: `duckietown`
+    
+*   Password: `quackquack`
+```
+
+## Troubleshooting
+
+```{trouble}
+I cannot connect to my Duckiedrone in AP mode.
+---
+Try using client mode and shut down the docker container `dt-access-point` through the Portainer interface (accessible through your browser from your base station at `<hostname>.local:9000`)
+```

@@ -94,41 +94,6 @@ Reversing the leads (i.e. red on `-` and black on `+`) won't do any harm; it wil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TdUK6RPdIrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## AC Voltage Check
-
-1. **Selecting the AC Voltage Mode**  
-    Switch on your multimeter, and set the dial to AC voltage mode (indicated by a `V` with a wavy line (`~V`), or the symbol `ṽ`).  
-
-    ```{tip}
-    AC voltage does not have polarity. 
-    ```
-
-    ```{danger}
-    Do not let your fingers touch the lead tips.
-
-    Do not allow the tips to contact one another.
-    ```
-
-    ```{figure} ./_images/multimeters/multimeter_dial_ac_voltage.jpg
-
-    Switch the Dial to the AC Voltage Test Function
-    ```
-
-2. **Performing the Voltage Check**  
-    * Place the positive(red) lead on the positive terminal, and the negative(black) lead on the negative terminal.  
-    * We can get a reading from the screen now.
-
-    ```{tip}
-    Reversing the leads won't do any harm: it just gives us a negative reading.  
-    ```
-
-
-```{seealso}
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nW13vjQjS5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-[This article](https://www.fluke.com/en-us/learn/best-practices/test-tools-basics/digital-multimeters/how-to-measure-ac-voltage-with-a-digital-multimeter) contains more detailed information about AC voltage test.    
-```
-
 ```{seealso}
 For an introduction or review of circuit basics and Ohm’s Law, $V=IR$, check out this [SparkFun article](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law).
 ```

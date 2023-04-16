@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 parts:
-    - caption: Hardware build
+    - caption: Preliminaries
       maxdepth: 2
       numbered: False
       chapters:
@@ -12,10 +12,14 @@ parts:
         - file: building-start/prerequisites
         - file: multimeters
         - file: building-start/included-materials
-        - file: building-start/excluded-materials
+        - file: building-start/other-materials
         - file: building-start/software-initialization
         - file: building-start/flight-controller-initialization
 
+    - caption: Hardware build DD21
+      maxdepth: 2
+      numbered: False
+      chapters:
         - file: rpi-power/index.md
           sections:
             - file: rpi-power/overview
@@ -49,13 +53,20 @@ parts:
       maxdepth: 2
       numbered: False
       chapters:
-          - file: first-boot
-          - file: calibrations
+          - file: drone-handling/first-boot
           - file: drone-handling/first-connection
+          - file: drone-handling/calibrations
+          - file: drone-handling/troubleshooting
+
+    - caption: Using the drone
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: flying/environment-setup
+          - file: flying/flying-your-drone
+          - file: flying/cleanflight-pid-settings
+          - file: flying/diagnostic
           
-          - file: drone-handling/dashboard/index
-            sections:
-              - file: drone-handling/dashboard/robot/info
     - caption: Software Architecture
       maxdepth: 2
       numbered: False

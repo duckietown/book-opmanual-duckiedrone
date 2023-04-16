@@ -5,9 +5,10 @@
 3 hours
 ```
 
-
 ## Preliminary Tasks
+
 ### Charge the Battery
+
 Start charging your drone battery so it is ready when you need it. To charge the battery connect it to the `3 Cells` plug of the charger and connect it to the charging adapter.
 
 ```{figure} ../_images/rpi-power/battery_charging.jpg
@@ -19,7 +20,11 @@ The battery takes about 2 hours to charge.  When charging, the battery flashes b
 
 ```{warning}
 
-The battery is fully charged when `"ALL"` is 12.5 volts.
+The battery is fully charged when `"ALL"` is 12.6 volts.
+
+The charger will also start emitting a `BEEP` sound when charging is complete.
+
+Disconnect your battery.
 ```
 
 You can also tell by measuring the voltage across the battery's power and ground with a multimeter.  When the battery is plugged into a charger and the charger is not plugged into a wall, it uses power from the battery to display the voltage on the battery.  Over time this will drain the battery.  If a battery's voltage gets too low, the battery can then no longer be charged.  
@@ -57,7 +62,7 @@ Pin header inserted into the back of Raspberry Pi Hat
 
 ### 2 - Solder the Pin Header
 
-```{important}
+```{attention}
 1. Review the [through-hole soldering technique](sec:soldering)
 
 1. Use the helping hands to assist as you solder the pin header
@@ -145,7 +150,8 @@ Verify there is
 no short between the `+5V` rail and the `GND` rail on the Raspberry Pi Hat
 ```
 
-## Attaching WiFi mode pins
+## Attaching Wi-Fi mode pins
+
 The Raspberry Pi has a unique way to understand how to switch between its two different Wi-Fi modes.
 
 You will be soldering another set of 90 degree pins in port `#5` and port `#6` of the Raspberry Pi Hat as shown in the following image.
@@ -158,12 +164,16 @@ WiFi mode pins with jumper (not inserted in the pic)
 ```
 
 ```{attention}
-The second piece shown in the image is a jumper to short the pins. This piece is very small, be careful not to lose this. 
+The other piece of hardware shown in the image, which is a black cap-like device next to the soldered pins, is a jumper to short the pins. This piece is very small, be careful not to lose this. 
 
 It is advised to insert it into the pins for safe keeping.
 ```
+
 ```{warning}
-Remember that it does matter if the jumper is plugged into both pins or just one when booting your Pi up.
+Remember that it does matter whether the jumper is plugged into both pins or just one when booting your Raspberry Pi up:
+
+* Jumper plugged in both pins → **access point mode**
+* Jumper plugged in only one pin → **client mode**
 ```
 
 ## Preparing the PDB
@@ -172,9 +182,9 @@ The PDB (Power distribution board) takes power from the battery and distributes 
 ### Tin the PDB
 Similar to exposed wires, the metal pads on a PDB need to be tinned. This will allow tinned wires to be joined to the pads - and therefore the PDB. 
 
-```{warning} It is **very important** to use a chisel tip soldering iron rather than the pointed tip you used for soldering header to the Raspberry Pi Hat.
+```{warning} It is **very important** to use a chisel tip soldering iron rather than the pointed tip you used for soldering the header to the Raspberry Pi Hat.
 
-Make sure to power down your soldering iron, cool it completely, and switch to a chisel tip.
+Make sure to unplug your soldering iron and let it cool down **completely** before switching the tip.
 
 This tip applies more heat quickly to the pad, so that the solder flows onto the pad when you tin it.
 ```
@@ -193,8 +203,8 @@ For the remainder of the instructions, unless stated otherwise, **red** wires sh
 ```
 
 ### Solder the XT60 Battery Connector to the PDB
-1. **Strip** the ends of the battery connector so that about 1 cm of wire is exposed
 
+1. **Strip** the ends of the battery connector so that about 1 cm of wire is exposed
 
 1. **Tin** the exposed ends of the XT60 connector
 
@@ -203,6 +213,8 @@ For the remainder of the instructions, unless stated otherwise, **red** wires sh
 ```{tip} This wire is very thick and it will take a while for the solder to melt.
 
 Make sure your soldering iron is turned all the way up, you're using a chisel tip and be patient.
+
+It also helps to keep the cable at an angle to have it touch the copper hole while soldering.
 ```
 
 ```{figure} ../_images/rpi-power/pdb_soldered_XT60.jpg
@@ -256,7 +268,7 @@ Verify there is:
 ```{admonition} Check
 :class: seealso
 
-**ONLY** if the connectivity check passed, do a _DC voltage_ check on the PDB.
+**only** if the connectivity check passed, do a _DC voltage_ check on the PDB.
 
 Plug in a 12V battery and verify there is:
 * ~0V between any positive (`+`) pad and any other positive (`+`) pad
@@ -276,7 +288,7 @@ If the battery is charged to X volts instead of 12 volts (e.g. 10), then the mul
 ```{admonition} Check
 :class: seealso
 
-**ONLY** if the DC voltage check passed, re-connect a battery to your drone and verify the following:
+**only** if the DC voltage check passed, re-connect a battery to your drone and verify the following:
 
 * red LEDs on the PDB light up.
 
@@ -285,9 +297,9 @@ If the battery is charged to X volts instead of 12 volts (e.g. 10), then the mul
 
 ## Put Heat Sinks on Raspberry Pi
 
-Attach the heat sinks to the Pi as shown in the pictures.
+Attach the heat sinks to the Raspberry Pi as shown in the pictures.
 
-```{figure} ../_images/rpi-power/rpi_top_heatsink.jpg
+```{figure} ../_images/rpi-power/rpi_top_heatsink.png
 :width: 400px
 :align: center
 
@@ -302,7 +314,7 @@ Bottom heatsink
 ```
 
 (attach_pi_hat)=
-## Attach the Raspberry Pi Hat to the Pi
+## Attach the Raspberry Pi Hat to the Raspberry Pi
 
 Align the 2x40 GPIO pins on the Raspberry Pi with the 2x40 pin header that you soldered to the Raspberry Pi Hat as shown in the image.
 
@@ -336,9 +348,10 @@ On the Raspberry Pi Hat, do another connectivity check to verify that there is *
 
 2. Verify that the BEC has a solid red light.
 
-3. Verify that the Pi has a solid red light.
+3. Verify that the Raspberry Pi has a solid red light.
 ```
 
+(insert-sd-card)=
 ### Insert the SD card into the Pi
 
 ```{admonition} Disconnect the UBEC from the Raspberry Pi Hat
@@ -353,16 +366,9 @@ Insert your (previously flashed) micro SD card into the micro SD card slot on th
 The micro SD card **direction does matter** - the lettering on the SD card should be facing downward.
 ```
 
-```{figure} ../_images/rpi-power/raspberry_inserting_sd_card.jpg
-:width: 300px
+```{figure} ../_images/rpi-power/raspberry-pi-sd-card.png
+:width: 500px
 :align: center
 
 Micro SD Card being inserted into the Raspberry Pi
-```
-
-```{figure} ../_images/rpi-power/raspberry_inserted_sd_card.jpg
-:width: 300px
-:align: center
-
-Micro SD Card fully inserted in the Raspberry Pi
 ```

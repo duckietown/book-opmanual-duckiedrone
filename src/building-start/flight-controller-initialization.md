@@ -20,7 +20,7 @@ The Flight Controller (FC) implements several low-level behaviors, e.g., stabili
 Cleanflight Configurator is an app that allows the base station to connect directly to the Flight Controller and access its configuration interface.
 
 ```{note}
-Cleanflight Configurator used to be a Chrome App, however Chrome Apps' support has been dropped from Google so we'll use native apps for your OS.
+Cleanflight Configurator used to be a Chrome App, however Chrome Apps' support has been dropped from Google so you will use the native app for your OS.
 ```
 
 Steps:
@@ -42,18 +42,18 @@ Steps:
 
 Flight Controllers might have different versions of firmware (i.e., the software that runs on the Flight Controller microcontroller) out of the factory. Normally, this only needs to be done once initially. Follow this procedure to update your firmware.
 
-```{important}
+```{attention}
 During flashing, do not press the `“Connect”` button in Cleanflight Configurator. 
 ```
 
 Our current target firmware is: 
 
-*   **BTFL v3.3.3**  (Download the `.hex` file below to your base station) [Download BTFL v3.3.3 here](https://github.com/betaflight/betaflight/releases/download/v3.3.3/betaflight_3.3.3_SPRACINGF3.hex)
+*   **BTFL v3.3.3** (Download the `.hex` file below to your base station) [Download BTFL v3.3.3 here](https://github.com/betaflight/betaflight/releases/download/v3.3.3/betaflight_3.3.3_SPRACINGF3.hex)
 
 
 ### Prepare for flashing the Flight Controller firmware
 
-```{important}
+```{attention}
 Regardless of the firmware version, if it is the first time setting up the Flight Controller, we recommend performing the below flashing procedure once anyways in order to start from a clean state.
 ```
 
@@ -251,7 +251,9 @@ Now that the Flight Controller is in `bootloader mode` you can flash the correct
     1. Click `“Connect”` and verify the firmware version is correct as detailed below
     ```
 
+```{attention}
 To see the whole process for your version of the Flight Controller choose the correct tab below:
+```
 
 ::::{tab-set}
 
@@ -273,7 +275,7 @@ To see the whole process for your version of the Flight Controller choose the co
 
 1.  Unplug the battery from your drone
 
-    ```{important}
+    ```{attention}
     Double-check the battery is unplugged
     ```
 
@@ -397,7 +399,7 @@ This second procedure has to be done each time the Flight Controller is reconnec
 
 ```{trouble}
    
-I'm using Ubuntu 22.04 and Cleanflight Configurator doesn't open or install!
+I'm using Ubuntu 22.04 and Cleanflight Configurator does not open nor install.
 ---
 If that's the case use Cleanflight Configurator v2.6.0 from [here](https://github.com/cleanflight/cleanflight-configurator/releases/tag/CLFL_v2.6.0)
 ```
