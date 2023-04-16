@@ -56,3 +56,10 @@ parts:
           - file: drone-handling/dashboard/index
             sections:
               - file: drone-handling/dashboard/robot/info
+    - caption: Software Architecture
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: software-architecture/introduction
+          - file: software-architecture/ros
+          - file: software-architecture/nodes
