@@ -68,11 +68,14 @@ parts:
           - file: flying/cleanflight-pid-settings
           - file: flying/diagnostic
 
-    - caption: Supported Learning Experiences
+    - caption: Learning Experiences
       maxdepth: 2
       numbered: False
+      
+      - file : learning-experiences/index
+      
       chapters:
-          - file: supported-lxs
+          - file: learning-experiences/supported-lxs
           
     - caption: Software Architecture
       maxdepth: 2
