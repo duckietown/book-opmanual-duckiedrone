@@ -67,6 +67,12 @@ parts:
           - file: flying/flying-your-drone
           - file: flying/cleanflight-pid-settings
           - file: flying/diagnostic
+
+    - caption: Supported Learning Experiences
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: supported-lxs
           
     - caption: Software Architecture
       maxdepth: 2

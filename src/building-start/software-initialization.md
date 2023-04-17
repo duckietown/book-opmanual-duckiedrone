@@ -26,7 +26,7 @@ In this section you will install the Duckiedrone software on the microSD card.
 
 1. If you have not already, on a base station, download the latest drone image:
 
-    ```{button-link} <https://duckietown-public-storage.s3.amazonaws.com/brown/disk_image/dt-amelia-DD21-brown2022-sd-card-v11.zip>
+    ```{button-link} https://duckietown-public-storage.s3.amazonaws.com/brown/disk_image/dt-amelia-DD21-brown2022-sd-card-v11.zip
     :color: primary
     :shadow:
     
