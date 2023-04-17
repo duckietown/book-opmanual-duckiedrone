@@ -10,7 +10,7 @@ parts:
       chapters:
         - file: building-start/safety
         - file: building-start/prerequisites
-        - file: multimeters
+        - file: building-start/multimeters
         - file: building-start/included-materials
         - file: building-start/other-materials
         - file: building-start/software-initialization
@@ -57,6 +57,7 @@ parts:
           - file: drone-handling/first-connection
           - file: drone-handling/calibrations
           - file: drone-handling/troubleshooting
+          - file: datasheets/index
 
     - caption: Using the drone
       maxdepth: 2
@@ -72,3 +73,11 @@ parts:
       numbered: False
       chapters:
           - file: supported-lxs
+          
+    - caption: Software Architecture
+      maxdepth: 2
+      numbered: False
+      chapters:
+          - file: software-architecture/introduction
+          - file: software-architecture/ros
+          - file: software-architecture/nodes

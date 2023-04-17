@@ -1,4 +1,3 @@
-(build-multimeter)=
 # How to Use Multimeters
 
 During this step you will learn about how to use multimeters to do a continuity check and a voltage check.    
@@ -13,7 +12,7 @@ A multimeter or a multitester, also known as a *VOM* (volt-ohm-milliammeter), is
 Please turn off the multimeter by setting the dial to `OFF` after you finish your check.    
 ```
 
-```{figure} ./_images/multimeters/multimeters.jpg
+```{figure} ../_images/multimeters/multimeters.jpg
 
 Multimeter
 ```
@@ -35,11 +34,11 @@ Performing a continuity check is a safe way to debug if a circuit has an undesir
 
         | Continuity test dial position | Continuity test mode |
         |:-----------------------------:|:---------------------:
-        |![](./_images/multimeters/multimeter_dial_continuity_inked.jpg) | ![](./_images/multimeters/multimeter_continuity_mode_inked.jpg) 
+        |![](../_images/multimeters/multimeter_dial_continuity_inked.jpg) | ![](../_images/multimeters/multimeter_continuity_mode_inked.jpg) 
 
     * Test the continuity test mode by touching and holding the multimeter leads together. A continuous beep will be audible for as long as the leads are held together. 
 
-        ```{figure} ./_images/multimeters/multimeter_leads_together_inked.jpg
+        ```{figure} ../_images/multimeters/multimeter_leads_together_inked.jpg
 
         Leads held together (a continuous beep is audible)
         ```
@@ -48,7 +47,7 @@ Performing a continuity check is a safe way to debug if a circuit has an undesir
 
     * Place each lead at a point of the circuit or component you want to test.   
 
-        ```{figure} ./_images/multimeters/multimeter_leads_on_board.jpg
+        ```{figure} ../_images/multimeters/multimeter_leads_on_board.jpg
 
         Multimeter leads on breadboard
         ```
@@ -79,7 +78,7 @@ Performing a continuity check is a safe way to debug if a circuit has an undesir
 1. **Selecting the DC Voltage Mode**  
     Switch on your multimeter, and set the dial to DC voltage mode (indicated by a `V` with a straight line `-V`, or the symbol `⎓`).   
 
-    ```{figure} ./_images/multimeters/multimeter_dial_dc_voltage.jpg
+    ```{figure} ../_images/multimeters/multimeter_dial_dc_voltage.jpg
 
     Switch the Dial to the DC Voltage Test Function
     ```
