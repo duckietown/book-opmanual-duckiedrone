@@ -70,11 +70,9 @@ parts:
 
     - caption: Learning Experiences
       maxdepth: 2
-      numbered: False
-      
-      - file : learning-experiences/index
-      
+      numbered: False      
       chapters:
+          - file : learning-experiences/index
           - file: learning-experiences/supported-lxs
           
     - caption: Software Architecture
