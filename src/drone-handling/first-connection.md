@@ -18,11 +18,21 @@ You are now ready to connect to your Duckiedrone through the Duckietown Dashboar
 ```
 
 
+```{todo}
+absolute URL in needget box above
+```
+
+
 ## Connecting to the Duckiedrone  
 
 Any Duckiedrone is accessible by any base station through a browser, but only the first user setting up a Dashboard will have admin powers over it.
 
 For best performance, we recommend using Google Chrome as browser.
+
+
+```{todo}
+absolute URL to `dt_account.html` below
+```
 
 1.  Obtain and write down your Duckietown token before starting this procedure
     
