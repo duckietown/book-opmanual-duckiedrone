@@ -7,7 +7,7 @@ You are now ready to connect to your Duckiedrone through the Duckietown Dashboar
 
 *   A live `DD21` ([First Boot](sec:first-boot))
 
-*   A Duckietown token ([See here](https://docs.duckietown.org/daffy/opmanual_duckiebot/out/dt_account.html) how to obtain it)
+*   A Duckietown token ([See here](https://docs-old.duckietown.org/daffy/opmanual_duckiebot/out/dt_account.html) how to obtain it)
 
 *   A base station with wireless connectivity, or a pre-existing network
 
@@ -26,7 +26,7 @@ For best performance, we recommend using Google Chrome as browser.
 
 1.  Obtain and write down your Duckietown token before starting this procedure
     
-    *  Follow the "Setup Duckietown Account” instruction (Sec. 2.1, 2.2) [here](https://docs.duckietown.org/daffy/opmanual_duckiebot/out/dt_account.html)  
+    *  Follow the "Setup Duckietown Account” instruction (Sec. 2.1, 2.2) [here](https://docs-old.duckietown.org/daffy/opmanual_duckiebot/out/dt_account.html)  
 
         ````{tip}
         The token will look something like this:  
