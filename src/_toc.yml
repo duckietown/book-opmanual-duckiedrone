@@ -81,5 +81,4 @@ parts:
       chapters:
           - file: software-architecture/introduction
           - file: software-architecture/ros
-          - file: software-architecture/diagram
           - file: software-architecture/nodes
