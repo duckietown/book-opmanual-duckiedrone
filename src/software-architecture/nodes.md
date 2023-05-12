@@ -1,8 +1,8 @@
 # Nodes
 
-This section elaborates on all of the ROS nodes that run on your drone to make it fly autonomously. These are described in the order in which they appear in pi.screenrc.
+This section elaborates on all of the ROS nodes that run on your drone to make it fly autonomously. These are described in the order in which they appear in `pi.screenrc`: the pattern \`# in the headers serves to remind that in screen you can move between the various nodes by typing \`# where # is the node number.
 
-## \`0: rcore
+## \`0: roscore
 Starts up a ROS master to allow the nodes to find each other.
 
 * Runs: `roscore`
