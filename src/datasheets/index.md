@@ -1,3 +1,4 @@
+(datasheets)=
 # Datasheets
 
 ## Flight Controller
