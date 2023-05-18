@@ -22,24 +22,17 @@ Do a connectivity check on the XT60 connector cable; verify there is no short be
 
 An ESC (i.e. Electronic Speed Control) is a component which requires power. It takes this power and provides a variable amount of it to a motor; since a motor’s RPM depends on how much power it gets, an ESC can control how fast a motor spins by controlling how much power it supplies the motor.
 
-```{figure} ../_images/motors-esc/motors_esc_schematic.jpg
-:width: 400px
-:align: center
+Solder each of your 4 ESCs to the PDB, one by one:
 
-Schematic of motors-ESCs connections
-```
-
-Solder each of your 4 ESCs to the PDB:
-
-1. Strip about 5 mm of wire from (`+`) red and (`-`) black cables of ESC
+1. Strip about 5 mm of wire from (`+`) red and (`-`) black cables of the ESC.
 1. Tin the wire
-1. Solder on the pad.
+1. Solder on the pad, the (`+`) red cable solders to the (`+`) on the PDB and the (`-`) black cable to the (`-`) pad.
 
 ```{figure} ../_images/motors-esc/soldered_ESCs.jpg
 :width: 400px
 :align: center
 
-ESCs cables soldered to the PDB on the right and left pads
+ESCs cables soldered to the PDB on the side pads.
 ```
 
 ## Solder battery monitor leads to the PDB

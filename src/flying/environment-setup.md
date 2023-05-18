@@ -42,11 +42,8 @@ To make it possible for you to develop your own code on the drone, you need to s
 1. Then clone the repository to your Duckiedrone's SD card and switch to the branch `ente`:
 
     ```shell
-    mkdir -p catkin_ws/src
-    cd catkin_ws/src
-    git clone https://github.com/h2r/pidrone_pkg
-    cd pidrone_pkg
-    git checkout ente
+    mkdir -p catkin_ws/src && cd catkin_ws/src
+    git clone https://github.com/h2r/pidrone_pkg && cd pidrone_pkg
     ```
 
 1.  Finally build the Docker image needed to run the software (which is back on an older version of ROS, ROS Kinetic).
