@@ -14,8 +14,10 @@ Flight Controller interfaces with the flight controller board to extract the IMU
 
 You will need to start this node explicitly (press enter on screen 1) as a safety measure to prevent the drone from flying until you are really ready.
 
-* Python script: `flight_controller_node.py`
-* Hardware interfacing: flight controller board
+* Python script: 
+    * `flight_controller_node.py`
+* Hardware interfacing: 
+    * flight controller board
 * Publishers:
     * `/pidrone/imu`
     * `/pidrone/battery`
@@ -31,7 +33,7 @@ You will need to start this node explicitly (press enter on screen 1) as a safet
 ## \`2: PID
 The PID controller node controls the flight of the drone by running a PID controller on the error calculated by the desired and current velocity and position of the drone.
 
-Most of the PID loop tuning values, and the implementation of a PID control loop is actually in scripts/pid_class.py.
+Most of the PID loop tuning values, and the implementation of a PID control loop is actually in `scripts/pid_class.py`.
 
 * The 5 columns of numbers that are printed on this screen actually come from pid_class.py, and represent the following:
     * throttle command for flight controller (1200=least lift)
@@ -41,8 +43,10 @@ Most of the PID loop tuning values, and the implementation of a PID control loop
     * component of throttle command caused by Derivative component of PID
 
 
-* Python script: `pid_controller.py`
-* Hardware interfacing: None
+* Python script: 
+    * `pid_controller.py`
+* Hardware interfacing: 
+    * None
 * Publishers:
     * `/pidrone/fly_commands`
     * `/pidrone/position_control`
@@ -58,16 +62,20 @@ Most of the PID loop tuning values, and the implementation of a PID control loop
     * `/pidrone/picamera/lost`
 
 ## \`3: SE
-The State Estimator node unifies the different state estimators so that the user only has to call this script to interact with state estimators. This node publishes to /pidrone/state, which offers the best state estimate based on whichever state estimators are to be used, depending on the command-line arguments that the user passes into this script.
-    The different state estimators (in scripts/StateEstimators/) are:
-        - ema: uses an exponential moving average
-        - ukf2d: UKF with a 2D state vector
-        - ukf7d: UKF with a 7D state vector
-        - ukf12d: UKF with a 12D state vector
- The state typically consists of the x,y,z positions and velocities, and the yaw of the drone. We've implemented several state estimators that vary in complexity. You will be implementing a state estimator that uses an Unscented Kalman Filter (UKF) in a future project.
+The State Estimator node unifies the different state estimators so that the user only has to call this script to interact with state estimators. This node publishes to `/pidrone/state`, which offers the best state estimate based on whichever state estimators are to be used, depending on the command-line arguments that the user passes into this script. 
 
-* Python script: `state_estimator.py`
-* Hardware interfacing: None
+The different state estimators (in `scripts/StateEstimators/`) are:
+- ema: uses an exponential moving average
+- ukf2d: UKF with a 2D state vector
+- ukf7d: UKF with a 7D state vector
+- ukf12d: UKF with a 12D state vector
+
+The state typically consists of the x,y,z positions and velocities, and the yaw of the drone. We've implemented several state estimators that vary in complexity. You will be implementing a state estimator that uses an Unscented Kalman Filter (UKF) in a future project.
+
+* Python script: 
+    * `state_estimator.py`
+* Hardware interfacing: 
+    * None
 * Publishers:
     * `/pidrone/state`
 * Subscribers (one of):
@@ -79,16 +87,20 @@ The State Estimator node unifies the different state estimators so that the user
 
 ## \`4: Vision
 
-* Runs: raspicam_node (from [github.com/UbiquityRobotics/raspicam_node](https://www.github.com/UbiquityRobotics/raspicam_node))
-* Hardware interfacing: Raspberry Pi camera
+* Runs: 
+    * raspicam_node (from [github.com/UbiquityRobotics/raspicam_node](https://www.github.com/UbiquityRobotics/raspicam_node))
+* Hardware interfacing: 
+    * Raspberry Pi camera
 * Publishers:
     * `/raspicam_node/motion_vectors`
 
 ## \`5: Optical Flow
 The Optical Flow node subscribes to the optical flow motion vectors published by the vision node and publishes linear velocity calculated from that.
 
-* Python script: `optical_flow_node.py`
-* Hardware interfacing: None
+* Python script: 
+    * `optical_flow_node.py`
+* Hardware interfacing: 
+    * None
 * Publishers:
     * `/pidrone/picamera/twist`
 * Subscribers:
@@ -98,8 +110,10 @@ The Optical Flow node subscribes to the optical flow motion vectors published by
 ## \`6: Rigid Transform
 This node uses OpenCV to calculate the change in position of the drone using the camera.
 
-* Python script: `rigid_transform_node.py`
-* Hardware interfacing: None
+* Python script: 
+    * `rigid_transform_node.py`
+* Hardware interfacing: 
+    * None
 * Publishers:
     * `/pidrone/picamera/pose`
     * `/pidrone/picamera/lost`
@@ -113,8 +127,10 @@ This node uses OpenCV to calculate the change in position of the drone using the
 ## \`7: TOF
 The TOF node communicates with the VL53L0X Time Of Flight distance sensor using I2C and publishes the sensor's range readings.
 
-* Python script: `tof_node.py`
-* Hardware interfacing: Time Of Flight sensor
+* Python script: 
+    * `tof_node.py`
+* Hardware interfacing: 
+    * Time Of Flight sensor
 * Publishers:
     * `/pidrone/range`
 
