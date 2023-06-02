@@ -68,9 +68,9 @@ The Raspberry Pi Camera has tape on the back of the black lens assembly that has
     ```
 
 ```{warning}
-    Do not use the metal M2 screws as they might short the PCB.
+Do not use the metal M2 screws as they might short the PCB.
 
-    Only use them if you have an old hardware revision, see Troubleshooting if you have power issues.
+Only use them if you have an old hardware revision, see Troubleshooting if you have power issues.
 ```
 
 ## Mount the top frame
