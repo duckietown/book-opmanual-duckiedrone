@@ -55,7 +55,6 @@ parts:
       chapters:
           - file: drone-handling/first-boot
           - file: drone-handling/first-connection
-          - file: drone-handling/calibrations
           - file: drone-handling/troubleshooting
           - file: datasheets/index
 
