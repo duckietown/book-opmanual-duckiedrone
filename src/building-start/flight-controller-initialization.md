@@ -405,6 +405,19 @@ If that's the case use Cleanflight Configurator v2.6.0 from [here](https://githu
 ```
 
 ```{trouble}
+   
+I'm using Ubuntu 22.04 and Cleanflight Configurator freezes when flashing the firmware.
+---
+Proceed with the following workaround:
+
+1. Open Cleanflight Configurator.
+2. Go in the `Firmware Flasher` tab.
+3. Select the `Flash on connect` option.
+4. Load the firmware with `Load Firmware [Local]` (the screen will freeze, this is expected).
+5. Connect the flight controller. The flashing will start at this point.
+
+```
+```{trouble}
 Other issues
 ---
 We’re happy to support! Please contact our hardware team via email: [hardware@duckietown.com](mailto:hardware@duckietown.com)
