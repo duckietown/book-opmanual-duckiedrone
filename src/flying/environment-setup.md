@@ -6,7 +6,7 @@
 
 To make it possible for you to develop your own code on the drone, you need to set up a docker workspace from the source code of the repository `pidrone_pkg`.
 
-1.  Run `ssh duckie@yourdrone` from your base station to ssh into your drone.  The password is
+1.  Run `ssh duckie@[yourdrone].local` from your base station to ssh into your drone.  The password is
 `quackquack`.
 
 1. Clone the repository to your Duckiedrone's SD card and switch to the branch `ente`:
@@ -16,14 +16,14 @@ To make it possible for you to develop your own code on the drone, you need to s
     git clone https://github.com/h2r/pidrone_pkg && cd pidrone_pkg
     ```
 
+    ```{note}
+    The next step will take a long time because it has to download all the dependencies to build the image.  Make sure your Raspberry Pi is plugged into an external USB power supply.
+    ```
+    
 1.  Finally build the Docker image needed to run the software (which is back on an older version of ROS, ROS Kinetic).
 
     ```
     rake build && rake create
-    ```
-
-    ```{note}
-    The next step will take a long time because it has to download all the dependencies to build the image.  Make sure your Raspberry Pi is plugged into an external USB power supply.
     ```
 
 1.  You also need to download the `raspicam_node` package to be installed later:
