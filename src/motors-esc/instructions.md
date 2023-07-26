@@ -62,6 +62,9 @@ Pull **very** slightly the two wires to make sure they stay connected.
 ## Attaching parts to drone frame
 
 This section will cover attaching the first set of items to the drone frame.
+```{note}
+The propeller guards and frames are at the bottom of the duckie drone boxes.
+```
 
 ```{attention}
 Before beginning, verify the PDB is completely soldered with all necessary parts (as covered in previous sections).
@@ -132,6 +135,9 @@ Get the prop guards, and put a prop guard on the frame. The prop guards will slo
 **bottom** : standoffs
 ```
 
+```{tip}
+When screwing, the motors on the propeller guards, drone frame, and standoffs, notice that one side is longer than the other one. So make sure to align them accordingly so that the screws perfectly fit.
+```
 Attach **clockwise** motors to the bottom-right and top-left of the drone frame, using 4 long silver M3 screws for each attachment.  
 
 ```{danger}
