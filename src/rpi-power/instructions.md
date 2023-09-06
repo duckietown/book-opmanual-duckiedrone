@@ -204,9 +204,11 @@ For the remainder of the instructions, unless stated otherwise, **red** wires sh
 
 ### Solder the XT60 Battery Connector to the PDB
 
-1. **Strip** the ends of the battery connector so that about 1 cm of wire is exposed
+1. **Cut** the metal-covered ends off of the battery connector wires
 
-1. **Tin** the exposed ends of the XT60 connector
+1. **Strip** the ends of the battery connector wires so that about 1 cm of wire is exposed
+
+1. **Tin** the exposed ends of the XT60 connector (The original tinning is harder to connect to than freshly-tinned ends)
 
 1. **Solder** the XT60 **red (`+`) wire** to the tinned positive (`+`) opening on the PDB, and solder the **black (`-`) wire** to the tinned ground (`-`) opening on the PDB.
 
