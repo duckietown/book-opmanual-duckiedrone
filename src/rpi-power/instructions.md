@@ -365,7 +365,7 @@ You will boot the Raspberry Pi once the build is complete, for now on until the 
 Insert your (previously flashed) micro SD card into the micro SD card slot on the bottom of the Pi.
 
 ```{attention} 
-The micro SD card **direction does matter** - the lettering on the SD card should be facing downward.
+The micro SD card **direction does matter** - the lettering on the SD card should be facing away from the Pi.
 ```
 
 ```{figure} ../_images/rpi-power/raspberry-pi-sd-card.png
