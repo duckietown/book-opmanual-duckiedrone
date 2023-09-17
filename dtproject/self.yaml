@@ -1,0 +1,8 @@
+name: "book-opmanual-duckiedrone"
+maintainer:
+    name: "Davide Iafrate"
+    email: "davide.iafrate@duckietown.com"
+description: "Learn how to assemble and operate a Duckiedrone"
+version: 0.0.0
+# pick an icon from: https://fontawesome.com/v4.7.0/icons/
+icon: book

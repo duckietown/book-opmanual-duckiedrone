@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: book-opmanual-duckiedrone
-author: The Duckietown Team
+title: BOOK_NAME_HERE
+author: Duckietown, Inc.
 logo: logo.png
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 exclude_patterns: ["_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints"]
@@ -23,7 +23,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/duckietown/book-opmanual-duckiedrone
+  url: https://github.com/duckietown/BOOK_NAME_HERE
   path_to_book: src
 
 # Add GitHub buttons to your book
