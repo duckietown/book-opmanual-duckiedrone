@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: book-opmanual-duckiedrone
+title: The Duckiedrone Operation Manual
 author: The Duckietown Team
 logo: logo.png
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
