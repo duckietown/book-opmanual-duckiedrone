@@ -54,7 +54,7 @@ Plug the battery into your drone.
 
 Connect to your drone using ssh by running `ssh duckie@<hostname>`.
 
-Navigate to the `pidrone_pkg` directory and run `screen -c pi.screenrc` to start the Screen session.  Screen is a program that allows you to run multiple terminals in one ssh session.  The screen
+Navigate to the `pidrone_pkg` directory, execute `rake start` to spin up the container and run `screen -c pi.screenrc` to start the Screen session.  Screen is a program that allows you to run multiple terminals in one ssh session.  The screen
 will persist even if the ssh session is disconnected and you log in
 again.  However, it will disappear if you reboot the drone.
 
