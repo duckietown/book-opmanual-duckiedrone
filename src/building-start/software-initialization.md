@@ -1,5 +1,5 @@
 (sw-initialization)=
-# Software initialization
+# I. Software initialization
 
 ```{admonition} What you will need
 :class: note
@@ -18,13 +18,22 @@
 * A DD21 initialized and customized micro SD card
 ```
 
-## Flashing the SD card
+## 1. Flashing the SD card
 
 In this section you will install the Duckiedrone software on the microSD card.
 
-1. If you have not already, on a base station, download the image flashing tool [Etcher](https://www.balena.io/etcher/).
 
-1. If you have not already, on a base station, download the latest drone image:
+
+a. Connect the micro SD card to the base station. Use the micro SD to USB card reader if the base station does not have a micro SD port.
+  
+    ```{figure} ../_images/components-official/microSD_reader.png
+    :width: 400px
+
+    Micro SD Card adapter
+    ```
+b. If you have not already, on a base station, download the image flashing tool [Etcher](https://www.balena.io/etcher/).
+
+c. If you have not already, on a base station, download the latest drone image:
 
     ```{button-link} https://duckietown-public-storage.s3.amazonaws.com/brown/disk_image/dt-amelia-DD21-brown2022-sd-card-v12.zip
     :color: primary
@@ -32,16 +41,7 @@ In this section you will install the Duckiedrone software on the microSD card.
     
     DD21 system image
     ```
-
-1. Connect the micro SD card to the base station. Use the micro SD to USB card reader if the base station does not have a micro SD port.
-  
-    ```{figure} ../_images/components-official/microSD_reader.png
-    :width: 400px
-
-    Micro SD Card adapter
-    ```
-
-1. Open Etcher and select the downloaded drone image. Then select the micro SD card as the drive to flash. Finally, click the `"Flash"` button.
+d. Open Etcher and select the downloaded drone image. Then select the micro SD card as the drive to flash. Finally, click the `"Flash"` button.
 
 Watch this video to see how the process looks like.
 
@@ -56,10 +56,10 @@ Watch this video to see how the process looks like.
 You may be prompted to enter the base station password to proceed. This is normal: flashing an SD card deletes everything that is on it, so Etcher is making sure this process is OK with you.
 ```
 
-```{note} Flashing will take 10 - 15 min. In the meantime, you can move on to the next section.
+```{note} Flashing will take 10 - 15 min.
 ```
 
-## Customizing the Duckiedrone `hostname` and client network settings
+## 2. Customizing the Duckiedrone `hostname` and client network settings
 
 ```{warning}
 This step is particularly important.
@@ -91,7 +91,7 @@ Examples:
 If you are in an environment where multiple drones are operating at the same time, make sure your `hostname` is unique!
 ```
 
-1. To change your robot’s `hostname` navigate to the newly flashed SD card.
+a. To change your robot’s `hostname` navigate to the newly flashed SD card.
 
     * You will have to unplug it from your base station first and plug it back in as Balena Etcher dismounts the drive after finishing the flashing process.
 
@@ -103,7 +103,7 @@ If you are in an environment where multiple drones are operating at the same tim
       `boot` partition, **do not** alter!
       ```
 
-1. There will be a second partition called `config`. Open this partition. You will find two files inside:
+b. There will be a second partition called `config`. Open this partition. You will find two files inside:
 
     * `hostname`
 
@@ -114,7 +114,7 @@ If you are in an environment where multiple drones are operating at the same tim
     `config` partition content
     ```
 
-1. Open the `hostname` file with any text editor program (e.g., Notepad on Windows) and replace the default robot name, `amelia`, with one of your choosing.  
+c. Open the `hostname` file with any text editor program (e.g., Notepad on Windows) and replace the default robot name, `amelia`, with one of your choosing.  
 
     ```{warning}
     Make sure to follow the naming guidelines in the `attention` box above. 
@@ -126,7 +126,7 @@ If you are in an environment where multiple drones are operating at the same tim
     **Save** the file before closing it.
     ```
 
-1. Open the `wpa_supplicant.conf` with a text editor of your choice and either edit the default connection settings or duplicate them to add a new network. These parameters will be used only when booting the Duckiedrone in client-network mode, i.e. connecting to an existing Wi-Fi access point.
+d. Open the `wpa_supplicant.conf` with a text editor of your choice and either edit the default connection settings or duplicate them to add a new network. These parameters will be used only when booting the Duckiedrone in client-network mode, i.e. connecting to an existing Wi-Fi access point.
 
     ```bash
     ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
