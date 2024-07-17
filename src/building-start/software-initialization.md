@@ -56,7 +56,7 @@ Watch this video to see how the process looks like.
 You may be prompted to enter the base station password to proceed. This is normal: flashing an SD card deletes everything that is on it, so Etcher is making sure this process is OK with you.
 ```
 
-```{note} Flashing will take 10 - 15 min. In the meantime, you can move on to the next section.
+```{note} Flashing will take 10 - 15 min.
 ```
 
 ## Customizing the Duckiedrone `hostname` and client network settings
