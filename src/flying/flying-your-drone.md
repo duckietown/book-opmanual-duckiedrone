@@ -112,7 +112,6 @@ The Web Interface allows you to control the drone from your base station. To ope
     ```
     git clone https://github.com/h2r/pidrone_pkg
     cd pidrone_pkg
-    git checkout ente
     ```
 
 1.  In your file manager browse to the directory containing the repository you just cloned and open the file `index.html` in `/pidrone_pkg/web/`.
