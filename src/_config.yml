@@ -37,5 +37,7 @@ html:
 
 sphinx:
   extra_extensions: []
+  local_extensions:
+    manual_repository_links: _extensions
   config:
     intersphinx_mapping: {}
